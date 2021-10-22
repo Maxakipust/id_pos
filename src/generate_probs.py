@@ -189,6 +189,8 @@ for context in contexts:
 
 # Viterbi
 def runViterbi(identifier, context):
+    identifier.insert(0,'BOI')
+    identifier.append('EOI')
 
     ## Fill in some value for every state. But sometimes the emission probability will be 0 (e.g., 
     ## the probability that you see "the" when the tag is NN). Account for this possibility *and* for the 
@@ -266,8 +268,26 @@ def runViterbi(identifier, context):
     
     return posseq
 
+# ensemble_success = 0
+# ensemble_fail = 0
+
 success = 0
 fail = 0
+
+# def run_ensemble(type, name, context):
+#     try:
+#         name = "_".join(name)
+#         if context == "FUNCTION":
+#             name += "()"
+#         response = requests.get(f"http://localhost:5000/{type}/{name}/{context}")
+#         print("response", response.text)
+#         response = response.text.split(',')
+#         result = []
+#         for section in response:
+#             result.append(section.split('|')[1])
+#         return " ".join(result)
+#     except:
+#         return ""
 
 #run tests
 with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
@@ -275,23 +295,50 @@ with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
     prevId = ""
     for row in reader:
         if row['IDENTIFIER'] != prevId:
-            idArr = ('SOI ' +row['IDENTIFIER'].lower() + ' EOI').split()
+            prevId = row['IDENTIFIER']
+            # idArr = ('SOI ' +row['IDENTIFIER'].lower() + ' EOI').split()
+            idArr = row['IDENTIFIER'].lower().split()
             idArr = list(map(cleanUpWord, idArr))
+            print(idArr)
             context = contexts[int(row['CONTEXT']) - 1]
-            calcPOS = runViterbi(idArr, context).split()
-            actualPOS = ('BOI '+ row['GRAMMAR_PATTERN'] + ' EOI').split()
+            # calcPOS = runViterbi(idArr, context).split()
+            # ensemblePOS = run_ensemble("int", idArr, context).split()
+            # print("ensemble", ensemblePOS)
+            calcPOS = runViterbi(idArr, context).split()[1:-1]
+            print("calc", calcPOS)
+            # actualPOS = ('BOI '+ row['GRAMMAR_PATTERN'] + ' EOI').split()
+            actualPOS = row['GRAMMAR_PATTERN'].split()
+            print("actual", actualPOS)
             for (index, actual) in enumerate(actualPOS):
+                # try:
+                #     calc = ensemblePOS[index]
+                #     if calc == actual:
+                #         ensemble_success += 1
+                #         # print("ensemble_success")
+                #     else:
+                #         ensemble_fail += 1
+                #         print("ensemble_fail", actual, calc)
+                # except:
+                #     ensemble_fail += 1
                 calc = calcPOS[index]
                 if calc == actual:
                     success += 1
+                    # print("success")
                 else:
                     fail += 1
+                    print("fail", actual, calc)
+                
                     # print("word:", idArr[index])
                     # print("expected:", actual)
                     # print("calc:", calc)
                     # print()
+            print()
                     
 
 print("success",success)
 print("fail", fail)
 print("acc",success/(success+fail))
+
+# print("ensemble_success",ensemble_success)
+# print("ensemble_fail", ensemble_fail)
+# print("ensemble_acc",ensemble_success/(ensemble_success+ensemble_fail))
