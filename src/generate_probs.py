@@ -102,14 +102,14 @@ with open('data/orig_training_data.csv', newline='') as csvfile:
 
                 #record globals
                 transitionCounts[(pos, nextpos)] = transitionCounts[(pos, nextpos)]+1
-                transitionTotals[pos] = transitionTotals[pos] + 1
+                transitionTotals[pos] += + 1
 
                 emissionCounts[pos][id] = emissionCounts[pos][id] + 1 if id in emissionCounts[pos] else 1
                 emissionTotals[id] = emissionTotals[id] + 1 if id in emissionTotals else 1
 
                 #record context
                 contextTransitionCounts[context][(pos, nextpos)] = contextTransitionCounts[context][(pos, nextpos)]+1
-                contextTransitionTotals[context][pos] = contextTransitionTotals[context][pos] + 1
+                contextTransitionTotals[context][pos] += 1
 
                 contextEmissionCounts[context][pos][id] = contextEmissionCounts[context][pos][id] + 1 if id in contextEmissionCounts[context][pos] else 1
                 contexEmissionTotals[context][id] = contexEmissionTotals[context][id] + 1 if id in contexEmissionTotals[context] else 1
@@ -127,19 +127,19 @@ for word in emissionTotals:
             if word in emissionCounts[tag]:
                 if 'UNK' not in emissionCounts[tag]:
                     emissionCounts[tag]['UNK'] = 0
-                emissionCounts[tag]['UNK'] = emissionCounts[tag]['UNK'] + emissionCounts[tag][word]
+                emissionCounts[tag]['UNK'] += emissionCounts[tag][word]
                 del emissionCounts[tag][word]
         for context in contexts:
             if word in contexEmissionTotals[context]:
                 if 'UNK' not in contexEmissionTotals[context]:
                     contexEmissionTotals[context]['UNK'] = 0
-                contexEmissionTotals[context]['UNK'] = contexEmissionTotals[context]['UNK'] + contexEmissionTotals[context][word]
+                contexEmissionTotals[context]['UNK'] += contexEmissionTotals[context][word]
                 del contexEmissionTotals[context][word]
             for tag in tags:
                 if word in contextEmissionCounts[context][tag]:
                     if 'UNK' not in contextEmissionCounts[context][tag]:
                         contextEmissionCounts[context][tag]['UNK'] = 0
-                    contextEmissionCounts[context][tag]['UNK'] = contextEmissionCounts[context][tag]['UNK'] + contextEmissionCounts[context][tag][word]
+                    contextEmissionCounts[context][tag]['UNK'] += contextEmissionCounts[context][tag][word]
                     del contextEmissionCounts[context][tag][word]
 # print("deleting", toDel)
 for word in toDel:
@@ -283,9 +283,9 @@ with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
             for (index, actual) in enumerate(actualPOS):
                 calc = calcPOS[index]
                 if calc == actual:
-                    success = success + 1
+                    success += 1
                 else:
-                    fail = fail + 1
+                    fail += 1
                     # print("word:", idArr[index])
                     # print("expected:", actual)
                     # print("calc:", calc)
