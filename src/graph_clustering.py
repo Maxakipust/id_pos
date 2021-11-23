@@ -9,7 +9,7 @@ all_words = []
 neighbors = {}
 neighbors_count = {}
 
-suffixes = ['ee', 'eer', 'er', 'ion', 'ism', 'ity', 'ment', 'ness', 'or', 'sion', 'ship', 'th', 'able', 'ible', 'al', 'ant', 'ary', 'ful', 'ic', 'ious', 'ous', 'ive', 'less', 'y', 'ed', 'en', 'er', 'ing', 'ize','ise', 'ly', 'ward', 'wise']
+suffixes = ['ee', 'eer', 'er', 'ion', 'ism', 'ity', 'ment', 'ness', 'or', 'sion', 'ship', 'th', 'able', 'ible', 'al', 'ant', 'ary', 'ful', 'ic', 'ious', 'ous', 'ive', 'less', 'y', 'ed', 'en', 'er', 'ing', 'ize','ise', 'ly', 'ward', 'wise', 's', 'es']
 
 # calculate neighbors from the data
 with open('data/unlabeled_ids.txt', newline='') as file:
