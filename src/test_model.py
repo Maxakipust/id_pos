@@ -41,7 +41,7 @@ with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
             print(idArr)
             context = common.contexts[int(row['CONTEXT']) - 1]
             calcPOS = evaluate_pos.runViterbi(idArr, context).split()[1:-1]
-            ensemblePOS = runEnsemble("int", idArr.join(), context)
+            # ensemblePOS = runEnsemble("int", idArr.join(), context)
 
             actualPOS = row['GRAMMAR_PATTERN'].split()
             print("actual", actualPOS)
