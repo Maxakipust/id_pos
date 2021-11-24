@@ -44,7 +44,6 @@ with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
             # ensemblePOS = runEnsemble("int", idArr.join(), context)
 
             actualPOS = row['GRAMMAR_PATTERN'].split()
-
             for (index, actual) in enumerate(actualPOS):
                 calc = calcPOS[index]
                 if calc == actual:

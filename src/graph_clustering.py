@@ -2,6 +2,7 @@ import math
 import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.algorithms.cluster import clustering
+import common
 
 
 
@@ -15,6 +16,7 @@ suffixes = ['ee', 'eer', 'er', 'ion', 'ism', 'ity', 'ment', 'ness', 'or', 'sion'
 with open('data/unlabeled_ids.txt', newline='') as file:
     for line in file:
         words = line.split()
+        words = [cleanUpWord(w) for w in words]
         for (index, word) in enumerate(words):
             if word not in all_words:
                 all_words.append(word)
@@ -43,8 +45,11 @@ print("got counts")
 # generate graph and weights from the counts of neighbors
 graph = nx.Graph()
 
+all_word_count = len(all_words)
 
-for word1 in all_words:
+for (index,word1) in enumerate(all_words):
+    if index % 1000 == 0:
+        print(str(index) +" / " + str(all_word_count) +": " + str(int(100* (index/all_word_count)))+"%")
     for word2 in all_words:
         if word1 == word2:
             continue
@@ -67,6 +72,8 @@ for word1 in all_words:
                     graph.add_edge(word1, word2, weight=w)
 
 print("got probs and created graph")
+nx.write_gexf(graph, "model/wordGraph.gexf")
+print("saved graph")
 # pos=nx.spring_layout(graph)
 # nx.draw(graph,pos, with_labels=True)
 # labels = nx.get_edge_attributes(graph,'weight')
@@ -92,8 +99,10 @@ with open('model/emissionProbs.txt', 'r') as infile:
     print("got probs from model")
 
     from chinese_whispers import chinese_whispers, aggregate_clusters
-    chinese_whispers(graph, weighting='top', iterations=1000)
+    chinese_whispers(graph, weighting='top', iterations=100)
     print("got clusters")
+    nx.write_gexf(graph, "model/wordGraphClustered.gexf")
+    print("saved graph")
 
 with open('model/emissionProbs.txt', 'a') as outfile:
     for label, cluster in sorted(aggregate_clusters(graph).items(), key=lambda e: len(e[1]), reverse=True):
