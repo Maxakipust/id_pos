@@ -1334,555 +1334,1367 @@ yield mvs,NM NPL,PARAMETER
 z p i,NM NM N,PARAMETER
 z probs,NM NPL,PARAMETER
 zoom x y,NM N N,PARAMETER
-dissonance 1,N D,DECLARATION
-racket 1,N D,DECLARATION
-interference 1,N D,DECLARATION
-disturbance 1,N D,DECLARATION
-randomness 1,N D,DECLARATION
-haphazardness 1,N D,DECLARATION
-stochasticity 1,N D,DECLARATION
-figure start,NM N,ATTRIBUTE
-act start,NM N,ATTRIBUTE
-routine start,NM N,ATTRIBUTE
-turn start,NM N,ATTRIBUTE
-bit start,NM N,ATTRIBUTE
-phone_number start,NM N,ATTRIBUTE
-telephone_number start,NM N,ATTRIBUTE
-numeral start,NM N,ATTRIBUTE
-issue start,NM N,ATTRIBUTE
-identification_number start,NM N,ATTRIBUTE
-restart,V,PARAMETER
-re-start,V,PARAMETER
-take_up,V,PARAMETER
-sum_up,V,PARAMETER
-summarize,V,PARAMETER
-summarise,V,PARAMETER
-stubbing search listeners,NM NM NPL,ATTRIBUTE
-current clear shards,NM NM NPL,DECLARATION
-current outdoors shards,NM NM NPL,DECLARATION
-current out-of-doors shards,NM NM NPL,DECLARATION
-current open_air shards,NM NM NPL,DECLARATION
-current surface shards,NM NM NPL,DECLARATION
-step sizing,NM N,DECLARATION
-step size_of_it,NM N,DECLARATION
-num vec per section,NM N P N,DECLARATION
-cmd output military_operation type,NM NM NM N,CLASS
-cmd output surgery type,NM NM NM N,CLASS
-cmd output surgical_operation type,NM NM NM N,CLASS
-cmd output surgical_procedure type,NM NM NM N,CLASS
-cmd output surgical_process type,NM NM NM N,CLASS
-cmd output procedure type,NM NM NM N,CLASS
-cmd output functioning type,NM NM NM N,CLASS
-cmd output performance type,NM NM NM N,CLASS
-cmd output process type,NM NM NM N,CLASS
-cmd output cognitive_process type,NM NM NM N,CLASS
-cmd output mental_process type,NM NM NM N,CLASS
-cmd output cognitive_operation type,NM NM NM N,CLASS
-cmd output mathematical_process type,NM NM NM N,CLASS
-cmd output mathematical_operation type,NM NM NM N,CLASS
-mention range,NM N,PARAMETER
-citation range,NM N,PARAMETER
-cite range,NM N,PARAMETER
-acknowledgment range,NM N,PARAMETER
-credit range,NM N,PARAMETER
-quotation range,NM N,PARAMETER
-reference_point range,NM N,PARAMETER
-point_of_reference range,NM N,PARAMETER
-reference_book range,NM N,PARAMETER
-reference_work range,NM N,PARAMETER
-book_of_facts range,NM N,PARAMETER
-character range,NM N,PARAMETER
-character_reference range,NM N,PARAMETER
-denotation range,NM N,PARAMETER
-extension range,NM N,PARAMETER
-consultation range,NM N,PARAMETER
-source range,NM N,PARAMETER
-address range,NM N,PARAMETER
-computer_address range,NM N,PARAMETER
-bt stuff,PRE N,CLASS
-bt fabric,PRE N,CLASS
-bt cloth,PRE N,CLASS
-bt textile,PRE N,CLASS
-breathe address,V N,FUNCTION
-pass_off address,V N,FUNCTION
-give_out address,V N,FUNCTION
-give_off address,V N,FUNCTION
-utter address,V N,FUNCTION
-let_out address,V N,FUNCTION
-let_loose address,V N,FUNCTION
-return way,NM N,PARAMETER
-return way_of_life,NM N,PARAMETER
-return route,NM N,PARAMETER
-return itinerary,NM N,PARAMETER
-return track,NM N,PARAMETER
-return course,NM N,PARAMETER
-num Axis events,NM NM NPL,ATTRIBUTE
-num bloc events,NM NM NPL,ATTRIBUTE
-num axis_vertebra events,NM NM NPL,ATTRIBUTE
-num axis_of_rotation events,NM NM NPL,ATTRIBUTE
-dump core map to twine builder,V NM N P NM N,FUNCTION
-dump core map to bowed_stringed_instrument builder,V NM N P NM N,FUNCTION
-dump core map to train builder,V NM N P NM N,FUNCTION
-dump core map to drawstring builder,V NM N P NM N,FUNCTION
-dump core map to drawing_string builder,V NM N P NM N,FUNCTION
-dump core map to cosmic_string builder,V NM N P NM N,FUNCTION
-dump core map to chain builder,V NM N P NM N,FUNCTION
-dump core map to strand builder,V NM N P NM N,FUNCTION
+transcript item,NM N,DECLARATION
+written_matter item,NM N,DECLARATION
+property,N,CLASS
+dimension,N,CLASS
+eglew android frame buffer mark,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer prey,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer quarry,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer fair_game,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer target_area,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer butt,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer aim,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer object,PRE PRE NM NM N,ATTRIBUTE
+eglew android frame buffer objective,PRE PRE NM NM N,ATTRIBUTE
+tree component,NM N,CLASS
+tree constituent,NM N,CLASS
+tree factor,NM N,CLASS
+tree ingredient,NM N,CLASS
+tree chemical_element,NM N,CLASS
+case 0,N D,DECLARATION
+consequence 0,N D,DECLARATION
+effect 0,N D,DECLARATION
+outcome 0,N D,DECLARATION
+result 0,N D,DECLARATION
+issue 0,N D,DECLARATION
+upshot 0,N D,DECLARATION
+soap input size,NM NM N,DECLARATION
+scoop input size,NM NM N,DECLARATION
+liquid_ecstasy input size,NM NM N,DECLARATION
+grievous_bodily_harm input size,NM NM N,DECLARATION
+goop input size,NM NM N,DECLARATION
+Georgia_home_boy input size,NM NM N,DECLARATION
+easy_lay input size,NM NM N,DECLARATION
+footnotes place,NM N,ATTRIBUTE
+footnotes military_position,NM N,ATTRIBUTE
+footnotes view,NM N,ATTRIBUTE
+footnotes perspective,NM N,ATTRIBUTE
+footnotes posture,NM N,ATTRIBUTE
+footnotes attitude,NM N,ATTRIBUTE
+footnotes status,NM N,ATTRIBUTE
+footnotes post,NM N,ATTRIBUTE
+footnotes berth,NM N,ATTRIBUTE
+footnotes office,NM N,ATTRIBUTE
+footnotes spot,NM N,ATTRIBUTE
+footnotes billet,NM N,ATTRIBUTE
+footnotes situation,NM N,ATTRIBUTE
+footnotes spatial_relation,NM N,ATTRIBUTE
+footnotes placement,NM N,ATTRIBUTE
+footnotes location,NM N,ATTRIBUTE
+footnotes locating,NM N,ATTRIBUTE
+footnotes positioning,NM N,ATTRIBUTE
+footnotes emplacement,NM N,ATTRIBUTE
+footnotes stance,NM N,ATTRIBUTE
+footnotes side,NM N,ATTRIBUTE
+footnotes stead,NM N,ATTRIBUTE
+footnotes lieu,NM N,ATTRIBUTE
+liter b layer,NM NM N,PARAMETER
+litre b layer,NM NM N,PARAMETER
+cubic_decimeter b layer,NM NM N,PARAMETER
+cubic_decimetre b layer,NM NM N,PARAMETER
+fifty b layer,NM NM N,PARAMETER
+50 b layer,NM NM N,PARAMETER
+L b layer,NM NM N,PARAMETER
+lambert b layer,NM NM N,PARAMETER
+id reference,N NM,DECLARATION
+id citation,N NM,DECLARATION
+id cite,N NM,DECLARATION
+id acknowledgment,N NM,DECLARATION
+id credit,N NM,DECLARATION
+id quotation,N NM,DECLARATION
+id honorable_mention,N NM,DECLARATION
+hoard body unbuffered,NM N NM,DECLARATION
+stash body unbuffered,NM N NM,DECLARATION
+memory_cache body unbuffered,NM N NM,DECLARATION
+array counting propagation,NM NM N,CLASS
+array numeration propagation,NM NM N,CLASS
+array enumeration propagation,NM NM N,CLASS
+array reckoning propagation,NM NM N,CLASS
+array tally propagation,NM NM N,CLASS
+activity view show master pages,NM N V NM NPL,ATTRIBUTE
+activeness view show master pages,NM N V NM NPL,ATTRIBUTE
+military_action view show master pages,NM N V NM NPL,ATTRIBUTE
+natural_process view show master pages,NM N V NM NPL,ATTRIBUTE
+natural_action view show master pages,NM N V NM NPL,ATTRIBUTE
+action_mechanism view show master pages,NM N V NM NPL,ATTRIBUTE
+legal_action view show master pages,NM N V NM NPL,ATTRIBUTE
+action_at_law view show master pages,NM N V NM NPL,ATTRIBUTE
+first infinite,NM N,DECLARATION
+first outer_space,NM N,DECLARATION
+first blank,NM N,DECLARATION
+first distance,NM N,DECLARATION
+first blank_space,NM N,DECLARATION
+first place,NM N,DECLARATION
+first quad,NM N,DECLARATION
+hunt profile results,NM NM NPL,PARAMETER
+hunting profile results,NM NM NPL,PARAMETER
+lookup profile results,NM NM NPL,PARAMETER
+ten origin,NM N,ATTRIBUTE
+10 origin,NM N,ATTRIBUTE
+X origin,NM N,ATTRIBUTE
+tenner origin,NM N,ATTRIBUTE
+decade origin,NM N,ATTRIBUTE
+ex origin,NM N,ATTRIBUTE
+Adam origin,NM N,ATTRIBUTE
+ecstasy origin,NM N,ATTRIBUTE
+XTC origin,NM N,ATTRIBUTE
+go origin,NM N,ATTRIBUTE
+disco_biscuit origin,NM N,ATTRIBUTE
+cristal origin,NM N,ATTRIBUTE
+hug_drug origin,NM N,ATTRIBUTE
+widget destroy,N V,FUNCTION
+widget destruct,N V,FUNCTION
+widget ruin,N V,FUNCTION
+widget demolish,N V,FUNCTION
+widget put_down,N V,FUNCTION
 default reply,NM N,ATTRIBUTE
 default response,NM N,ATTRIBUTE
 default solution,NM N,ATTRIBUTE
 default result,NM N,ATTRIBUTE
 default resolution,NM N,ATTRIBUTE
 default solvent,NM N,ATTRIBUTE
-electric_current median,NM N,PARAMETER
-stream median,NM N,PARAMETER
-flow median,NM N,PARAMETER
-minute fresh,NM N,PARAMETER
-Min fresh,NM N,PARAMETER
-Min_dialect fresh,NM N,PARAMETER
-Fukien fresh,NM N,PARAMETER
-Fukkianese fresh,NM N,PARAMETER
-Hokkianese fresh,NM N,PARAMETER
-Amoy fresh,NM N,PARAMETER
-Taiwanese fresh,NM N,PARAMETER
-cancel,V,FUNCTION
-erase,V,FUNCTION
-edit,V,FUNCTION
-blue-pencil,V,FUNCTION
-generated item on creation,NM N P N,DECLARATION
-generated keepsake on creation,NM N P N,DECLARATION
-generated souvenir on creation,NM N P N,DECLARATION
-generated relic on creation,NM N P N,DECLARATION
-harvest node,NM N,ATTRIBUTE
-craw node,NM N,ATTRIBUTE
-publish reaction,NM N,CLASS
-publish answer,NM N,CLASS
-publish reply,NM N,CLASS
-publish reception,NM N,CLASS
-human_body pixel coords,NM NM NPL,PARAMETER
-physical_body pixel coords,NM NM NPL,PARAMETER
-material_body pixel coords,NM NM NPL,PARAMETER
-soma pixel coords,NM NM NPL,PARAMETER
-build pixel coords,NM NM NPL,PARAMETER
-figure pixel coords,NM NM NPL,PARAMETER
-physique pixel coords,NM NM NPL,PARAMETER
-anatomy pixel coords,NM NM NPL,PARAMETER
-shape pixel coords,NM NM NPL,PARAMETER
-bod pixel coords,NM NM NPL,PARAMETER
-chassis pixel coords,NM NM NPL,PARAMETER
-form pixel coords,NM NM NPL,PARAMETER
-flesh pixel coords,NM NM NPL,PARAMETER
-inning pixel coords,NM NM NPL,PARAMETER
-frame_of_reference pixel coords,NM NM NPL,PARAMETER
-skeletal_system pixel coords,NM NM NPL,PARAMETER
-skeleton pixel coords,NM NM NPL,PARAMETER
-systema_skeletale pixel coords,NM NM NPL,PARAMETER
-skeletal_frame pixel coords,NM NM NPL,PARAMETER
-underframe pixel coords,NM NM NPL,PARAMETER
-framing pixel coords,NM NM NPL,PARAMETER
-school_term config,NM N,FUNCTION
-academic_term config,NM N,FUNCTION
-academic_session config,NM N,FUNCTION
-seance config,NM N,FUNCTION
-sitting config,NM N,FUNCTION
-create metadata raiment,V NM N,FUNCTION
-create metadata regalia,V NM N,FUNCTION
-acquire working directory,V NM N,FUNCTION
-become working directory,V NM N,FUNCTION
-go working directory,V NM N,FUNCTION
-let working directory,V NM N,FUNCTION
-have working directory,V NM N,FUNCTION
-receive working directory,V NM N,FUNCTION
-find working directory,V NM N,FUNCTION
-obtain working directory,V NM N,FUNCTION
-incur working directory,V NM N,FUNCTION
-arrive working directory,V NM N,FUNCTION
-come working directory,V NM N,FUNCTION
-bring working directory,V NM N,FUNCTION
-convey working directory,V NM N,FUNCTION
-fetch working directory,V NM N,FUNCTION
-experience working directory,V NM N,FUNCTION
-pay_back working directory,V NM N,FUNCTION
-pay_off working directory,V NM N,FUNCTION
-fix working directory,V NM N,FUNCTION
-make working directory,V NM N,FUNCTION
-induce working directory,V NM N,FUNCTION
-stimulate working directory,V NM N,FUNCTION
-cause working directory,V NM N,FUNCTION
-catch working directory,V NM N,FUNCTION
-capture working directory,V NM N,FUNCTION
-grow working directory,V NM N,FUNCTION
-develop working directory,V NM N,FUNCTION
-produce working directory,V NM N,FUNCTION
-contract working directory,V NM N,FUNCTION
-take working directory,V NM N,FUNCTION
-drive working directory,V NM N,FUNCTION
-aim working directory,V NM N,FUNCTION
-arrest working directory,V NM N,FUNCTION
-scram working directory,V NM N,FUNCTION
-buzz_off working directory,V NM N,FUNCTION
-fuck_off working directory,V NM N,FUNCTION
-bugger_off working directory,V NM N,FUNCTION
-get_under_one's_skin working directory,V NM N,FUNCTION
-draw working directory,V NM N,FUNCTION
-perplex working directory,V NM N,FUNCTION
-vex working directory,V NM N,FUNCTION
-stick working directory,V NM N,FUNCTION
-puzzle working directory,V NM N,FUNCTION
-mystify working directory,V NM N,FUNCTION
-baffle working directory,V NM N,FUNCTION
-beat working directory,V NM N,FUNCTION
-pose working directory,V NM N,FUNCTION
-bewilder working directory,V NM N,FUNCTION
-flummox working directory,V NM N,FUNCTION
-stupefy working directory,V NM N,FUNCTION
-nonplus working directory,V NM N,FUNCTION
-gravel working directory,V NM N,FUNCTION
-amaze working directory,V NM N,FUNCTION
-dumbfound working directory,V NM N,FUNCTION
-get_down working directory,V NM N,FUNCTION
-begin working directory,V NM N,FUNCTION
-start_out working directory,V NM N,FUNCTION
-start working directory,V NM N,FUNCTION
-set_about working directory,V NM N,FUNCTION
-set_out working directory,V NM N,FUNCTION
-commence working directory,V NM N,FUNCTION
-suffer working directory,V NM N,FUNCTION
-sustain working directory,V NM N,FUNCTION
-beget working directory,V NM N,FUNCTION
-engender working directory,V NM N,FUNCTION
-father working directory,V NM N,FUNCTION
-mother working directory,V NM N,FUNCTION
-sire working directory,V NM N,FUNCTION
-generate working directory,V NM N,FUNCTION
-bring_forth working directory,V NM N,FUNCTION
-expected exclusion,NM N,CLASS
-expected elision,NM N,CLASS
-parse property def,V NM N,FUNCTION
-parse dimension def,V NM N,FUNCTION
-regulation options,NM NPL,ATTRIBUTE
-convention options,NM NPL,ATTRIBUTE
-normal options,NM NPL,ATTRIBUTE
-pattern options,NM NPL,ATTRIBUTE
-formula options,NM NPL,ATTRIBUTE
-prescript options,NM NPL,ATTRIBUTE
-linguistic_rule options,NM NPL,ATTRIBUTE
-principle options,NM NPL,ATTRIBUTE
-dominion options,NM NPL,ATTRIBUTE
-ruler options,NM NPL,ATTRIBUTE
-analogue computer,NM N,CLASS
-analog computer,NM N,CLASS
-latitude computer,NM N,CLASS
-line_of_latitude computer,NM N,CLASS
-parallel_of_latitude computer,NM N,CLASS
-in hoard,P N,DECLARATION
-in stash,P N,DECLARATION
-in memory_cache,P N,DECLARATION
-after transmission_channel,P N,FUNCTION
-after groove,P N,FUNCTION
-after communication_channel,P N,FUNCTION
-after line,P N,FUNCTION
-after duct,P N,FUNCTION
-after epithelial_duct,P N,FUNCTION
-after canal,P N,FUNCTION
-after television_channel,P N,FUNCTION
-after TV_channel,P N,FUNCTION
-after distribution_channel,P N,FUNCTION
-html data_file,NM N,PARAMETER
-html single_file,NM N,PARAMETER
-html Indian_file,NM N,PARAMETER
-html file_cabinet,NM N,PARAMETER
-html filing_cabinet,NM N,PARAMETER
-new sil character,NM NM N,DECLARATION
-new sil eccentric,NM NM N,DECLARATION
-new sil case,NM NM N,DECLARATION
-nonpayment auto entry,NM NM N,PARAMETER
-nonremittal auto entry,NM NM N,PARAMETER
-default_option auto entry,NM NM N,PARAMETER
-cbor ten content,NM NM N,CLASS
-cbor 10 content,NM NM N,CLASS
-cbor X content,NM NM N,CLASS
-cbor tenner content,NM NM N,CLASS
-cbor decade content,NM NM N,CLASS
-cbor ex content,NM NM N,CLASS
-cbor Adam content,NM NM N,CLASS
-cbor ecstasy content,NM NM N,CLASS
-cbor XTC content,NM NM N,CLASS
-cbor go content,NM NM N,CLASS
-cbor disco_biscuit content,NM NM N,CLASS
-cbor cristal content,NM NM N,CLASS
-cbor hug_drug content,NM NM N,CLASS
-computer_address type ipv4,NM NM N,ATTRIBUTE
-reference type ipv4,NM NM N,ATTRIBUTE
-speech type ipv4,NM NM N,ATTRIBUTE
-destination type ipv4,NM NM N,ATTRIBUTE
-name_and_address type ipv4,NM NM N,ATTRIBUTE
-savoir-faire type ipv4,NM NM N,ATTRIBUTE
-stmt shut,N V,FUNCTION
-stmt close_up,N V,FUNCTION
-stmt fold,N V,FUNCTION
-stmt shut_down,N V,FUNCTION
-stmt close_down,N V,FUNCTION
-stmt conclude,N V,FUNCTION
-stmt come_together,N V,FUNCTION
-stmt fill_up,N V,FUNCTION
-bicker current tile,NM NM N,FUNCTION
-bickering current tile,NM NM N,FUNCTION
-spat current tile,NM NM N,FUNCTION
-squabble current tile,NM NM N,FUNCTION
-pettifoggery current tile,NM NM N,FUNCTION
-fuss current tile,NM NM N,FUNCTION
-set human_body pen,V NM N,FUNCTION
-set physical_body pen,V NM N,FUNCTION
-set material_body pen,V NM N,FUNCTION
-set soma pen,V NM N,FUNCTION
-set build pen,V NM N,FUNCTION
-set figure pen,V NM N,FUNCTION
-set physique pen,V NM N,FUNCTION
-set anatomy pen,V NM N,FUNCTION
-set shape pen,V NM N,FUNCTION
-set bod pen,V NM N,FUNCTION
-set chassis pen,V NM N,FUNCTION
-set form pen,V NM N,FUNCTION
-set flesh pen,V NM N,FUNCTION
-set inning pen,V NM N,FUNCTION
-set frame_of_reference pen,V NM N,FUNCTION
-set skeletal_system pen,V NM N,FUNCTION
-set skeleton pen,V NM N,FUNCTION
-set systema_skeletale pen,V NM N,FUNCTION
-set skeletal_frame pen,V NM N,FUNCTION
-set underframe pen,V NM N,FUNCTION
-set framing pen,V NM N,FUNCTION
-post book document,NM NM N,CLASS
-post playscript document,NM NM N,CLASS
-post handwriting document,NM NM N,CLASS
-post hand document,NM NM N,CLASS
-oauth school_term factory,NM NM N,CLASS
-oauth academic_term factory,NM NM N,CLASS
-oauth academic_session factory,NM NM N,CLASS
-oauth seance factory,NM NM N,CLASS
-oauth sitting factory,NM NM N,CLASS
-mx edible_bean,NM N,DECLARATION
-mx bean_plant,NM N,DECLARATION
-mx attic,NM N,DECLARATION
-mx bonce,NM N,DECLARATION
-mx noodle,NM N,DECLARATION
-mx noggin,NM N,DECLARATION
-mx dome,NM N,DECLARATION
-get top boundary_line size,V NM NM N,FUNCTION
-get top borderline size,V NM NM N,FUNCTION
-get top delimitation size,V NM NM N,FUNCTION
-get top mete size,V NM NM N,FUNCTION
-get top margin size,V NM NM N,FUNCTION
-get top perimeter size,V NM NM N,FUNCTION
-get top edge size,V NM NM N,FUNCTION
-get top molding size,V NM NM N,FUNCTION
-get top moulding size,V NM NM N,FUNCTION
-human_body,N,PARAMETER
-physical_body,N,PARAMETER
-material_body,N,PARAMETER
-soma,N,PARAMETER
-build,N,PARAMETER
-figure,N,PARAMETER
-physique,N,PARAMETER
-anatomy,N,PARAMETER
-shape,N,PARAMETER
-bod,N,PARAMETER
-chassis,N,PARAMETER
-form,N,PARAMETER
-flesh,N,PARAMETER
-inning,N,PARAMETER
-frame_of_reference,N,PARAMETER
-skeletal_system,N,PARAMETER
-skeleton,N,PARAMETER
-systema_skeletale,N,PARAMETER
-skeletal_frame,N,PARAMETER
-underframe,N,PARAMETER
-framing,N,PARAMETER
-masthead,N,ATTRIBUTE
-iris,N,ATTRIBUTE
-fleur-de-lis,N,ATTRIBUTE
-sword_lily,N,ATTRIBUTE
-signal_flag,N,ATTRIBUTE
-pin,N,ATTRIBUTE
-flagstone,N,ATTRIBUTE
-pnm load altogether pfm,NM V NM N,FUNCTION
-pnm load birthday_suit pfm,NM V NM N,FUNCTION
-crf non linear log conditional objective mathematical_function,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective single-valued_function,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective map,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective mapping,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective purpose,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective role,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective use,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective office,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective part,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective affair,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective occasion,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective social_occasion,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective social_function,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective routine,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective subroutine,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective subprogram,NM NM NM NM NM NM N,CLASS
-crf non linear log conditional objective procedure,NM NM NM NM NM NM N,CLASS
-m remove user data reaction args,PRE NM NM NM NM NPL,ATTRIBUTE
-m remove user data answer args,PRE NM NM NM NM NPL,ATTRIBUTE
-m remove user data reply args,PRE NM NM NM NM NPL,ATTRIBUTE
-m remove user data reception args,PRE NM NM NM NM NPL,ATTRIBUTE
-line 1 grade,NM D N,DECLARATION
-line 1 alumnus,NM D N,DECLARATION
-line 1 alumna,NM D N,DECLARATION
-line 1 alum,NM D N,DECLARATION
-line 1 graduate,NM D N,DECLARATION
-m mention,PRE N,ATTRIBUTE
-m citation,PRE N,ATTRIBUTE
-m cite,PRE N,ATTRIBUTE
-m acknowledgment,PRE N,ATTRIBUTE
-m credit,PRE N,ATTRIBUTE
-m quotation,PRE N,ATTRIBUTE
-m reference_point,PRE N,ATTRIBUTE
-m point_of_reference,PRE N,ATTRIBUTE
-m reference_book,PRE N,ATTRIBUTE
-m reference_work,PRE N,ATTRIBUTE
-m book_of_facts,PRE N,ATTRIBUTE
-m character,PRE N,ATTRIBUTE
-m character_reference,PRE N,ATTRIBUTE
-m denotation,PRE N,ATTRIBUTE
-m extension,PRE N,ATTRIBUTE
-m consultation,PRE N,ATTRIBUTE
-m source,PRE N,ATTRIBUTE
-m address,PRE N,ATTRIBUTE
-m computer_address,PRE N,ATTRIBUTE
-modesty fn,NM N,PARAMETER
-backlog fn,NM N,PARAMETER
-stockpile fn,NM N,PARAMETER
-substitute fn,NM N,PARAMETER
-second-stringer fn,NM N,PARAMETER
-reservation fn,NM N,PARAMETER
-military_reserve fn,NM N,PARAMETER
-reticence fn,NM N,PARAMETER
-taciturnity fn,NM N,PARAMETER
-bacillus d c,NM NM N,PARAMETER
-B d c,NM NM N,PARAMETER
-B-complex_vitamin d c,NM NM N,PARAMETER
-B_complex d c,NM NM N,PARAMETER
-vitamin_B_complex d c,NM NM N,PARAMETER
-vitamin_B d c,NM NM N,PARAMETER
-B_vitamin d c,NM NM N,PARAMETER
-boron d c,NM NM N,PARAMETER
-atomic_number_5 d c,NM NM N,PARAMETER
-Bel d c,NM NM N,PARAMETER
-barn d c,NM NM N,PARAMETER
-type_B d c,NM NM N,PARAMETER
-group_B d c,NM NM N,PARAMETER
-pd sum_of_money,NM N,DECLARATION
-pd amount,NM N,DECLARATION
-pd amount_of_money,NM N,DECLARATION
-pd total,NM N,DECLARATION
-pd summation,NM N,DECLARATION
-pd sum_total,NM N,DECLARATION
-pd kernel,NM N,DECLARATION
-pd substance,NM N,DECLARATION
-pd core,NM N,DECLARATION
-pd center,NM N,DECLARATION
-pd centre,NM N,DECLARATION
-pd essence,NM N,DECLARATION
-pd gist,NM N,DECLARATION
-pd heart,NM N,DECLARATION
-pd heart_and_soul,NM N,DECLARATION
-pd inwardness,NM N,DECLARATION
-pd marrow,NM N,DECLARATION
-pd meat,NM N,DECLARATION
-pd nub,NM N,DECLARATION
-pd pith,NM N,DECLARATION
-pd nitty-gritty,NM N,DECLARATION
-pd totality,NM N,DECLARATION
-pd aggregate,NM N,DECLARATION
-pd union,NM N,DECLARATION
-pd join,NM N,DECLARATION
-validate public static nothingness methods,V NM NM NM NPL,FUNCTION
-validate public static nullity methods,V NM NM NM NPL,FUNCTION
-validate public static nihility methods,V NM NM NM NPL,FUNCTION
-validate public static vacancy methods,V NM NM NM NPL,FUNCTION
-validate public static emptiness methods,V NM NM NM NPL,FUNCTION
-validate public static vacuum methods,V NM NM NM NPL,FUNCTION
-film media handler,NM NM N,DECLARATION
-picture media handler,NM NM N,DECLARATION
-moving_picture media handler,NM NM N,DECLARATION
-moving-picture_show media handler,NM NM N,DECLARATION
-motion_picture media handler,NM NM N,DECLARATION
-motion-picture_show media handler,NM NM N,DECLARATION
-picture_show media handler,NM NM N,DECLARATION
-pic media handler,NM NM N,DECLARATION
-flick media handler,NM NM N,DECLARATION
-link gens,NM N,ATTRIBUTE
-link figure,NM N,ATTRIBUTE
-link public_figure,NM N,ATTRIBUTE
-link epithet,NM N,ATTRIBUTE
-method_acting name prefixes,NM NM NPL,PARAMETER
-winnings error,NM N,DECLARATION
-profits error,NM N,DECLARATION
-m rapid_climb controller,PRE NM N,ATTRIBUTE
-m rapid_growth controller,PRE NM N,ATTRIBUTE
-m soar controller,PRE NM N,ATTRIBUTE
-category annotations,NM NPL,FUNCTION
-family annotations,NM NPL,FUNCTION
-form annotations,NM NPL,FUNCTION
-grade annotations,NM NPL,FUNCTION
-course annotations,NM NPL,FUNCTION
-stratum annotations,NM NPL,FUNCTION
-social_class annotations,NM NPL,FUNCTION
-socio-economic_class annotations,NM NPL,FUNCTION
-course_of_study annotations,NM NPL,FUNCTION
-course_of_instruction annotations,NM NPL,FUNCTION
-division annotations,NM NPL,FUNCTION
-year annotations,NM NPL,FUNCTION
-feed arranger,NM N,ATTRIBUTE
-feed transcriber,NM N,ATTRIBUTE
-feed adaptor,NM N,ATTRIBUTE
-get nonpayment install state,V NM NM N,FUNCTION
-get nonremittal install state,V NM NM N,FUNCTION
-get default_option install state,V NM NM N,FUNCTION
-of to binary_star,PRE P N,FUNCTION
-of to double_star,PRE P N,FUNCTION
-of to binary_program,PRE P N,FUNCTION
-os positions,NM NPL,PARAMETER
-osseous_tissue positions,NM NPL,PARAMETER
-ivory positions,NM NPL,PARAMETER
-pearl positions,NM NPL,PARAMETER
-off-white positions,NM NPL,PARAMETER
-get_down matched count dec,V NM N V,FUNCTION
-begin matched count dec,V NM N V,FUNCTION
-get matched count dec,V NM N V,FUNCTION
-start_out matched count dec,V NM N V,FUNCTION
-set_about matched count dec,V NM N V,FUNCTION
-set_out matched count dec,V NM N V,FUNCTION
-commence matched count dec,V NM N V,FUNCTION
-lead_off matched count dec,V NM N V,FUNCTION
-depart matched count dec,V NM N V,FUNCTION
-part matched count dec,V NM N V,FUNCTION
-set_forth matched count dec,V NM N V,FUNCTION
-set_off matched count dec,V NM N V,FUNCTION
-take_off matched count dec,V NM N V,FUNCTION
-originate matched count dec,V NM N V,FUNCTION
-initiate matched count dec,V NM N V,FUNCTION
-start_up matched count dec,V NM N V,FUNCTION
-embark_on matched count dec,V NM N V,FUNCTION
-startle matched count dec,V NM N V,FUNCTION
-jump matched count dec,V NM N V,FUNCTION
-go matched count dec,V NM N V,FUNCTION
-get_going matched count dec,V NM N V,FUNCTION
-take_up matched count dec,V NM N V,FUNCTION
-protrude matched count dec,V NM N V,FUNCTION
-pop matched count dec,V NM N V,FUNCTION
-pop_out matched count dec,V NM N V,FUNCTION
-bulge matched count dec,V NM N V,FUNCTION
-bulge_out matched count dec,V NM N V,FUNCTION
-bug_out matched count dec,V NM N V,FUNCTION
-come_out matched count dec,V NM N V,FUNCTION
-parameter duty_assignment,NM N,PARAMETER
-parameter assigning,NM N,PARAMETER
-parameter grant,NM N,PARAMETER
-parameter appointment,NM N,PARAMETER
-parameter designation,NM N,PARAMETER
-parameter naming,NM N,PARAMETER
+measure no,NM N,ATTRIBUTE
+footstep no,NM N,ATTRIBUTE
+pace no,NM N,ATTRIBUTE
+stride no,NM N,ATTRIBUTE
+stair no,NM N,ATTRIBUTE
+gradation no,NM N,ATTRIBUTE
+stone's_throw no,NM N,ATTRIBUTE
+footfall no,NM N,ATTRIBUTE
+tone no,NM N,ATTRIBUTE
+whole_tone no,NM N,ATTRIBUTE
+whole_step no,NM N,ATTRIBUTE
+footprint no,NM N,ATTRIBUTE
+footmark no,NM N,ATTRIBUTE
+dance_step no,NM N,ATTRIBUTE
+position icon,NM N,FUNCTION
+condition icon,NM N,FUNCTION
+volt tok,NM N,DECLARATION
+V tok,NM N,DECLARATION
+vanadium tok,NM N,DECLARATION
+atomic_number_23 tok,NM N,DECLARATION
+five tok,NM N,DECLARATION
+5 tok,NM N,DECLARATION
+cinque tok,NM N,DECLARATION
+quint tok,NM N,DECLARATION
+quintet tok,NM N,DECLARATION
+fivesome tok,NM N,DECLARATION
+quintuplet tok,NM N,DECLARATION
+pentad tok,NM N,DECLARATION
+fin tok,NM N,DECLARATION
+Phoebe tok,NM N,DECLARATION
+Little_Phoebe tok,NM N,DECLARATION
+hereafter active doc,NM NM N,DECLARATION
+futurity active doc,NM NM N,DECLARATION
+time_to_come active doc,NM NM N,DECLARATION
+future_tense active doc,NM NM N,DECLARATION
+d3d11 unsupported gpu plan,NM NM NM N,CLASS
+d3d11 unsupported gpu programme,NM NM NM N,CLASS
+d3d11 unsupported gpu broadcast,NM NM NM N,CLASS
+d3d11 unsupported gpu platform,NM NM NM N,CLASS
+d3d11 unsupported gpu political_platform,NM NM NM N,CLASS
+d3d11 unsupported gpu political_program,NM NM NM N,CLASS
+d3d11 unsupported gpu course_of_study,NM NM NM N,CLASS
+d3d11 unsupported gpu curriculum,NM NM NM N,CLASS
+d3d11 unsupported gpu syllabus,NM NM NM N,CLASS
+d3d11 unsupported gpu computer_program,NM NM NM N,CLASS
+d3d11 unsupported gpu computer_programme,NM NM NM N,CLASS
+cluster update setting response,NM NM NM N,CLASS
+cluster update scene response,NM NM NM N,CLASS
+cluster update background response,NM NM NM N,CLASS
+cluster update scope response,NM NM NM N,CLASS
+cluster update mise_en_scene response,NM NM NM N,CLASS
+cluster update stage_setting response,NM NM NM N,CLASS
+cluster update context response,NM NM NM N,CLASS
+cluster update circumstance response,NM NM NM N,CLASS
+cluster update place_setting response,NM NM NM N,CLASS
+cluster update mount response,NM NM NM N,CLASS
+Cam rot z,NM NM N,DECLARATION
+River_Cam rot z,NM NM N,DECLARATION
+Cam_River rot z,NM NM N,DECLARATION
+advise touch down,V NM N,FUNCTION
+give_notice touch down,V NM N,FUNCTION
+send_word touch down,V NM N,FUNCTION
+apprise touch down,V NM N,FUNCTION
+apprize touch down,V NM N,FUNCTION
+altogether extra interfaces,NM NM NPL,DECLARATION
+birthday_suit extra interfaces,NM NM NPL,DECLARATION
+c mental_image,PRE N,CLASS
+c persona,PRE N,CLASS
+c picture,PRE N,CLASS
+c icon,PRE N,CLASS
+c ikon,PRE N,CLASS
+c prototype,PRE N,CLASS
+c paradigm,PRE N,CLASS
+c epitome,PRE N,CLASS
+c trope,PRE N,CLASS
+c figure_of_speech,PRE N,CLASS
+c figure,PRE N,CLASS
+c double,PRE N,CLASS
+c look-alike,PRE N,CLASS
+c range,PRE N,CLASS
+c range_of_a_function,PRE N,CLASS
+c effigy,PRE N,CLASS
+c simulacrum,PRE N,CLASS
+nitrogen d,NM N,ATTRIBUTE
+N d,NM N,ATTRIBUTE
+atomic_number_7 d,NM N,ATTRIBUTE
+north d,NM N,ATTRIBUTE
+due_north d,NM N,ATTRIBUTE
+northward d,NM N,ATTRIBUTE
+newton d,NM N,ATTRIBUTE
+normality d,NM N,ATTRIBUTE
+check_up_on sign,V N,FUNCTION
+look_into sign,V N,FUNCTION
+check_out sign,V N,FUNCTION
+suss_out sign,V N,FUNCTION
+check_over sign,V N,FUNCTION
+go_over sign,V N,FUNCTION
+check_into sign,V N,FUNCTION
+see sign,V N,FUNCTION
+insure sign,V N,FUNCTION
+see_to_it sign,V N,FUNCTION
+ensure sign,V N,FUNCTION
+control sign,V N,FUNCTION
+ascertain sign,V N,FUNCTION
+assure sign,V N,FUNCTION
+hold_in sign,V N,FUNCTION
+hold sign,V N,FUNCTION
+contain sign,V N,FUNCTION
+curb sign,V N,FUNCTION
+moderate sign,V N,FUNCTION
+check_off sign,V N,FUNCTION
+mark sign,V N,FUNCTION
+mark_off sign,V N,FUNCTION
+tick_off sign,V N,FUNCTION
+tick sign,V N,FUNCTION
+retard sign,V N,FUNCTION
+delay sign,V N,FUNCTION
+match sign,V N,FUNCTION
+fit sign,V N,FUNCTION
+correspond sign,V N,FUNCTION
+jibe sign,V N,FUNCTION
+gibe sign,V N,FUNCTION
+tally sign,V N,FUNCTION
+agree sign,V N,FUNCTION
+discipline sign,V N,FUNCTION
+train sign,V N,FUNCTION
+condition sign,V N,FUNCTION
+checker sign,V N,FUNCTION
+chequer sign,V N,FUNCTION
+turn_back sign,V N,FUNCTION
+arrest sign,V N,FUNCTION
+stop sign,V N,FUNCTION
+hold_back sign,V N,FUNCTION
+determine sign,V N,FUNCTION
+find_out sign,V N,FUNCTION
+watch sign,V N,FUNCTION
+learn sign,V N,FUNCTION
+chink sign,V N,FUNCTION
+crack sign,V N,FUNCTION
+break sign,V N,FUNCTION
+c combustion shader raster reference,PRE NM NM NM N,CLASS
+c burn shader raster reference,PRE NM NM NM N,CLASS
+c electrocution shader raster reference,PRE NM NM NM N,CLASS
+c burning_at_the_stake shader raster reference,PRE NM NM NM N,CLASS
+be v,V NM,PARAMETER
+exist v,V NM,PARAMETER
+equal v,V NM,PARAMETER
+constitute v,V NM,PARAMETER
+represent v,V NM,PARAMETER
+make_up v,V NM,PARAMETER
+comprise v,V NM,PARAMETER
+follow v,V NM,PARAMETER
+embody v,V NM,PARAMETER
+personify v,V NM,PARAMETER
+live v,V NM,PARAMETER
+cost v,V NM,PARAMETER
+observe leaks,V NPL,ATTRIBUTE
+find leaks,V NPL,ATTRIBUTE
+discover leaks,V NPL,ATTRIBUTE
+notice leaks,V NPL,ATTRIBUTE
+component spec,NM N,DECLARATION
+constituent spec,NM N,DECLARATION
+factor spec,NM N,DECLARATION
+ingredient spec,NM N,DECLARATION
+chemical_element spec,NM N,DECLARATION
+get initial windowpane size,V NM NM N,FUNCTION
+ko rgb u8 invert colour transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert coloring transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert colouring transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert vividness transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert coloration transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert colouration transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert people_of_color transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert people_of_colour transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert semblance transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert gloss transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert coloring_material transformation,PRE NM NM NM NM N,CLASS
+ko rgb u8 invert colouring_material transformation,PRE NM NM NM NM N,CLASS
+globals as members table subscriber info,NPL P NPL NM NM N,CLASS
+globals as members table reviewer info,NPL P NPL NM NM N,CLASS
+globals as members table referee info,NPL P NPL NM NM N,CLASS
+globals as members table proofreader info,NPL P NPL NM NM N,CLASS
+globals as members table lector info,NPL P NPL NM NM N,CLASS
+globals as members table lecturer info,NPL P NPL NM NM N,CLASS
+listing level,NM N,CLASS
+tilt level,NM N,CLASS
+inclination level,NM N,CLASS
+lean level,NM N,CLASS
+leaning level,NM N,CLASS
+dialogue elements,NM NPL,CLASS
+duologue elements,NM NPL,CLASS
+embedded variant,NM N,ATTRIBUTE
+embedded variation,NM N,ATTRIBUTE
+embedded edition,NM N,ATTRIBUTE
+embedded adaptation,NM N,ATTRIBUTE
+embedded translation,NM N,ATTRIBUTE
+embedded interlingual_rendition,NM N,ATTRIBUTE
+embedded rendering,NM N,ATTRIBUTE
+embedded interpretation,NM N,ATTRIBUTE
+embedded reading,NM N,ATTRIBUTE
+c astatine grayscale,PRE NM N,CLASS
+c At grayscale,PRE NM N,CLASS
+c atomic_number_85 grayscale,PRE NM N,CLASS
+total merge throttled clip,NM NM NM N,ATTRIBUTE
+total merge throttled clock_time,NM NM NM N,ATTRIBUTE
+total merge throttled fourth_dimension,NM NM NM N,ATTRIBUTE
+total merge throttled meter,NM NM NM N,ATTRIBUTE
+total merge throttled metre,NM NM NM N,ATTRIBUTE
+total merge throttled prison_term,NM NM NM N,ATTRIBUTE
+total merge throttled sentence,NM NM NM N,ATTRIBUTE
+discount component,NM N,PARAMETER
+discount constituent,NM N,PARAMETER
+discount element,NM N,PARAMETER
+discount ingredient,NM N,PARAMETER
+discount divisor,NM N,PARAMETER
+discount agent,NM N,PARAMETER
+discount broker,NM N,PARAMETER
+discount gene,NM N,PARAMETER
+discount cistron,NM N,PARAMETER
+talker,N,FUNCTION
+utterer,N,FUNCTION
+verbalizer,N,FUNCTION
+verbaliser,N,FUNCTION
+loudspeaker,N,FUNCTION
+speaker_unit,N,FUNCTION
+loudspeaker_system,N,FUNCTION
+speaker_system,N,FUNCTION
+Speaker,N,FUNCTION
+current microscope_slide,NM N,FUNCTION
+current swoop,NM N,FUNCTION
+current playground_slide,NM N,FUNCTION
+current sliding_board,NM N,FUNCTION
+current glide,NM N,FUNCTION
+current coast,NM N,FUNCTION
+current lantern_slide,NM N,FUNCTION
+current chute,NM N,FUNCTION
+current slideway,NM N,FUNCTION
+current sloping_trough,NM N,FUNCTION
+coerce direct,V N,PARAMETER
+hale direct,V N,PARAMETER
+squeeze direct,V N,PARAMETER
+pressure direct,V N,PARAMETER
+impel direct,V N,PARAMETER
+push direct,V N,PARAMETER
+thrust direct,V N,PARAMETER
+wedge direct,V N,PARAMETER
+drive direct,V N,PARAMETER
+ram direct,V N,PARAMETER
+pull direct,V N,PARAMETER
+draw direct,V N,PARAMETER
+storm direct,V N,PARAMETER
+movie media animal_trainer,NM NM N,DECLARATION
+movie media coach,NM NM N,DECLARATION
+movie media manager,NM NM N,DECLARATION
+slump client,NM N,CLASS
+drop-off client,NM N,CLASS
+falloff client,NM N,CLASS
+falling_off client,NM N,CLASS
+slack_water client,NM N,CLASS
+mire client,NM N,CLASS
+quagmire client,NM N,CLASS
+quag client,NM N,CLASS
+morass client,NM N,CLASS
+slackness client,NM N,CLASS
+gimp image data_file get thumbnail,PRE NM N V N,FUNCTION
+gimp image single_file get thumbnail,PRE NM N V N,FUNCTION
+gimp image Indian_file get thumbnail,PRE NM N V N,FUNCTION
+gimp image file_cabinet get thumbnail,PRE NM N V N,FUNCTION
+gimp image filing_cabinet get thumbnail,PRE NM N V N,FUNCTION
+bridged economic_value fun arg,NM NM NM N,PARAMETER
+bridged time_value fun arg,NM NM NM N,PARAMETER
+bridged note_value fun arg,NM NM NM N,PARAMETER
+len roentgen,NM N,PARAMETER
+len R,NM N,PARAMETER
+len gas_constant,NM N,PARAMETER
+len universal_gas_constant,NM N,PARAMETER
+len radius,NM N,PARAMETER
+mp4 input_signal,NM N,CLASS
+mp4 remark,NM N,CLASS
+mp4 comment,NM N,CLASS
+mp4 stimulation,NM N,CLASS
+mp4 stimulus,NM N,CLASS
+mp4 stimulant,NM N,CLASS
+current supplication,NM N,PARAMETER
+current conjuring,NM N,PARAMETER
+current conjuration,NM N,PARAMETER
+current conjury,NM N,PARAMETER
+textual_matter chopped 2,N NM D,DECLARATION
+textbook chopped 2,N NM D,DECLARATION
+text_edition chopped 2,N NM D,DECLARATION
+schoolbook chopped 2,N NM D,DECLARATION
+school_text chopped 2,N NM D,DECLARATION
+max nucleus,NM N,CLASS
+max core_group,NM N,CLASS
+max kernel,NM N,CLASS
+max substance,NM N,CLASS
+max center,NM N,CLASS
+max centre,NM N,CLASS
+max essence,NM N,CLASS
+max gist,NM N,CLASS
+max heart,NM N,CLASS
+max heart_and_soul,NM N,CLASS
+max inwardness,NM N,CLASS
+max marrow,NM N,CLASS
+max meat,NM N,CLASS
+max nub,NM N,CLASS
+max pith,NM N,CLASS
+max sum,NM N,CLASS
+max nitty-gritty,NM N,CLASS
+max Congress_of_Racial_Equality,NM N,CLASS
+max CORE,NM N,CLASS
+max effect,NM N,CLASS
+max burden,NM N,CLASS
+max magnetic_core,NM N,CLASS
+demo tags,V NPL,ATTRIBUTE
+exhibit tags,V NPL,ATTRIBUTE
+present tags,V NPL,ATTRIBUTE
+demonstrate tags,V NPL,ATTRIBUTE
+prove tags,V NPL,ATTRIBUTE
+establish tags,V NPL,ATTRIBUTE
+shew tags,V NPL,ATTRIBUTE
+testify tags,V NPL,ATTRIBUTE
+bear_witness tags,V NPL,ATTRIBUTE
+evidence tags,V NPL,ATTRIBUTE
+picture tags,V NPL,ATTRIBUTE
+depict tags,V NPL,ATTRIBUTE
+render tags,V NPL,ATTRIBUTE
+express tags,V NPL,ATTRIBUTE
+evince tags,V NPL,ATTRIBUTE
+indicate tags,V NPL,ATTRIBUTE
+point tags,V NPL,ATTRIBUTE
+designate tags,V NPL,ATTRIBUTE
+show_up tags,V NPL,ATTRIBUTE
+read tags,V NPL,ATTRIBUTE
+register tags,V NPL,ATTRIBUTE
+record tags,V NPL,ATTRIBUTE
+usher tags,V NPL,ATTRIBUTE
+num active_agent contexts,NM NM NPL,PARAMETER
+num active_voice contexts,NM NM NPL,PARAMETER
+readjust token stats,V NM NPL,FUNCTION
+file scheme archive,NM NM N,CLASS
+file system_of_rules archive,NM NM N,CLASS
+file arrangement archive,NM NM N,CLASS
+file organization archive,NM NM N,CLASS
+file organisation archive,NM NM N,CLASS
+action to index function,N P NM N,ATTRIBUTE
+action to index mathematical_function,N P NM N,ATTRIBUTE
+action to index single-valued_function,N P NM N,ATTRIBUTE
+action to index mapping,N P NM N,ATTRIBUTE
+retain mathematical_function,NM N,PARAMETER
+retain single-valued_function,NM N,PARAMETER
+retain map,NM N,PARAMETER
+retain mapping,NM N,PARAMETER
+retain purpose,NM N,PARAMETER
+retain role,NM N,PARAMETER
+retain use,NM N,PARAMETER
+retain office,NM N,PARAMETER
+retain part,NM N,PARAMETER
+retain affair,NM N,PARAMETER
+retain occasion,NM N,PARAMETER
+retain social_occasion,NM N,PARAMETER
+retain social_function,NM N,PARAMETER
+retain routine,NM N,PARAMETER
+retain subroutine,NM N,PARAMETER
+retain subprogram,NM N,PARAMETER
+retain procedure,NM N,PARAMETER
+reaction handlers,NM NPL,CLASS
+answer handlers,NM NPL,CLASS
+reply handlers,NM NPL,CLASS
+reception handlers,NM NPL,CLASS
+template preview picture data,NM NM NM NPL,CLASS
+template preview image data,NM NM NM NPL,CLASS
+template preview ikon data,NM NM NM NPL,CLASS
+curvatures tallness,NM N,PARAMETER
+curvatures acme,NM N,PARAMETER
+curvatures elevation,NM N,PARAMETER
+curvatures peak,NM N,PARAMETER
+curvatures pinnacle,NM N,PARAMETER
+curvatures summit,NM N,PARAMETER
+curvatures superlative,NM N,PARAMETER
+curvatures meridian,NM N,PARAMETER
+curvatures tiptop,NM N,PARAMETER
+curvatures top,NM N,PARAMETER
+curvatures stature,NM N,PARAMETER
+curvatures altitude,NM N,PARAMETER
+command thymine,NM N,CLASS
+command T,NM N,CLASS
+command deoxythymidine_monophosphate,NM N,CLASS
+command metric_ton,NM N,CLASS
+command MT,NM N,CLASS
+command tonne,NM N,CLASS
+command triiodothyronine,NM N,CLASS
+command liothyronine,NM N,CLASS
+command thyroxine,NM N,CLASS
+command thyroxin,NM N,CLASS
+command tetraiodothyronine,NM N,CLASS
+index_number to loc format,N P NM N,ATTRIBUTE
+indicant to loc format,N P NM N,ATTRIBUTE
+indicator to loc format,N P NM N,ATTRIBUTE
+exponent to loc format,N P NM N,ATTRIBUTE
+power to loc format,N P NM N,ATTRIBUTE
+index_finger to loc format,N P NM N,ATTRIBUTE
+forefinger to loc format,N P NM N,ATTRIBUTE
+runner mill,NM N,PARAMETER
+runner manufacturing_plant,NM N,PARAMETER
+runner manufactory,NM N,PARAMETER
+pitchfork iter,V N,DECLARATION
+fork iter,V N,DECLARATION
+branch iter,V N,DECLARATION
+ramify iter,V N,DECLARATION
+furcate iter,V N,DECLARATION
+separate iter,V N,DECLARATION
+effective manner,NM N,FUNCTION
+effective mode,NM N,FUNCTION
+effective way,NM N,FUNCTION
+effective fashion,NM N,FUNCTION
+effective expressive_style,NM N,FUNCTION
+effective vogue,NM N,FUNCTION
+effective trend,NM N,FUNCTION
+effective dash,NM N,FUNCTION
+effective elan,NM N,FUNCTION
+effective flair,NM N,FUNCTION
+effective panache,NM N,FUNCTION
+effective stylus,NM N,FUNCTION
+append object index,V NM N,FUNCTION
+supply object index,V NM N,FUNCTION
+lend object index,V NM N,FUNCTION
+impart object index,V NM N,FUNCTION
+bestow object index,V NM N,FUNCTION
+contribute object index,V NM N,FUNCTION
+bring object index,V NM N,FUNCTION
+add_together object index,V NM N,FUNCTION
+total object index,V NM N,FUNCTION
+tot object index,V NM N,FUNCTION
+tot_up object index,V NM N,FUNCTION
+sum object index,V NM N,FUNCTION
+sum_up object index,V NM N,FUNCTION
+summate object index,V NM N,FUNCTION
+tote_up object index,V NM N,FUNCTION
+tally object index,V NM N,FUNCTION
+add_up object index,V NM N,FUNCTION
+file point delegate,NM NM N,CLASS
+file detail delegate,NM NM N,CLASS
+file particular delegate,NM NM N,CLASS
+file token delegate,NM NM N,CLASS
+piecewise constant abcd discrepancy,NM NM NM N,CLASS
+piecewise constant abcd variant,NM NM NM N,CLASS
+piecewise constant abcd division,NM NM NM N,CLASS
+piecewise constant abcd disagreement,NM NM NM N,CLASS
+piecewise constant abcd divergence,NM NM NM N,CLASS
+piecewise constant abcd variability,NM NM NM N,CLASS
+piecewise constant abcd variableness,NM NM NM N,CLASS
+piecewise constant abcd variation,NM NM NM N,CLASS
+get dmf headers,V NM NPL,FUNCTION
+y ins,NM NPL,PARAMETER
+get binary sides,V NM NPL,FUNCTION
+pre maps,P NPL,PARAMETER
+number starts,NM NPL,ATTRIBUTE
+validator strategies,NM NPL,ATTRIBUTE
+rule of new chains,NPL P NM NPL,DECLARATION
+get controller transforms,V NM NPL,FUNCTION
+feed adapters,NM NPL,ATTRIBUTE
+local refs,NM NPL,CLASS
+copy items,NM NPL,DECLARATION
+sqlite3 walk expr lists,PRE V NM NPL,FUNCTION
+class annotations,NM NPL,FUNCTION
+face indexes,NM NPL,DECLARATION
+refutable pattern initializations,NM NM NPL,CLASS
+png read idat datas,NM V NM NPL,FUNCTION
+v toks,NM NPL,DECLARATION
+append sequences,V NPL,FUNCTION
+html files,NM NPL,PARAMETER
+log mixed linear cubic interpolations,NM NM NM NM NPL,CLASS
+order with,V P,DECLARATION
+apply rewriters,NM NPL,CLASS
+waiting lists,NM NPL,PARAMETER
+reader flags,NM NPL,PARAMETER
+abstract build executions,NM NM NPL,CLASS
+top dirs,NM NPL,PARAMETER
+progressives,NPL,PARAMETER
+m shadow receiver passes,PRE NM NM NPL,ATTRIBUTE
+repl modules,NM NPL,DECLARATION
+gen subjs,NM NPL,ATTRIBUTE
+num active contexts,NM NM NPL,PARAMETER
+aead crypter seals,NM NM NPL,DECLARATION
+mask components,NM NPL,CLASS
+float day counters,NM NM NPL,ATTRIBUTE
+max work group sizes,NM NM NM NPL,ATTRIBUTE
+speakers,NPL,FUNCTION
+parts sizes,NM NPL,DECLARATION
+languages to rules files,NPL P NM NPL,ATTRIBUTE
+determine strictnesses,V NPL,FUNCTION
+read white spaces,V NM NPL,FUNCTION
+curr thread exceptions,NM NM NPL,DECLARATION
+shift values,NM NPL,ATTRIBUTE
+echo path changes,V NM NPL,PARAMETER
+get numbers of transitions,V NPL P NPL,FUNCTION
+initialize dual graphs,V NM NPL,FUNCTION
+lp binary path names,PRE NM NM NPL,PARAMETER
+cap times,NM NPL,DECLARATION
+cache bodies unbuffered,NM NPL NM,DECLARATION
+equals offsets,NM NPL,DECLARATION
+unrestricted,NM,ATTRIBUTE
+user hooks 3,NM NPL D,ATTRIBUTE
+rtm sessions,NM NPL,DECLARATION
+unpack texture blend funcs,V NM NM NPL,FUNCTION
+w widths,NM NPL,ATTRIBUTE
+operator method decls,NM NM NPL,PARAMETER
+cmd strs,NM NPL,PARAMETER
+alternative cache names,NM NM NPL,PARAMETER
+validate class rules,V NM NPL,FUNCTION
+max draw buffers,NM NM NPL,FUNCTION
+stmts close,NPL V,FUNCTION
+shader data to shader globals,NM NPL P NM NPL,FUNCTION
+rotations per seconds,NPL P NPL,PARAMETER
+dynamic table indexes,NM NM NPL,FUNCTION
+factory classes,NM NPL,DECLARATION
+default flags,NM NPL,ATTRIBUTE
+is partials,V NPL,ATTRIBUTE
+render texts,V NPL,FUNCTION
+expect rows,NM NPL,DECLARATION
+set inverts,V NPL,FUNCTION
+suite methods,NM NPL,CLASS
+fine priorities,NM NPL,PARAMETER
+file descriptor protoes,NM NM NPL,ATTRIBUTE
+verification strategies,NM NPL,ATTRIBUTE
+read element text spans,V NM NM NPL,FUNCTION
+get default atlasing attributes,V NM NM NPL,FUNCTION
+rs compute operations,NM NM NPL,CLASS
+from local aabb mins,P NM NM NPL,DECLARATION
+has view relative texture coordinate generations,V NM NM NM NM NPL,FUNCTION
+inner angles,NM NPL,PARAMETER
+cell cursors,NM NPL,DECLARATION
+configure timeouts,NM NPL,CLASS
+data access repositories private,NM NM NPL NM,CLASS
+c http2 connectors,PRE NM NPL,CLASS
+len rs,NM NPL,PARAMETER
+img stubs,NM NPL,DECLARATION
+pointer maps,NM NPL,CLASS
+idx us,NM NPL,DECLARATION
+on group call keys sent,P NM NM NPL NM,FUNCTION
+set protocol methods,NM NM NPL,PARAMETER
+predicate wrappers,NM NPL,CLASS
+area info dialog ts,NM NM NM NPL,CLASS
+op code continuations,NM NM NPL,ATTRIBUTE
+zero plane re,NM NM NPL,ATTRIBUTE
+vary fields,NM NPL,DECLARATION
+numbers of joysticks,NPL P NPL,DECLARATION
+clip dist bugs,NM NM NPL,DECLARATION
+times to append last matchers,NPL P V NM NPL,PARAMETER
+new image heights,NM NM NPL,DECLARATION
+groups by contexts,NPL P NPL,CLASS
+current invocations,NM NPL,PARAMETER
+get failure timestamps,V NM NPL,FUNCTION
+accessor conformance infos,NM NM NPL,CLASS
+i read files,NM NM NPL,CLASS
+color maps,NM NPL,PARAMETER
+reserve fns,NM NPL,PARAMETER
+is androids,V NPL,FUNCTION
+simple fn ties,NM NM NPL,DECLARATION
+promises,NPL,PARAMETER
+pybullet compute view matrixes,PRE V NM NPL,FUNCTION
+super methods,NM NPL,PARAMETER
+calibration phases,NM NPL,ATTRIBUTE
+vals 32,NPL D,ATTRIBUTE
+is friends,V NPL,PARAMETER
+glew validate program pipelines,PRE V NM NPL,ATTRIBUTE
+struct ties,NM NPL,ATTRIBUTE
+grpc sock addrs make wildcards,PRE NM NPL V NPL,FUNCTION
+esas,NPL,PARAMETER
+debug policies,NM NPL,ATTRIBUTE
+cmd output operation types,NM NM NM NPL,CLASS
+implicit group keys,NM NM NPL,DECLARATION
+repress refs at locs,V NPL P NPL,FUNCTION
+get red adjusts 2,V NM NPL D,FUNCTION
+accelerometer datas,NM NPL,PARAMETER
+code exception messages,NM NM NPL,DECLARATION
+ordered invocations,NM NPL,PARAMETER
+spline max lens,NM NM NPL,ATTRIBUTE
+http1 exchange codecs,NM NM NPL,CLASS
+convex shapes,NM NPL,PARAMETER
+skip whitespaces and commas,V NPL CJ NPL,FUNCTION
+depth stencils as textures,NM NPL P NPL,ATTRIBUTE
+png init palette transformations,NM V NM NPL,FUNCTION
+action views show master pages,NM NPL V NM NPL,ATTRIBUTE
+build group queries,V NM NPL,FUNCTION
+max widths,NM NPL,ATTRIBUTE
+relative contrasts,NM NPL,PARAMETER
+run before params,V NM NPL,CLASS
+outer rules,NM NPL,PARAMETER
+grpc json writer value strings,PRE NM NM NM NPL,FUNCTION
+new orders,NM NPL,DECLARATION
+block nrs,NM NPL,PARAMETER
+rs,NPL,PARAMETER
+processing levels,NM NPL,DECLARATION
+bm logs,NM NPL,ATTRIBUTE
+timeout tasks,NM NPL,PARAMETER
+text paint views,NM NM NPL,CLASS
+enable materials,V NPL,FUNCTION
+whole regexps,NM NPL,ATTRIBUTE
+invalid state numbers,NM NM NPL,ATTRIBUTE
+list levels,NM NPL,CLASS
+indexes to loc formats,NPL P NM NPL,ATTRIBUTE
+unregistered request matchers,NM NM NPL,ATTRIBUTE
+next lines,NM NPL,PARAMETER
+argbs subtract row cs,NPL V NM NPL,FUNCTION
+f matchers,PRE NPL,ATTRIBUTE
+wait until,V P,DECLARATION
+handle if,V CJ,FUNCTION
+strip left recursions,V NM NPL,FUNCTION
+ares expand names for responses,PRE V NPL P NPL,FUNCTION
+averages in bucket used slot counts,NPL P NM NM NM NPL,ATTRIBUTE
+client certificates,NM NPL,DECLARATION
+icy decoders,NM NPL,CLASS
+controlled objects,NM NPL,CLASS
+original mocking details,NM NM NPL,ATTRIBUTE
+stacks,NPL,ATTRIBUTE
+pref fonts,NM NPL,ATTRIBUTE
+f co,NM NPL,DECLARATION
+tool view positions,NM NM NPL,FUNCTION
+accepting tasks,NM NPL,PARAMETER
+process helpers,NM NPL,FUNCTION
+is returns bridged,V NPL NM,ATTRIBUTE
+ref point offset percents,NM NM NM NPL,ATTRIBUTE
+module finders,NM NPL,ATTRIBUTE
+array struct values,NM NM NPL,PARAMETER
+a po,PRE NPL,PARAMETER
+get related view data rows double,V NM NM NM NPL NM,FUNCTION
+loaded mentions counts,NM NM NPL,DECLARATION
+is blocked by shutdowns,V V P NPL,FUNCTION
+destroy with parents,V P NPL,PARAMETER
+subroutine slot names,NM NM NPL,PARAMETER
+crf non linear log conditional objective functions,NM NM NM NM NM NM NPL,CLASS
+mapped colors,NM NPL,PARAMETER
+corr qcs,NM NPL,DECLARATION
+first type labels,NM NM NPL,PARAMETER
+module handlers,NM NPL,CLASS
+check writeable,V NM,FUNCTION
+fixed leg frequencies,NM NM NPL,DECLARATION
+compiler items,NM NPL,CLASS
+metadata snapshots,NM NPL,FUNCTION
+min fresh seconds,NM NM NPL,PARAMETER
+xes 2,NPL D,DECLARATION
+noises 1,NPL D,DECLARATION
+actual counts,NM NPL,ATTRIBUTE
+b is playing,PRE V V,ATTRIBUTE
+choose documents,V NPL,FUNCTION
+compare inverse and forward dynamics,V NM CJ NM NPL,FUNCTION
+risky annuities,NM NPL,ATTRIBUTE
+quotes,NPL,CLASS
+child locations,NM NPL,CLASS
+resume,V,PARAMETER
+default looks,NM NPL,DECLARATION
+byte array views,NM NM NPL,PARAMETER
+uuids,NPL,ATTRIBUTE
+txt aliases,NM NPL,DECLARATION
+main classes,NM NPL,CLASS
+tlv symbols,NM NPL,ATTRIBUTE
+identifier quarks,NM NPL,DECLARATION
+bind matrixes,NM NPL,DECLARATION
+qr detects,NM NPL,CLASS
+get error listeners,V NM NPL,FUNCTION
+items per seconds,NPL P NPL,DECLARATION
+default answers,NM NPL,ATTRIBUTE
+pass machine instructions,NM NM NPL,PARAMETER
+child categories,NM NPL,DECLARATION
+fingerprint dialogs,NM NPL,ATTRIBUTE
+refresh intervals in millis,NM NPL P NPL,ATTRIBUTE
+tot elems,NM NPL,ATTRIBUTE
+get operations reads,V NM NPL,FUNCTION
+gimp image files get thumbnails,PRE NM NPL V NPL,FUNCTION
+verifications started,NPL V,FUNCTION
+navs visible,NPL NM,ATTRIBUTE
+tables 2 ids,NPL D NPL,PARAMETER
+all open indices,DT NM NPL,DECLARATION
+append python styles escaped code points,V NM NPL NM NM NPL,FUNCTION
+explicit euler schemes,NM NM NPL,CLASS
+rot axes,NM NPL,PARAMETER
+set custom uniforms 1 f,V NM NPL D NM,FUNCTION
+of android objects,PRE NM NPL,CLASS
+win errors,NM NPL,DECLARATION
+s tracking system names,PRE NM NM NPL,DECLARATION
+eglew create platform window surfaces,PRE V NM NM NPL,ATTRIBUTE
+active copies,NM NPL,ATTRIBUTE
+dual con input readers,NM NM NM NPL,CLASS
+handled boxes,NM NPL,ATTRIBUTE
+install uncaught exception handlers,V NM NM NPL,CLASS
+layer sizes,NM NPL,DECLARATION
+minimum supported versions,NM NM NPL,CLASS
+f tolerances,NM NPL,PARAMETER
+key statuses,NM NPL,CLASS
+generate rule bypass transitions,V NM NM NPL,DECLARATION
+pronouns,NPL,PARAMETER
+dynamic textured cube demos,NM NM NM NPL,CLASS
+with cms leg rules,P NM NM NPL,FUNCTION
+parallel computers,NM NPL,CLASS
+move rbt surgeons,NM NM NPL,ATTRIBUTE
+im out shapes,NM NM NPL,ATTRIBUTE
+actions to index maps,NPL P NM NPL,ATTRIBUTE
+lsm basis systems,NM NM NPL,CLASS
+replace text contexts,NM NM NPL,ATTRIBUTE
+gimp canvas rectangles set properties,PRE NM NPL V NPL,FUNCTION
+keep aspects,V NPL,ATTRIBUTE
+kinects copies,NM NPL,DECLARATION
+mapped labels,NM NPL,DECLARATION
+separator colors,NM NPL,PARAMETER
+palettes poll,NPL V,FUNCTION
+gimp filter tools set gyroscopes,PRE NM NPL V NPL,FUNCTION
+depth cbs,NM NPL,ATTRIBUTE
+tsurgeon parse exceptions,NM NM NPL,CLASS
+use shadows 1,V NPL D,PARAMETER
+parsing,V,PARAMETER
+x tilts,NM NPL,FUNCTION
+label casefolds,NM NPL,DECLARATION
+mock refs,NM NPL,ATTRIBUTE
+bt collision shapes,PRE NM NPL,CLASS
+int hex strings,NM NM NPL,PARAMETER
+rest clients,NM NPL,CLASS
+set canonical mention begins,V NM NM NPL,FUNCTION
+convert to php namespaces,V P NM NPL,FUNCTION
+mtxes,NPL,ATTRIBUTE
+requested plugins,NM NPL,DECLARATION
+dst maps 2,NM NPL D,PARAMETER
+cores,NPL,ATTRIBUTE
+numbering paths,NM NPL,DECLARATION
+c d3d9 render targets,PRE NM NM NPL,CLASS
+worlds to screens,NPL P NPL,FUNCTION
+m resources,PRE NPL,ATTRIBUTE
+learned lop expert weights 2 ds,NM NM NM NPL D NPL,PARAMETER
+rule member validators,NM NM NPL,CLASS
+locations,NPL,ATTRIBUTE
+max scale fs,NM NM NPL,PARAMETER
+file channels,NM NPL,PARAMETER
+set prev ctx actions,NM NM NM NPL,DECLARATION
+set display indexes,V NM NPL,FUNCTION
+executors,NPL,DECLARATION
+verifiers get mappings,NPL V NPL,FUNCTION
+network security policies,NM NM NPL,DECLARATION
+biggest constructors,NM NPL,FUNCTION
+b3 push profile timings,PRE V NM NPL,FUNCTION
+formats ok,NPL NM,DECLARATION
+rt stream ptrs,NM NM NPL,DECLARATION
+run dist cmd props,NM NM NM NPL,ATTRIBUTE
+num files,NM NPL,PARAMETER
+property interval sets,NM NM NPL,PARAMETER
+jflex dummy lexers,PRE NM NPL,CLASS
+previous initial values,NM NM NPL,PARAMETER
+set project naming strategies,V NM NM NPL,FUNCTION
+down samples,NM NPL,PARAMETER
+rate pointers,NM NPL,PARAMETER
+create duplicate change ids,V NM NM NPL,FUNCTION
+parent fields,NM NPL,PARAMETER
+idp configurations,NM NPL,DECLARATION
+src gradients,NM NPL,PARAMETER
+address type ipv4s,NM NM NPL,ATTRIBUTE
+nulls ok,NPL NM,FUNCTION
+inet socket addresses,NM NM NPL,ATTRIBUTE
+f context lengths,PRE NM NPL,ATTRIBUTE
+received token signatures,NM NM NPL,DECLARATION
+color maps,NM NPL,CLASS
+geometry interfaces,NM NPL,CLASS
+tick freqs,NM NPL,PARAMETER
+new exchanges,NM NPL,FUNCTION
+grpc chttp2 mark streams writable,PRE PRE V NPL NM,FUNCTION
+tex ids,NM NPL,PARAMETER
+previous indexes,NM NPL,PARAMETER
+f m ms,NM NM NPL,DECLARATION
+m post fixes,PRE NM NPL,ATTRIBUTE
+stochastic processes,NM NPL,CLASS
+rs stencil operations,NM NM NPL,CLASS
+from byte buffers,P NM NPL,FUNCTION
+value xes,NM NPL,DECLARATION
+src start idxes,NM NM NPL,DECLARATION
+buf nums,NM NPL,PARAMETER
+context token list indexed getter decls,NM NM NM NM NM NPL,CLASS
+speech ins,NM NPL,PARAMETER
+have masks,V NPL,DECLARATION
+question asts,NM NPL,PARAMETER
+return paths,NM NPL,PARAMETER
+id some,NM NPL,PARAMETER
+save dual cells,V NM NPL,PARAMETER
+cone translations,NM NPL,DECLARATION
+angles in radians,NPL P NPL,DECLARATION
+attribute decls,NM NPL,ATTRIBUTE
+start matched counts dec,V NM NPL V,FUNCTION
+m remove user data response args,PRE NM NM NM NM NPL,ATTRIBUTE
+is stdlib modules,V NM NPL,FUNCTION
+c burning shader raster references,PRE NM NM NM NPL,CLASS
+atoms,NPL,ATTRIBUTE
+out bufs,NM NPL,PARAMETER
+rule options,NM NPL,ATTRIBUTE
+do print after,V V P,FUNCTION
+default blocked item comparators,NM NM NM NPL,DECLARATION
+ares dns resolvers,NM NM NPL,CLASS
+file item delegates,NM NM NPL,CLASS
+transform paths,V NPL,FUNCTION
+free positions,NM NPL,DECLARATION
+target chars,NM NPL,DECLARATION
+get plane points,V NM NPL,FUNCTION
+add unicode script codes to names,V NM NM NPL P NPL,FUNCTION
+fast load successes,VM V NPL,DECLARATION
+wat ids,NM NPL,DECLARATION
+pem keys,NM NPL,PARAMETER
+print ts,V NPL,PARAMETER
+cam rot zzes,NM NM NPL,DECLARATION
+num axis events,NM NM NPL,ATTRIBUTE
+get actual values,V NM NPL,FUNCTION
+m previews started,PRE NPL NM,ATTRIBUTE
+uncompress if needed,V CJ V,FUNCTION
+extra inhabitants masks,NM NM NPL,DECLARATION
+line index mask lens,NM NM NM NPL,PARAMETER
+use mat dirs,V NM NPL,DECLARATION
+id lumninance mins,NM NM NPL,ATTRIBUTE
+on item long click listeners,P NM NM NM NPL,ATTRIBUTE
+c animated mesh scene nodes,PRE NM NM NM NPL,CLASS
+finished normally,V VM,DECLARATION
+m line dash offsets,PRE NM NM NPL,ATTRIBUTE
+throw provision exceptions if errors exist,V NM NPL CJ NPL V,FUNCTION
+buffers,NPL,ATTRIBUTE
+inbound,NM,PARAMETER
+resize nearest neighbors,V NM NPL,FUNCTION
+num primes,NM NPL,DECLARATION
+caplet variance curves,NM NM NPL,CLASS
+ches,NPL,DECLARATION
+split argument lists,V NM NPL,FUNCTION
+gimp devices check change,PRE NPL V V,FUNCTION
+m zoom controllers,PRE NM NPL,ATTRIBUTE
+is conscrypts preferred,V NPL V,FUNCTION
+force directs,V NPL,PARAMETER
+silk bw expanders 32,NM NM NPL D,FUNCTION
+create in indices,V NM NPL,FUNCTION
+suppress files,V NPL,PARAMETER
+control points,NM NPL,DECLARATION
+reset meta class caches,V NM NM NPL,FUNCTION
+matcher builders,NM NPL,ATTRIBUTE
+require client auths,V NM NPL,FUNCTION
+temp comp masks,NM NM NPL,CLASS
+formatted texts,NM NPL,CLASS
+edit counts,NM NPL,ATTRIBUTE
+joint starts,NM NPL,DECLARATION
+response handlers,NM NPL,CLASS
+backprop trainings,NM NPL,PARAMETER
+m annotations,PRE NPL,ATTRIBUTE
+attrs,NPL,DECLARATION
+layer get composite mode invokers,NM V NM NM NPL,FUNCTION
+index prefixes with templates,NM NPL P NPL,ATTRIBUTE
+fixed cams,NM NPL,DECLARATION
+end snapshots,NM NPL,PARAMETER
+check gl supports,V NM NPL,FUNCTION
+make html tables,V NM NPL,FUNCTION
+embedded versions,NM NPL,ATTRIBUTE
+n shininesses,NM NPL,PARAMETER
+m window widths,PRE NM NPL,ATTRIBUTE
+melanin of,NM NPL,DECLARATION
+referee set maps,NM NM NPL,PARAMETER
+get pids no exceptions,V NPL DT NPL,FUNCTION
+creds,NPL,ATTRIBUTE
+deep stubs,NM NPL,FUNCTION
+non greedy states builders,NM NM NM NPL,DECLARATION
+quads,NPL,CLASS
+piecewise constant abcd variances,NM NM NM NPL,CLASS
+num body parts,NM NM NPL,ATTRIBUTE
+recorded matchers sizes,NM NM NPL,DECLARATION
+tessellate to meshes,V P NPL,FUNCTION
+minimized random fas,NM NM NPL,DECLARATION
+binary searches bytes,NM NPL NPL,FUNCTION
+worst scores,NM NPL,DECLARATION
+institutions,NPL,PARAMETER
+lhs components,NM NPL,DECLARATION
+polling logs,NM NPL,PARAMETER
+step noes,NM NPL,ATTRIBUTE
+field offset vectors,NM NM NPL,DECLARATION
+parameter assignments,NM NPL,PARAMETER
+random walks,NM NPL,PARAMETER
+voronoi fracture demos,NM NM NPL,CLASS
+reset token stats,V NM NPL,FUNCTION
+tiff current tiles,NM NM NPL,FUNCTION
+total merge throttled times,NM NM NM NPL,ATTRIBUTE
+token property ref channels,NM NM NM NPL,CLASS
+clause matrixes,NM NPL,CLASS
+index data,NM NPL,ATTRIBUTE
+reference index meta datas,NM NM NM NPL,ATTRIBUTE
+write node materials,V NM NPL,FUNCTION
+strengths,NPL,PARAMETER
+word lemma tags,NM NM NPL,PARAMETER
+selection bounds,NM NPL,DECLARATION
+set layer texture names,V NM NM NPL,FUNCTION
+within vertically,P VM,DECLARATION
+stores,NPL,CLASS
+anchor names,NM NPL,DECLARATION
+enum counts,NM NPL,DECLARATION
+excess workloads,NM NPL,PARAMETER
+cluster update settings responses,NM NM NM NPL,CLASS
+get artificial op prec rules,V NM NM NM NPL,FUNCTION
+get display paths,V NM NPL,FUNCTION
+parse expires,V NPL,FUNCTION
+encoded value,NM NPL,PARAMETER
+rectangle indexes,NM NPL,DECLARATION
+curves,NPL,FUNCTION
+sz joint ranges,NM NM NPL,DECLARATION
+more,DT,ATTRIBUTE
+scene node type names,NM NM NM NPL,PARAMETER
+jnt array accs,NM NM NPL,CLASS
+read bitstreams,V NPL,CLASS
+check not locals,V VM NPL,FUNCTION
+c file read callbacks,PRE NM NM NPL,CLASS
+eglew android frame buffer targets,PRE PRE NM NM NPL,ATTRIBUTE
+yield mvs,NM NPL,PARAMETER
+env vars slave info display names,NM NM NM NM NM NPL,CLASS
+tokens within actions,NPL P NPL,PARAMETER
+stroke attribute alphas get,NM NM NPL V,FUNCTION
+set tilings,V NPL,FUNCTION
+pnm load raw pfms,NM V NM NPL,FUNCTION
+outs d g,NPL NM NM,DECLARATION
+m references,PRE NPL,ATTRIBUTE
+proof profiles,NM NPL,ATTRIBUTE
+c image writers jpg,PRE NM NPL NM,CLASS
+is first frames,V NM NPL,ATTRIBUTE
+provider codes,NM NPL,DECLARATION
+get constant references for protocol descriptors,V NM NPL P NM NPL,FUNCTION
+verification mode factories,NM NM NPL,CLASS
+objects with to strings,NPL P P NPL,FUNCTION
+read subframes,V NPL,FUNCTION
+strictness selectors,NM NPL,CLASS
+rule version attributes,NM NM NPL,CLASS
+m sbufs,PRE NPL,ATTRIBUTE
+is nodes a left child leaves,V NPL DT NM NM NPL,DECLARATION
+mp4 inputs,NM NPL,CLASS
+processes,NPL,CLASS
+disk lru caches,NM NM NPL,CLASS
+byte counts,NM NPL,DECLARATION
+with market rate accuracies,P NM NM NPL,FUNCTION
+point indexes,NM NPL,PARAMETER
+extract components,V NPL,FUNCTION
+m execute on hosts,PRE V P NPL,ATTRIBUTE
+of to binaries,PRE P NPL,FUNCTION
+bibliography types,NM NPL,PARAMETER
+get meta indexes,V NM NPL,FUNCTION
+maximize all,V DT,FUNCTION
+in caches,P NPL,DECLARATION
+clang can ties,PRE NM NPL,DECLARATION
+ko rgb u8 invert color transformations,PRE NM NM NM NM NPL,CLASS
+sin rot ws,NM NM NPL,DECLARATION
+print events,NM NPL,CLASS
+base transforms,NM NPL,DECLARATION
+final responses,NM NPL,PARAMETER
+value count strings,NM NM NPL,DECLARATION
+score po prev,NM NPL NM,DECLARATION
+tot channels,NM NPL,ATTRIBUTE
+paths with native separators,NPL P NM NPL,FUNCTION
+dividend discount mothers,NM NM NPL,FUNCTION
+tbl indexes,NM NPL,PARAMETER
+docking areas,NM NPL,PARAMETER
+get diffuse colours,V NM NPL,FUNCTION
+inverted directions,NM NPL,DECLARATION
+sha256 hashes,NM NPL,FUNCTION
+get jfs,V NPL,FUNCTION
+equals builders,NM NPL,DECLARATION
+aud sound envelopes,PRE NM NPL,FUNCTION
+parents,NPL,ATTRIBUTE
+is first capitals,V NM NPL,ATTRIBUTE
+byte srcs,NM NPL,DECLARATION
+transform unique ids,NM NM NPL,DECLARATION
+targets,NPL,PARAMETER
+inner alphas,NM NPL,ATTRIBUTE
+previous stream ids,NM NM NPL,DECLARATION
+session configs,NM NPL,FUNCTION
+value hashes,NM NPL,ATTRIBUTE
+certificate chain cleaners,NM NM NPL,ATTRIBUTE
+method name prefixes,NM NM NPL,PARAMETER
+r hdrs,NM NPL,DECLARATION
+values,NPL,CLASS
+cbor x contents,NM NM NPL,CLASS
+z probs,NM NPL,PARAMETER
+best styles,NM NPL,DECLARATION
+footnotes positions,NM NPL,ATTRIBUTE
+expected exceptions,NM NPL,CLASS
+min freshes,NM NPL,PARAMETER
+gimp param drawable ids init,PRE NM NM NPL V,FUNCTION
+ssl creds,NM NPL,DECLARATION
+reference ranges,NM NPL,PARAMETER
+on connects,P NPL,PARAMETER
+stubbing comparators,NM NPL,CLASS
+logger name parts,NM NM NPL,DECLARATION
+follow components,V NPL,FUNCTION
+const parameter floats,NM NM NPL,CLASS
+mockito assertion errors,PRE NM NPL,CLASS
+publish responses,NM NPL,CLASS
+less dummy gui helpers,NM NM NM NPL,CLASS
+new strokes,NM NPL,ATTRIBUTE
+driver type names,NM NM NPL,PARAMETER
+key password profiles,NM NM NPL,ATTRIBUTE
+followups,NPL,DECLARATION
+sub module name visibility pairs,NM NM NM NM NPL,ATTRIBUTE
+ori ws,NM NPL,DECLARATION
+thread array sizes,NM NM NPL,DECLARATION
+trim parse trees,V NM NPL,DECLARATION
+layout datas,NM NPL,CLASS
+nulls passed to verify no more interactions,NPL V P V VM DT NPL,FUNCTION
+platform strings,NM NPL,DECLARATION
+device handlers,NM NPL,CLASS
+is indirect results,V NM NPL,ATTRIBUTE
+wsdls solvers,NM NPL,CLASS
+inv unit scales,NM NM NPL,DECLARATION
+new verification modes,NM NM NPL,PARAMETER
+rule property ref ctxes,NM NM NM NPL,CLASS
+line ys,NM NPL,DECLARATION
+running log averages,NM NM NPL,DECLARATION
+d bus proxies,NM NM NPL,CLASS
+next unassigned,NM NM,FUNCTION
+num keys,NM NPL,PARAMETER
+prim types,NM NPL,DECLARATION
+cause matchers,NM NPL,PARAMETER
+avgs 1,NPL D,DECLARATION
+index tensors,NM NPL,PARAMETER
+generic type extractors,NM NM NPL,CLASS
+ep,NPL,PARAMETER
+default auto entries,NM NM NPL,PARAMETER
+detect leaks,V NPL,ATTRIBUTE
+unload textures,V NPL,FUNCTION
+camera datas,NM NPL,CLASS
+read responses,V NPL,FUNCTION
+curvatures heights,NM NPL,PARAMETER
+multipolygons,NPL,CLASS
+discount factors,NM NPL,PARAMETER
+nd formulas,NM NPL,DECLARATION
+indexes of suspicious args,NPL P NM NPL,DECLARATION
+contextualize closures,V NPL,CLASS
+runner factories,NM NPL,PARAMETER
+m workers,PRE NPL,ATTRIBUTE
+patch coord buffers,NM NM NPL,CLASS
+present scalings,NM NPL,DECLARATION
+n repeats,NM NPL,DECLARATION
+underlying fx correlations,NM NM NPL,PARAMETER
+weak ref losts,NM NM NPL,ATTRIBUTE
+new aggregate builder maps,NM NM NM NPL,CLASS
+tiff get size procs,NM V NM NPL,FUNCTION
+find hashable base types,V NM NM NPL,FUNCTION
+res widths,NM NPL,PARAMETER
+mx beans,NM NPL,DECLARATION
+lower tails,NM NPL,DECLARATION
+alt label ctxs,NM NM NPL,ATTRIBUTE
+set extra interfaces,V NM NPL,FUNCTION
+http2 error codes,NM NM NPL,PARAMETER
+left sisters buffers,NM NM NPL,DECLARATION
+is a empties,V DT NPL,DECLARATION
+content type strings,NM NM NPL,PARAMETER
+dynamic table byte counts,NM NM NM NPL,ATTRIBUTE
+nodes find outputs by names,NPL V NPL P NPL,FUNCTION
+loggers,NPL,ATTRIBUTE
+tcp slave agent listener locks,NM NM NM NM NPL,ATTRIBUTE
+ambients,NPL,ATTRIBUTE
+add biases to embeddings,V NPL P NPL,ATTRIBUTE
+get top border sizes,V NM NM NPL,FUNCTION
+default mat xes,NM NM NPL,PARAMETER
+m text types,PRE NM NPL,ATTRIBUTE
+gimp selection tool classes init,PRE NM NM NPL V,FUNCTION
+project controllers private,NM NPL NM,CLASS
+texts chopped 2,NPL NM D,DECLARATION
+latency args,NM NPL,ATTRIBUTE
+atn states,NM NPL,DECLARATION
+media chunk indexes,NM NM NPL,PARAMETER
+get protocol methods,NM NM NPL,PARAMETER
+inst results,NM NPL,DECLARATION
+get max shingle diffs,V NM NM NPL,FUNCTION
+raw extra interfaces,NM NM NPL,DECLARATION
+dispatch paint masks,NM NM NPL,CLASS
+all factors,DT NPL,PARAMETER
+dump core maps to string builders,V NM NPL P NM NPL,FUNCTION
+key frames 2,NM NPL D,PARAMETER
+p global infos 32,PRE NM NPL D,PARAMETER
+dialog elements,NM NPL,CLASS
+generate service descriptor properties,V NM NM NPL,FUNCTION
+enable background opacities,V NM NPL,FUNCTION
+resize linear open cvs,V NM NM NPL,FUNCTION
+max buffer sizes,NM NM NPL,ATTRIBUTE
+reconstruct update callbacks,NM NM NPL,CLASS
+link urls,NM NPL,DECLARATION
+basic replication requests,NM NM NPL,CLASS
+is vaild,V NM,PARAMETER
+is bridged arguments,V NM NPL,ATTRIBUTE
+eglew khr stream fifoes,PRE PRE NM NPL,ATTRIBUTE
+animations data,NM NPL,PARAMETER
+future active docs,NM NM NPL,DECLARATION
+min font sizes,NM NM NPL,ATTRIBUTE
+action translators,NM NPL,CLASS
+rgbxes 2 bgrxes,NPL P NPL,FUNCTION
+nbr gaps,NM NPL,DECLARATION
+label actions,NM NPL,CLASS
+context url lists,NM NM NPL,FUNCTION
+mention detection evaluators,NM NM NPL,CLASS
+alts and context config equality comparators,NPL CJ NM NM NM NPL,CLASS
+patterns annotations,NM NPL,CLASS
+file path filters,NM NM NPL,CLASS
+idle delays,NM NPL,ATTRIBUTE
+content paths,NM NPL,CLASS
+sibling infos,NM NPL,PARAMETER
+executors,NPL,CLASS
+pens loaded,NPL V,PARAMETER
+last tokens was deletes or defaults,NM NPL V NPL CJ NPL,DECLARATION
+out tables,NM NPL,PARAMETER
+su times,NM NPL,CLASS
+glew render modes,PRE NM NPL,ATTRIBUTE
+is valid trailing closures,V NM NM NPL,FUNCTION
+runner schedulers,NM NPL,CLASS
+rule property ref starts,NM NM NM NPL,CLASS
+ico load layers,PRE V NPL,FUNCTION
+temp attrs,NM NPL,DECLARATION
+pai args,NM NPL,DECLARATION
+maps,NPL,CLASS
+remap nearest neighbors,V NM NPL,FUNCTION
+link names,NM NPL,ATTRIBUTE
+pd sums,NM NPL,DECLARATION
+undiscounted amounts,NM NPL,PARAMETER
+enabled subdevices,NM NPL,ATTRIBUTE
+original sets,NM NPL,PARAMETER
+request bytes,NM NPL,DECLARATION
+video capture dshows,NM NM NPL,CLASS
+category filter factories,NM NM NPL,CLASS
+status icons,NM NPL,FUNCTION
+op pools,NM NPL,CLASS
+initialization errors,NM NPL,ATTRIBUTE
+show tags,V NPL,ATTRIBUTE
+rgbs 2 rgb565s,NPL P NPL,FUNCTION
+inflation leg npvs,NM NM NPL,FUNCTION
+next searches,NM NPL,DECLARATION
+set add faces points,V V NM NPL,FUNCTION
+dvb subtitle readers,NM NM NPL,CLASS
+parse max ages,V NM NPL,FUNCTION
+suite method builders,NM NM NPL,CLASS
+coterminal models,NM NPL,DECLARATION
+b loops,PRE NPL,ATTRIBUTE
+output arrays,NM NPL,PARAMETER
+method indexes,NM NPL,DECLARATION
+m first render queues,PRE NM NM NPL,ATTRIBUTE
+last gradients,NM NPL,FUNCTION
+value labels,NM NPL,CLASS
+befores,NPL,ATTRIBUTE
+with charsets,P NPL,FUNCTION
+wrapper classes,NM NPL,DECLARATION
+to xyzzes,P NPL,DECLARATION
+labels files,NM NPL,PARAMETER
+z weights,NM NPL,ATTRIBUTE
+is trained,V V,DECLARATION
+number elementary vegas,NM NM NPL,ATTRIBUTE
+tune treebanks,NM NPL,DECLARATION
+filtered children,NM NPL,ATTRIBUTE
+mod ifaces,NM NPL,DECLARATION
+attributes,NPL,CLASS
+extract events,V NPL,ATTRIBUTE
+dependencies sts,NM NPL,DECLARATION
+pixel widths,NM NPL,ATTRIBUTE
+crop nodes,NM NPL,ATTRIBUTE
+i var initializers,NM NM NPL,PARAMETER
+training examples,NM NPL,FUNCTION
+bke lattice indexes flip,PRE NM NPL V,FUNCTION
+output delegates private,NM NPL NM,CLASS
+sk editor consumers,NM NM NPL,CLASS
+wrap if not thread safes,V CJ VM NM NPL,FUNCTION
+declaration items,NM NPL,CLASS
+max requests per hosts,NM NPL P NPL,PARAMETER
+parse attribute defs,V NM NPL,FUNCTION
+max intermediate cas,NM NM NPL,PARAMETER
+match by ips,V P NPL,FUNCTION
+call error extensions,NM NM NPL,CLASS
+get default install states,V NM NM NPL,FUNCTION
+status files,NM NPL,PARAMETER
+resolved failed exceptions,NM NM NPL,CLASS
+render result exr file ends,V NM NM NM NPL,FUNCTION
+mpeg audio readers,NM NM NPL,CLASS
+of android sound players,PRE NM NM NPL,CLASS
+get item type descriptors,V NM NM NPL,FUNCTION
+canvas items,NM NPL,ATTRIBUTE
+all action roots,DT NM NPL,DECLARATION
+search profile results,NM NM NPL,PARAMETER
+gimp erasers default,PRE NPL NM,FUNCTION
+temporary folders,NM NPL,CLASS
+nullable classes,NM NPL,PARAMETER
+always preview,VM V,DECLARATION
+sizes on first uses,NPL P NM NPL,PARAMETER
+variables,NPL,ATTRIBUTE
+folder names,NM NPL,PARAMETER
+optimize identity cast compositions,V NM NM NPL,FUNCTION
+extract raw type of,V NM NM P,FUNCTION
+mono p invoke callback attributes,NM NM NM NM NPL,CLASS
+m gpu rays,PRE NM NPL,ATTRIBUTE
+d infs,NM NPL,DECLARATION
+new ys,NM NPL,ATTRIBUTE
+all open files strings,DT NM NM NPL,FUNCTION
+max baskets,NM NPL,DECLARATION
+c images,PRE NPL,CLASS
+exception channels,NM NPL,ATTRIBUTE
+step xes,NM NPL,DECLARATION
+is generic type disambiguating tokens,V NM NM NM NPL,FUNCTION
+addresses lowering,NPL V,CLASS
+root ptrs,NM NPL,DECLARATION
+element specs,NM NPL,DECLARATION
+adding,V,DECLARATION
+imb stereo3d read interlaces,PRE NM V NPL,FUNCTION
+generic emissive closures,NM NM NPL,CLASS
+bt materials,PRE NPL,CLASS
+led colors,NM NPL,PARAMETER
+n ds,NM NPL,ATTRIBUTE
+max input sizes,NM NM NPL,DECLARATION
+write tcp datas,V NM NPL,FUNCTION
+tmp vecs,NM NPL,DECLARATION
+classfile buffers,NM NPL,PARAMETER
+drift terms,NM NPL,DECLARATION
+run after params,V NM NPL,CLASS
+feature iterators,NM NPL,DECLARATION
+compiling contexts,V NPL,DECLARATION
+validate on,V P,PARAMETER
+utc timestamp ms,NM NM NPL,DECLARATION
+data point methods,NM NM NPL,PARAMETER
+dest points,NM NPL,PARAMETER
+order with,V P,FUNCTION
+m paste modes,PRE NM NPL,ATTRIBUTE
+arg mismatch stubbings,NM NM NPL,PARAMETER
+cache files,NM NPL,PARAMETER
+left recursive rule functions,NM NM NM NPL,CLASS
+leases,NPL,CLASS
+sprites,NPL,ATTRIBUTE
+codes,NPL,ATTRIBUTE
+users 2 internal indexes,NPL P NM NPL,CLASS
+binormal types,NM NPL,DECLARATION
+img buffers original,NM NPL NM,ATTRIBUTE
+physics client examples,NM NM NPL,CLASS
+manifest file prefixes,NM NM NPL,ATTRIBUTE
+set destructor callbacks,V NM NPL,FUNCTION
+get commit ids,V NM NPL,FUNCTION
+gauss lobatto ep,NM NM NPL,PARAMETER
+add object indexes,V NM NPL,FUNCTION
+dispatch mask buffer iterators,NM NM NM NPL,CLASS
+mkt factors,NM NPL,PARAMETER
+rgb reals,NM NPL,DECLARATION
+command ts,NM NPL,CLASS
+edit lengths,NM NPL,PARAMETER
+is sums supported,V NPL V,FUNCTION
+dst types 1,NM NPL D,DECLARATION
+dump frame buffer formats,V NM NM NPL,FUNCTION
+array classes,NM NPL,PARAMETER
+secondary ranges,NM NPL,PARAMETER
+wrapped verifications,NM NPL,PARAMETER
+filter specs,NM NPL,DECLARATION

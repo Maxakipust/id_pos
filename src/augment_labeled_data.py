@@ -2,9 +2,11 @@ import csv
 import common
 import random
 from nltk.corpus import wordnet
+import inflect
 
 PERCENT_OF_UNK = 0.05
 PERCENT_TO_SYN = 0.05
+PERCENT_TO_INFLECT = 0.5
 
 vocab = []
 data = []
@@ -36,6 +38,7 @@ print(f"original number of ids: {len(data)}")
 
 # indexes_to_unk = random.sample(range(0, len(data)), int(PERCENT_OF_UNK*len(vocab)))
 indexes_to_syn = random.sample(range(0, len(data)), int(PERCENT_TO_SYN*len(vocab)))
+indexes_to_inflect = random.sample(range(0, len(data)), int(PERCENT_TO_INFLECT*len(vocab)))
 # for index in indexes_to_unk:
 #     (identifierArrOrig, posArr, context) = data[index]
 #     identifierArr = identifierArrOrig.copy()
@@ -71,6 +74,20 @@ for index in indexes_to_syn:
                     if lemma.name() not in vocab:
                         vocab.append(lemma.name())
         break
+
+p = inflect.engine()
+for index in indexes_to_inflect:
+    (identifierArrOrig, posArrOrig, context) = data[index]
+    identifierArr = identifierArrOrig.copy()
+    posArr = posArrOrig.copy()
+    for (index, word) in enumerate(identifierArrOrig):
+        if posArrOrig[index] == "N":
+            plural = p.plural(word)
+            identifierArr[index] = plural
+            posArr[index] = "NPL"
+    data.append((identifierArr, posArr, context))
+
+
 print(f"final number of words: {len(vocab)}")
 print(f"final number of ids: {len(data)}")
 with open('data/aug_training_data.csv', 'w+', newline='') as csvfile:

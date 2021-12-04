@@ -82,34 +82,34 @@ with open('data/orig_training_data.csv', newline='') as csvfile:
 
 
 #replace any word with a global total count less then unkThreshold with UNK token in each of the other counts and totals
-toDel = []
-emissionTotalsUnkCount = 0
-for word in emissionTotals:
-    if emissionTotals[word] <= common.unkThreshold:
-        emissionTotalsUnkCount = emissionTotalsUnkCount + emissionTotals[word]
-        toDel.append(word)
-        for tag in common.tags:
-            if word in emissionCounts[tag]:
-                if 'UNK' not in emissionCounts[tag]:
-                    emissionCounts[tag]['UNK'] = 0
-                emissionCounts[tag]['UNK'] += emissionCounts[tag][word]
-                del emissionCounts[tag][word]
-        for context in common.contexts:
-            if word in contexEmissionTotals[context]:
-                if 'UNK' not in contexEmissionTotals[context]:
-                    contexEmissionTotals[context]['UNK'] = 0
-                contexEmissionTotals[context]['UNK'] += contexEmissionTotals[context][word]
-                del contexEmissionTotals[context][word]
-            for tag in common.tags:
-                if word in contextEmissionCounts[context][tag]:
-                    if 'UNK' not in contextEmissionCounts[context][tag]:
-                        contextEmissionCounts[context][tag]['UNK'] = 0
-                    contextEmissionCounts[context][tag]['UNK'] += contextEmissionCounts[context][tag][word]
-                    del contextEmissionCounts[context][tag][word]
-# print("deleting", toDel)
-for word in toDel:
-    del emissionTotals[word]
-emissionTotals['UNK'] = emissionTotalsUnkCount
+# toDel = []
+# emissionTotalsUnkCount = 0
+# for word in emissionTotals:
+#     if emissionTotals[word] <= common.unkThreshold:
+#         emissionTotalsUnkCount = emissionTotalsUnkCount + emissionTotals[word]
+#         toDel.append(word)
+#         for tag in common.tags:
+#             if word in emissionCounts[tag]:
+#                 if 'UNK' not in emissionCounts[tag]:
+#                     emissionCounts[tag]['UNK'] = 0
+#                 emissionCounts[tag]['UNK'] += emissionCounts[tag][word]
+#                 del emissionCounts[tag][word]
+#         for context in common.contexts:
+#             if word in contexEmissionTotals[context]:
+#                 if 'UNK' not in contexEmissionTotals[context]:
+#                     contexEmissionTotals[context]['UNK'] = 0
+#                 contexEmissionTotals[context]['UNK'] += contexEmissionTotals[context][word]
+#                 del contexEmissionTotals[context][word]
+#             for tag in common.tags:
+#                 if word in contextEmissionCounts[context][tag]:
+#                     if 'UNK' not in contextEmissionCounts[context][tag]:
+#                         contextEmissionCounts[context][tag]['UNK'] = 0
+#                     contextEmissionCounts[context][tag]['UNK'] += contextEmissionCounts[context][tag][word]
+#                     del contextEmissionCounts[context][tag][word]
+# # print("deleting", toDel)
+# for word in toDel:
+#     del emissionTotals[word]
+# emissionTotals['UNK'] = emissionTotalsUnkCount
 
 #calculate probablilites
 transitionProbs = {}
@@ -127,7 +127,7 @@ for tag in common.tags:
         try:
             emissionProbs[tag][id] =  emissionCounts[tag][id] / emissionTotals[id] 
         except ZeroDivisionError:
-            transitionProbs[tag][id] = common.defaultProb
+            emissionProbs[tag][id] = common.defaultProb
 
 contextTransitionProbs = {}
 for context in common.contexts:
