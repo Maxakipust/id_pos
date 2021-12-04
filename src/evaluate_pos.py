@@ -6,7 +6,7 @@ globalexpr = re.compile('(.*) (.*): (.*)')
 contextexpr = re.compile('(.*) (.*) (.*): (.*)')
 
 emissionProbs = {}
-with open('model/emissionProbs.txt', 'r') as infile:
+with open('../model/emissionProbs.txt', 'r') as infile:
     for line in infile.readlines():
         result = globalexpr.match(line)
         tag = result.group(1)
@@ -18,7 +18,7 @@ with open('model/emissionProbs.txt', 'r') as infile:
 
 
 transitionProbs = {}
-with open('model/transitionProbs.txt', 'r') as infile:
+with open('../model/transitionProbs.txt', 'r') as infile:
     for line in infile.readlines():
         result = globalexpr.match(line)
         taga = result.group(1)
@@ -28,7 +28,7 @@ with open('model/transitionProbs.txt', 'r') as infile:
     # outfile.write(f"{taga} {tagb}: {transitionProbs[(taga,tagb)]}\n")
 
 contextTransitionProbs = {}
-with open('model/contextTransitionProbs.txt', 'r') as infile:
+with open('../model/contextTransitionProbs.txt', 'r') as infile:
     for line in infile.readlines():
         result = contextexpr.match(line)
         context = result.group(1)
@@ -41,7 +41,7 @@ with open('model/contextTransitionProbs.txt', 'r') as infile:
         # outfile.write(f"{context} {taga} {tagb}: {contextTransitionProbs[context][(taga,tagb)]}\n")
 
 contextemissionProbs = {}
-with open('model/contextEmissionProbs.txt', 'r') as infile:
+with open('../model/contextEmissionProbs.txt', 'r') as infile:
     for line in infile.readlines():
         result = contextexpr.match(line)
         context = result.group(1)

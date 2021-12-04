@@ -29,7 +29,7 @@ def runEnsemble(type, name, context):
 
 
 #run tests
-with open('data/orig_unseen_testing_data.csv', newline='') as csvfile:
+with open('../data/orig_unseen_testing_data.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     prevId = ""
     nltkMap = {}

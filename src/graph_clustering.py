@@ -3,6 +3,9 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.algorithms.cluster import clustering
 import common
+import gensim
+from gensim.models import Word2Vec
+from common import cleanUpWord
 
 
 
