@@ -25,6 +25,19 @@ tags = [
     'PRE',
     'EOI'
 ]
+used_tags = [
+    'N',
+    'DT',
+    'CJ',
+    'P',
+    'NPL',
+    'NM',
+    'V',
+    'VM',
+    # 'PR',
+    'D',
+    'PRE'
+]
 
 #remove numbers from words
 def cleanUpWord(id):

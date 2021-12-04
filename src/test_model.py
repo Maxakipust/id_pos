@@ -2,6 +2,7 @@ import evaluate_pos
 import csv
 import common
 import requests
+from sklearn.metrics import confusion_matrix, classification_report
 # import nltk
 
 success = 0
@@ -26,41 +27,22 @@ def runEnsemble(type, name, context):
 #     pos = nltk.pos_tag(name)
 #     return list(map(lambda arg: arg[1], pos))
 
-
-
-#run tests
-with open('../data/orig_unseen_testing_data.csv', newline='') as csvfile:
-    reader = csv.DictReader(csvfile)
+def test_model(tag_id_fn, test_file):
+    reader = csv.DictReader(test_file)
     prevId = ""
-    nltkMap = {}
+    calculated_total = []
+    actual_total = []
     for row in reader:
         if row['IDENTIFIER'] != prevId:
             prevId = row['IDENTIFIER']
             idArr = row['IDENTIFIER'].lower().split()
             idArr = list(map(common.cleanUpWord, idArr))
-
             context = common.contexts[int(row['CONTEXT']) - 1]
-            calcPOS = evaluate_pos.runViterbi(idArr, context).split()[1:-1]
-            # ensemblePOS = runEnsemble("int", idArr.join(), context)
-
+            calcPOS = tag_id_fn(idArr, context)
             actualPOS = row['GRAMMAR_PATTERN'].split()
-            for (index, actual) in enumerate(actualPOS):
-                calc = calcPOS[index]
-                if calc == actual:
-                    success += 1
-                else:
-                    fail += 1
-                    print(idArr)
-                    print("actual", actualPOS)
-                    print("calc", calcPOS)
-                    print("fail", actual, calc)
-                    print()
-                    
-
-print("success",success)
-print("fail", fail)
-print("acc",success/(success+fail))
-
-# print("nltk_success",nltk_success)
-# print("nltk_fail", nltk_fail)
-# print("nltk_acc",nltk_success/(nltk_success+nltk_fail))
+            for (calc, actual) in list(zip(calcPOS, actualPOS)):
+                calculated_total.append(calc)
+                actual_total.append(actual)
+    confusion = confusion_matrix(actual_total, calculated_total, labels=common.used_tags)
+    report = classification_report(actual_total, calculated_total, labels=common.used_tags)
+    return (confusion, report)

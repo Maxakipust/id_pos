@@ -1,52 +1,53 @@
 import numpy as np
 import json
 import common
+import csv
 
 
-#init the count dicts for global counts
-transitionCounts = {}
-for taga in common.tags:
-    for tagb in common.tags:
-        transitionCounts[(taga, tagb)] = 0
 
-emissionCounts = {}
-for tag in common.tags:
-    emissionCounts[tag] = {'UNK': 0}
-
-transitionTotals = {}
-for tag in common.tags:
-    transitionTotals[tag] = 0
-
-emissionTotals = {'UNK': 0}
-
-#init the count dicts for specific contexts
-contextTransitionCounts = {}
-for context in common.contexts:
-    contextTransitionCounts[context] = {}
+# with open('data/orig_training_data.csv', newline='') as csvfile:
+def generate_probabilities(infile, outEmissionProbs, outTransitionProbs, outContextEmissionProbs, outContextTransitionProbs):
+    #init the count dicts for global counts
+    transitionCounts = {}
     for taga in common.tags:
         for tagb in common.tags:
-            contextTransitionCounts[context][(taga, tagb)] = 0
+            transitionCounts[(taga, tagb)] = 0
 
-contextEmissionCounts = {}
-for context in common.contexts:
-    contextEmissionCounts[context] = {}
+    emissionCounts = {}
     for tag in common.tags:
-        contextEmissionCounts[context][tag] = {'UNK':0}
+        emissionCounts[tag] = {}
 
-contextTransitionTotals = {}
-for context in common.contexts:
-    contextTransitionTotals[context] = {}
+    transitionTotals = {}
     for tag in common.tags:
-        contextTransitionTotals[context][tag] = 0
+        transitionTotals[tag] = 0
 
-contexEmissionTotals = {}
-for context in common.contexts:
-    contexEmissionTotals[context] = {'UNK': 0}
+    emissionTotals = {}
 
-#calculate counts
-import csv
-with open('data/orig_training_data.csv', newline='') as csvfile:
-    reader = csv.DictReader(csvfile)
+    #init the count dicts for specific contexts
+    contextTransitionCounts = {}
+    for context in common.contexts:
+        contextTransitionCounts[context] = {}
+        for taga in common.tags:
+            for tagb in common.tags:
+                contextTransitionCounts[context][(taga, tagb)] = 0
+
+    contextEmissionCounts = {}
+    for context in common.contexts:
+        contextEmissionCounts[context] = {}
+        for tag in common.tags:
+            contextEmissionCounts[context][tag] = {}
+
+    contextTransitionTotals = {}
+    for context in common.contexts:
+        contextTransitionTotals[context] = {}
+        for tag in common.tags:
+            contextTransitionTotals[context][tag] = 0
+
+    contexEmissionTotals = {}
+    for context in common.contexts:
+        contexEmissionTotals[context] = {}
+    
+    reader = csv.DictReader(infile)
     prevId = ""
     for row in reader:
         #since the dataset contains an entry for each word, we only want to run this for each identifer
@@ -79,95 +80,63 @@ with open('data/orig_training_data.csv', newline='') as csvfile:
                 contextEmissionCounts[context][pos][id] = contextEmissionCounts[context][pos][id] + 1 if id in contextEmissionCounts[context][pos] else 1
                 contexEmissionTotals[context][id] = contexEmissionTotals[context][id] + 1 if id in contexEmissionTotals[context] else 1
 
-
-
-#replace any word with a global total count less then unkThreshold with UNK token in each of the other counts and totals
-# toDel = []
-# emissionTotalsUnkCount = 0
-# for word in emissionTotals:
-#     if emissionTotals[word] <= common.unkThreshold:
-#         emissionTotalsUnkCount = emissionTotalsUnkCount + emissionTotals[word]
-#         toDel.append(word)
-#         for tag in common.tags:
-#             if word in emissionCounts[tag]:
-#                 if 'UNK' not in emissionCounts[tag]:
-#                     emissionCounts[tag]['UNK'] = 0
-#                 emissionCounts[tag]['UNK'] += emissionCounts[tag][word]
-#                 del emissionCounts[tag][word]
-#         for context in common.contexts:
-#             if word in contexEmissionTotals[context]:
-#                 if 'UNK' not in contexEmissionTotals[context]:
-#                     contexEmissionTotals[context]['UNK'] = 0
-#                 contexEmissionTotals[context]['UNK'] += contexEmissionTotals[context][word]
-#                 del contexEmissionTotals[context][word]
-#             for tag in common.tags:
-#                 if word in contextEmissionCounts[context][tag]:
-#                     if 'UNK' not in contextEmissionCounts[context][tag]:
-#                         contextEmissionCounts[context][tag]['UNK'] = 0
-#                     contextEmissionCounts[context][tag]['UNK'] += contextEmissionCounts[context][tag][word]
-#                     del contextEmissionCounts[context][tag][word]
-# # print("deleting", toDel)
-# for word in toDel:
-#     del emissionTotals[word]
-# emissionTotals['UNK'] = emissionTotalsUnkCount
-
-#calculate probablilites
-transitionProbs = {}
-for taga in common.tags:
-    for tagb in common.tags:
-        try:
-            transitionProbs[(taga, tagb)] = transitionCounts[(taga, tagb)] / transitionTotals[taga]
-        except ZeroDivisionError:
-            transitionProbs[(taga, tagb)] = common.defaultProb
-
-emissionProbs = {}
-for tag in common.tags:
-    emissionProbs[tag] = {}
-    for id in emissionCounts[tag]:
-        try:
-            emissionProbs[tag][id] =  emissionCounts[tag][id] / emissionTotals[id] 
-        except ZeroDivisionError:
-            emissionProbs[tag][id] = common.defaultProb
-
-contextTransitionProbs = {}
-for context in common.contexts:
-    contextTransitionProbs[context] = {}
+    #calculate probablilites
+    transitionProbs = {}
     for taga in common.tags:
         for tagb in common.tags:
             try:
-                contextTransitionProbs[context][(taga, tagb)] =  contextTransitionCounts[context][(taga,tagb)]/contextTransitionTotals[context][taga] 
+                transitionProbs[(taga, tagb)] = transitionCounts[(taga, tagb)] / transitionTotals[taga]
             except ZeroDivisionError:
-                contextTransitionProbs[context][(taga,tagb)] = common.defaultProb
+                transitionProbs[(taga, tagb)] = common.defaultProb
 
-contextemissionProbs = {}
-for context in common.contexts:
-    contextemissionProbs[context] = {}
+    emissionProbs = {}
     for tag in common.tags:
-        contextemissionProbs[context][tag] = {}
-        for id in contextEmissionCounts[context][tag]:
+        emissionProbs[tag] = {}
+        for id in emissionCounts[tag]:
             try:
-                contextemissionProbs[context][tag][id] = contextEmissionCounts[context][tag][id] / contexEmissionTotals[context][id]
+                emissionProbs[tag][id] =  emissionCounts[tag][id] / emissionTotals[id] 
             except ZeroDivisionError:
-                contextemissionProbs[context][tag][id] = common.defaultProb
+                emissionProbs[tag][id] = common.defaultProb
 
-with open('model/emissionProbs.txt', 'w+') as outfile:
+    contextTransitionProbs = {}
+    for context in common.contexts:
+        contextTransitionProbs[context] = {}
+        for taga in common.tags:
+            for tagb in common.tags:
+                try:
+                    contextTransitionProbs[context][(taga, tagb)] =  contextTransitionCounts[context][(taga,tagb)]/contextTransitionTotals[context][taga] 
+                except ZeroDivisionError:
+                    contextTransitionProbs[context][(taga,tagb)] = common.defaultProb
+
+    contextemissionProbs = {}
+    for context in common.contexts:
+        contextemissionProbs[context] = {}
+        for tag in common.tags:
+            contextemissionProbs[context][tag] = {}
+            for id in contextEmissionCounts[context][tag]:
+                try:
+                    contextemissionProbs[context][tag][id] = contextEmissionCounts[context][tag][id] / contexEmissionTotals[context][id]
+                except ZeroDivisionError:
+                    contextemissionProbs[context][tag][id] = common.defaultProb
+
+    # with open('model/emissionProbs.txt', 'w+') as outfile:
     for tag in emissionProbs:
         for id in emissionProbs[tag]:
-            outfile.write(f"{tag} {id}: {emissionProbs[tag][id]}\n")
+            outEmissionProbs.write(f"{tag} {id}: {emissionProbs[tag][id]}\n")
 
-with open('model/transitionProbs.txt', 'w+') as outfile:
+    # with open('model/transitionProbs.txt', 'w+') as outfile:
     for taga in common.tags:
         for tagb in common.tags:
-            outfile.write(f"{taga} {tagb}: {transitionProbs[(taga,tagb)]}\n")
+            outTransitionProbs.write(f"{taga} {tagb}: {transitionProbs[(taga,tagb)]}\n")
 
-with open('model/contextTransitionProbs.txt', 'w+') as outfile:
+    # with open('model/contextTransitionProbs.txt', 'w+') as outfile:
     for context in common.contexts:
         for taga in common.tags:
             for tagb in common.tags:
-                outfile.write(f"{context} {taga} {tagb}: {contextTransitionProbs[context][(taga,tagb)]}\n")
+                outContextTransitionProbs.write(f"{context} {taga} {tagb}: {contextTransitionProbs[context][(taga,tagb)]}\n")
 
-with open('model/contextEmissionProbs.txt', 'w+') as outfile:
+    # with open('model/contextEmissionProbs.txt', 'w+') as outfile:
     for context in common.contexts:
         for tag in contextemissionProbs[context]:
             for id in contextemissionProbs[context][tag]:
-                outfile.write(f"{context} {tag} {id}: {contextemissionProbs[context][tag][id]}\n")
+                outContextEmissionProbs.write(f"{context} {tag} {id}: {contextemissionProbs[context][tag][id]}\n")

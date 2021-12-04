@@ -7,17 +7,18 @@ import gensim
 from gensim.models import Word2Vec
 from common import cleanUpWord
 
-
-
-all_words = []
-neighbors = {}
-neighbors_count = {}
-
 suffixes = ['ee', 'eer', 'er', 'ion', 'ism', 'ity', 'ment', 'ness', 'or', 'sion', 'ship', 'th', 'able', 'ible', 'al', 'ant', 'ary', 'ful', 'ic', 'ious', 'ous', 'ive', 'less', 'y', 'ed', 'en', 'er', 'ing', 'ize','ise', 'ly', 'ward', 'wise', 's', 'es']
 
-# calculate neighbors from the data
-with open('data/unlabeled_ids.txt', newline='') as file:
-    for line in file:
+
+def augment_emission_probs_with_custom_clustering(unlabeled_ids, emission_probs_file, graph_outfile, probs_outfile):
+    print("augmenting emissions probs with custom clustering. Note this may take a while")
+    all_words = []
+    neighbors = {}
+    neighbors_count = {}
+
+    # calculate neighbors from the data
+    # with open('data/unlabeled_ids.txt', newline='') as file:
+    for line in unlabeled_ids:
         words = line.split()
         words = [cleanUpWord(w) for w in words]
         for (index, word) in enumerate(words):
@@ -41,54 +42,35 @@ with open('data/unlabeled_ids.txt', newline='') as file:
                     neighbors[word][neighbor_front] = 0
                 neighbors[word][neighbor_front] += 1
                 neighbors_count[word] += 1
+
+    # generate graph and weights from the counts of neighbors
+    graph = nx.Graph()
+    for (index,word1) in enumerate(all_words):
+        for word2 in all_words:
+            if word1 == word2:
+                continue
+            if graph.has_edge(word1, word2):
+                continue
             
-print("got counts")
+            common_neighbors_count = len(set(neighbors[word1]).intersection(set(neighbors[word2])))
+            total_neighbors_count = len(set(neighbors[word1]).union(set(neighbors[word2])))
 
+            if total_neighbors_count > 0:
+                w = common_neighbors_count / total_neighbors_count
+                for suffix in suffixes:
+                    if word1.endswith(suffix) and word2.endswith(suffix):
+                        w = w * 2
+                        break
 
-# generate graph and weights from the counts of neighbors
-graph = nx.Graph()
+                if total_neighbors_count > 4:
+                    if w >= 0.25:
+                        # print(word1, word2, w)
+                        graph.add_edge(word1, word2, weight=w)
 
-all_word_count = len(all_words)
+    probs = {}
 
-for (index,word1) in enumerate(all_words):
-    if index % 1000 == 0:
-        print(str(index) +" / " + str(all_word_count) +": " + str(int(100* (index/all_word_count)))+"%")
-    for word2 in all_words:
-        if word1 == word2:
-            continue
-        if graph.has_edge(word1, word2):
-            continue
-        
-        common_neighbors_count = len(set(neighbors[word1]).intersection(set(neighbors[word2])))
-        total_neighbors_count = len(set(neighbors[word1]).union(set(neighbors[word2])))
-
-        if total_neighbors_count > 0:
-            w = common_neighbors_count / total_neighbors_count
-            for suffix in suffixes:
-                if word1.endswith(suffix) and word2.endswith(suffix):
-                    w = w * 2
-                    break
-
-            if total_neighbors_count > 4:
-                if w >= 0.25:
-                    # print(word1, word2, w)
-                    graph.add_edge(word1, word2, weight=w)
-
-print("got probs and created graph")
-nx.write_gexf(graph, "model/wordGraph.gexf")
-print("saved graph")
-# pos=nx.spring_layout(graph)
-# nx.draw(graph,pos, with_labels=True)
-# labels = nx.get_edge_attributes(graph,'weight')
-# nx.draw_networkx_edge_labels(graph,pos,edge_labels=labels)
-# plt.show()
-
-# load the emmision probs from disk into memory
-# probs[word][pos] = prob
-probs = {}
-
-with open('model/emissionProbs.txt', 'r') as infile:
-    for line in infile:
+    # with open('model/emissionProbs.txt', 'r') as infile:
+    for line in emission_probs_file:
         # pos, tag, prob
         
         pos = line.split(': ')[0].split(' ')[0]
@@ -99,15 +81,15 @@ with open('model/emissionProbs.txt', 'r') as infile:
             probs[word] = {}
         probs[word][pos] = prob
 
-    print("got probs from model")
+    # print("got probs from model")
 
     from chinese_whispers import chinese_whispers, aggregate_clusters
     chinese_whispers(graph, weighting='top', iterations=100)
-    print("got clusters")
-    nx.write_gexf(graph, "model/wordGraphClustered.gexf")
-    print("saved graph")
+    # print("got clusters")
+    nx.write_gexf(graph, graph_outfile)
+    # print("saved graph")
 
-with open('model/emissionProbs.txt', 'a') as outfile:
+    # with open('model/emissionProbs.txt', 'a') as outfile:
     for label, cluster in sorted(aggregate_clusters(graph).items(), key=lambda e: len(e[1]), reverse=True):
         print(label, cluster)
         for matchword in cluster:
@@ -115,7 +97,11 @@ with open('model/emissionProbs.txt', 'a') as outfile:
                 print(label, matchword)
                 for outword in cluster:
                     if outword not in probs:
-                        for tag in probs[matchword]:
-                            outfile.write(f"{tag} {outword}: {probs[matchword][tag]}\n")
+                        # for tag in probs[matchword]:
+                        #     outfile.write(f"{tag} {outword}: {probs[matchword][tag]}\n")
                         probs[outword]=probs[matchword]
                 continue
+
+    for word in probs:
+        for pos in probs[word]:
+            probs_outfile.write(f"{pos} {word}: {probs[word][pos]}")
