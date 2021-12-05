@@ -28,6 +28,7 @@ def runEnsemble(type, name, context):
 #     return list(map(lambda arg: arg[1], pos))
 
 def test_model(tag_id_fn, test_file):
+    test_file.seek(0)
     reader = csv.DictReader(test_file)
     prevId = ""
     calculated_total = []
@@ -43,6 +44,11 @@ def test_model(tag_id_fn, test_file):
             for (calc, actual) in list(zip(calcPOS, actualPOS)):
                 calculated_total.append(calc)
                 actual_total.append(actual)
+                # if not calc == actual:
+                    # print(idArr, context)
+                    # print(calcPOS)
+                    # print(actualPOS)
+                    # print()
     confusion = confusion_matrix(actual_total, calculated_total, labels=common.used_tags)
-    report = classification_report(actual_total, calculated_total, labels=common.used_tags)
+    report = classification_report(actual_total, calculated_total, labels=common.used_tags) # ,output_dict=True)
     return (confusion, report)

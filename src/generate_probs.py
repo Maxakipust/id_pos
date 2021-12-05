@@ -7,6 +7,11 @@ import csv
 
 # with open('data/orig_training_data.csv', newline='') as csvfile:
 def generate_probabilities(infile, outEmissionProbs, outTransitionProbs, outContextEmissionProbs, outContextTransitionProbs):
+    infile.seek(0)
+    outEmissionProbs.seek(0)
+    outTransitionProbs.seek(0)
+    outContextEmissionProbs.seek(0)
+    outContextTransitionProbs.seek(0)
     #init the count dicts for global counts
     transitionCounts = {}
     for taga in common.tags:
@@ -58,7 +63,12 @@ def generate_probabilities(infile, outEmissionProbs, outTransitionProbs, outCont
             #extract the grammar from the dataset
             posArr = ('SOI ' + row['GRAMMAR_PATTERN'] + ' EOI').split()
             #extract the context from the dataset
-            context = common.contexts[int(row['CONTEXT'])-1]
+            context = row['CONTEXT']
+            try:
+                context_int = int(context)
+                context = common.contexts[context_int - 1]
+            except:
+                context = row['CONTEXT']
             for i in range(0, len(identifierArr)-1):
                 #clean up the word
                 id = common.cleanUpWord(identifierArr[i])

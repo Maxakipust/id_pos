@@ -6,8 +6,11 @@ globalexpr = re.compile('(.*) (.*): (.*)')
 contextexpr = re.compile('(.*) (.*) (.*): (.*)')
 
 def load_probs(in_emission_probs, in_transition_probs, in_context_emission_probs, in_context_transition_probs, global_transition_weight, global_emission_weight, context_transition_weight, context_emission_weight):
-
-
+    in_emission_probs.seek(0)
+    in_transition_probs.seek(0)
+    in_context_emission_probs.seek(0)
+    in_context_transition_probs.seek(0)
+    
     emissionProbs = {}
 # with open('../model/emissionProbs.txt', 'r') as infile:
     for line in in_emission_probs.readlines():
