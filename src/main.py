@@ -10,6 +10,7 @@ import augment_labeled_data
 import inflect
 import word2vec_clustering 
 import graph_clustering
+import sys
 
 
 def print_confusion(confusion):
@@ -74,6 +75,7 @@ def run_new_tagger():
     
 
 def full_run():
+    long = True if len(sys.argv) > 1 and sys.argv[1] == "long" else False
     print("running base HMM with only global probs")
     orig_training_data = open("data/orig_training_data.csv", "r")
     orig_test_data = open("data/orig_unseen_testing_data.csv", "r")
@@ -130,7 +132,11 @@ def full_run():
     print("running augmented emission data with word2vec")
     # word2vec_model = open("model/word2vec/word2vec.model", "w+")
     word2vec_probs = open("model/word2vec/global_emission_probs.txt", "w+")
-    word2vec_clustering.word2vec_clustering(untagged_ids, base_hmm_global_emission_probs, "model/word2vec/word2vec.model", word2vec_probs)
+    if long:
+        print("This will take a long time. to disable run 'main.py'")
+        word2vec_clustering.word2vec_clustering(untagged_ids, base_hmm_global_emission_probs, "model/word2vec/word2vec.model", word2vec_probs)
+    else:
+        print("not building new word2vec model, to enable run 'main.py long'")
     word2vec_tag_fn = evaluate_pos.load_probs(word2vec_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
     0.5, 0.5, 0.5, 0.5)
     (confusion, report) = test_model.test_model(word2vec_tag_fn, orig_test_data)
@@ -140,7 +146,11 @@ def full_run():
     print("running augmented emission data with neighbor graph clustering")
     # graph = open("model/graph/graph.gexf", "w+")
     graph_probs = open("model/graph/global_emission_probs.txt", "w+")
-    graph_clustering.augment_emission_probs_with_custom_clustering(untagged_ids,base_hmm_global_emission_probs , "model/graph/graph.gexf", graph_probs)
+    if long:
+        print("This will take a long time. To disable run 'main.py'")
+        graph_clustering.augment_emission_probs_with_custom_clustering(untagged_ids,base_hmm_global_emission_probs , "model/graph/graph.gexf", graph_probs)
+    else:
+        print("not building new graph clustering probabilities, to enable run 'main.py long'")
     graph_tag_fn = evaluate_pos.load_probs(graph_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
     0.5, 0.5, 0.5, 0.5)
     (confusion, report) = test_model.test_model(graph_tag_fn, orig_test_data)
