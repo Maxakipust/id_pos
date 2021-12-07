@@ -131,11 +131,13 @@ def full_run():
     untagged_ids = open("data/unlabeled_ids.txt", "r+")
     print("running augmented emission data with word2vec")
     # word2vec_model = open("model/word2vec/word2vec.model", "w+")
-    word2vec_probs = open("model/word2vec/global_emission_probs.txt", "w+")
+    word2vec_probs = None
     if long:
         print("This will take a long time. to disable run 'main.py'")
+        word2vec_probs = open("model/word2vec/global_emission_probs.txt", "w+")
         word2vec_clustering.word2vec_clustering(untagged_ids, base_hmm_global_emission_probs, "model/word2vec/word2vec.model", word2vec_probs)
     else:
+        word2vec_probs = open("model/word2vec/global_emission_probs.txt", "r+")
         print("not building new word2vec model, to enable run 'main.py long'")
     word2vec_tag_fn = evaluate_pos.load_probs(word2vec_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
     0.5, 0.5, 0.5, 0.5)
@@ -145,11 +147,13 @@ def full_run():
 
     print("running augmented emission data with neighbor graph clustering")
     # graph = open("model/graph/graph.gexf", "w+")
-    graph_probs = open("model/graph/global_emission_probs.txt", "w+")
+    graph_probs = None
     if long:
         print("This will take a long time. To disable run 'main.py'")
+        graph_probs = open("model/graph/global_emission_probs.txt", "w+")
         graph_clustering.augment_emission_probs_with_custom_clustering(untagged_ids,base_hmm_global_emission_probs , "model/graph/graph.gexf", graph_probs)
     else:
+        graph_probs = open("model/graph/global_emission_probs.txt", "r+")
         print("not building new graph clustering probabilities, to enable run 'main.py long'")
     graph_tag_fn = evaluate_pos.load_probs(graph_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
     0.5, 0.5, 0.5, 0.5)
