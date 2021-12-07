@@ -11,6 +11,10 @@ suffixes = ['ee', 'eer', 'er', 'ion', 'ism', 'ity', 'ment', 'ness', 'or', 'sion'
 
 
 def augment_emission_probs_with_custom_clustering(unlabeled_ids, emission_probs_file, graph_outfile, probs_outfile):
+    unlabeled_ids.seek(0)
+    emission_probs_file.seek(0)
+    # graph_outfile.seek(0)
+    probs_outfile.seek(0)
     print("augmenting emissions probs with custom clustering. Note this may take a while")
     all_words = []
     neighbors = {}

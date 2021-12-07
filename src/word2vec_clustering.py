@@ -4,8 +4,11 @@ from gensim.models import Word2Vec
 cos_cutoff = 0.9
 
 def word2vec_clustering(in_ids, in_probs, out_word2vec, out_probs):
-#  Reads ‘alice.txt’ file
-# with open('data/unlabeled_ids.txt', newline='') as file:
+    in_ids.seek(0)
+    in_probs.seek(0)
+    # out_word2vec.seek(0)
+    out_probs.seek(0)
+
     ids = in_ids.read().split("\n")
     data = []
     for id in ids:
@@ -13,7 +16,7 @@ def word2vec_clustering(in_ids, in_probs, out_word2vec, out_probs):
 
     # print(f"creating model on {len(ids)} identifiers")
     # Create CBOW model
-    model = Word2Vec(sentences=data, vector_size=100, window=1, min_count=1, workers=8)
+    model = Word2Vec(sentences=data, vector_size=100, window=1, min_count=3, workers=16)
     # print("done making model")
     # print("saving model as model/word2vec.model")
     model.save(out_word2vec)

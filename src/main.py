@@ -8,12 +8,14 @@ import common
 import pandas as pd
 import augment_labeled_data
 import inflect
+import word2vec_clustering 
+import graph_clustering
 
 
 def print_confusion(confusion):
     print(pd.DataFrame(confusion, 
         index=list(map((lambda x: 'true:'+x), common.used_tags)), #['true:yes', 'true:no'], 
-        columns=list(map((lambda x: 'pred:'+x), common.used_tags))#['pred:yes', 'pred:no']
+        columns=list(map((lambda x: 'pred:'+x), common.used_tags)) #['pred:yes', 'pred:no']
     ))
 
 noun_tags = ["N", "NM", "NPL"]
@@ -124,6 +126,32 @@ def full_run():
     print(report)
 
 
+    untagged_ids = open("data/unlabeled_ids.txt", "r+")
+    print("running augmented emission data with word2vec")
+    # word2vec_model = open("model/word2vec/word2vec.model", "w+")
+    word2vec_probs = open("model/word2vec/global_emission_probs.txt", "w+")
+    word2vec_clustering.word2vec_clustering(untagged_ids, base_hmm_global_emission_probs, "model/word2vec/word2vec.model", word2vec_probs)
+    word2vec_tag_fn = evaluate_pos.load_probs(word2vec_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
+    0.5, 0.5, 0.5, 0.5)
+    (confusion, report) = test_model.test_model(word2vec_tag_fn, orig_test_data)
+    print_confusion(confusion)
+    print(report)
+
+    print("running augmented emission data with neighbor graph clustering")
+    # graph = open("model/graph/graph.gexf", "w+")
+    graph_probs = open("model/graph/global_emission_probs.txt", "w+")
+    graph_clustering.augment_emission_probs_with_custom_clustering(untagged_ids,base_hmm_global_emission_probs , "model/graph/graph.gexf", graph_probs)
+    graph_tag_fn = evaluate_pos.load_probs(graph_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs, 
+    0.5, 0.5, 0.5, 0.5)
+    (confusion, report) = test_model.test_model(graph_tag_fn, orig_test_data)
+    print_confusion(confusion)
+    print(report)
+
+
+
+    
+
+
 def find_optimal_weights():
     results = {}
     orig_training_data = open("data/orig_training_data.csv", "r")
@@ -161,6 +189,6 @@ def run_baseline(tag):
     print(report)
 
 # run_baseline("NM")
-run_new_tagger()
+# run_new_tagger()
 # find_optimal_weights()
-# full_run()
+full_run()
