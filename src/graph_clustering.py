@@ -95,10 +95,10 @@ def augment_emission_probs_with_custom_clustering(unlabeled_ids, emission_probs_
 
     # with open('model/emissionProbs.txt', 'a') as outfile:
     for label, cluster in sorted(aggregate_clusters(graph).items(), key=lambda e: len(e[1]), reverse=True):
-        print(label, cluster)
+        # print(label, cluster)
         for matchword in cluster:
             if matchword in probs:
-                print(label, matchword)
+                # print(label, matchword)
                 for outword in cluster:
                     if outword not in probs:
                         # for tag in probs[matchword]:

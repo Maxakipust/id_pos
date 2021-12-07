@@ -21,9 +21,9 @@ Next we experimented with different weights between the global model and the con
 | Global  | 0               | 50                |
 | Context | 100             | 50                |
 
-Next we tried to extend the vocabulary of the model since we don't have a ton of training data. We did this by taking untagged identifiers and creating a weighted graph where each node is a word and each weight between word x and y is how many neighbors x shares with y. Then we used the chinese whispers graph clustering algorithm to identify clusters of related words, or words that could possibly be used interchangeably. Then we could search through each cluster for words that we know the emission probabilities of, and assign the emission probability of each word in the cluster to the probabilities of the known word. 
+Next we tried to extend the vocabulary of the model since we don't have a ton of training data. We did this by taking untagged identifiers and creating a weighted graph where each node is a word and each weight between word x and y is how many neighbors x shares with y. Then we used the chinese whispers graph clustering algorithm to identify clusters of related words, or words that could possibly be used interchangeably. Then we could search through each cluster for words that we know the emission probabilities of, and assign the emission probability of each word in the cluster to the probabilities of the known word. This resulted in an accuracy of 95%
 
-Next we tried to use a similar approach with dense word embeddings. We trained a word2vec model on our untagged identifiers. Then we searched for words that were similar to known words. We could then extend the probabilities to the new words.
+Next we tried to use a similar approach with dense word embeddings. We trained a word2vec model on our untagged identifiers. Then we searched for words that were similar to known words. We could then extend the probabilities to the new words. This resulted in an accuracy of 93%
 
 Both of these methods take a while to run since we have so many untagged identifiers.
 
@@ -34,6 +34,8 @@ Next we tried to find synonyms for words in the training data that share a commo
 When we augment our training dat with both synonyms and plurality at 100% we get an accuracy of 93%.
 
 Finally we added a brill-like post processing. We look for sequences of N, NPL, and NMs. Then we make all but the head noun NM. We also do the same with VM and V. When running on just nouns we get an accuracy of 94%. When running on just verbs we get 93%. And with both we get 93%.
+
+There is more data in `weight.xlsx`
 
 To run: `python3 src/main`
 To start a webserver urn `python3 src/webserver.py`
