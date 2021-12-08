@@ -2,6 +2,16 @@
 
 This implementation is a simple hmm trained on [this dataset](https://github.com/SCANL/datasets/blob/master/ensemble_tagger_training_data/training_data.csv)
 
+the unlabeled identifiers came from the following open source repos and extracted with srcml
+https://github.com/stanfordnlp/CoreNLP
+https://github.com/elastic/elasticsearch
+https://github.com/alibaba/fastjson
+https://github.com/kdn251/interviews
+https://github.com/TheAlgorithms/Java
+https://github.com/iluwatar/java-design-patterns
+https://github.com/SeleniumHQ/selenium
+https://github.com/spring-projects/spring-boot
+
 It uses the Viterbi algorithm to find the POS sequence with the highest probability for a given identifier
 
 Inspired by the algorithm to use graph clustering for unsupervised POS tagging presented here https://aclanthology.org/P06-3002.pdf
