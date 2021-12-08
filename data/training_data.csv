@@ -1,328 +1,1136 @@
 IDENTIFIER,GRAMMAR_PATTERN,CONTEXT
-Struct Ty,NM N,1
-validate instance methods,V NM NPL,4
-Dynamic Textured Cube Demo,NM NM NM N,2
-expected String,NM N,3
-key Begin,NM N,3
-cause Matcher,NM N,5
-m is indx present,PRE V NM N,1
-OF Android Sound Player,PRE NM NM N,2
-nullable Class,NM N,5
-nulls Ok,NPL NM,4
-word Lemma Tag,NM NM N,5
-set Frame Pen,V NM N,4
-http2 Error Code,NM NM N,5
-first Space,NM N,3
-nav visible,N V,1
-open Class Tags,NM NM NPL,3
-Get Longitude,V N,4
-res Width,NM N,5
-z weight,NM N,1
-rule Options,NM NPL,1
-Binary Rule,NM N,2
-Warning Failure Exception,NM NM N,2
-silk bw expander 32,NM NM N D,4
-p global info 32,PRE NM N D,5
-selection width label,NM NM N,1
-size on first use,N P NM N,5
-platform String,NM N,3
-tot channel,NM N,1
-cam Rot Z,NM NM N,3
-num Keys,NM NPL,5
-score Pos Prev,NM N NM,3
-int Hex String,NM NM N,5
-trade Price,NM N,1
-Configure Timeouts,NM NPL,2
-value Hash,NM N,1
-is Node A Left Child Leaf,V N DT NM NM N,3
-OF Android Life Cycle Helper,PRE NM NM NM N,2
-keep Aspect,V N,1
-col Length Left,NM NM N,3
-spline max len,NM NM N,1
-all Open Files String,DT NM NM N,4
-Physics Client Example,NM NM N,2
-contours,NPL,1
-Suite Method Builder,NM NM N,2
-to sentence,P N,4
-Run Before Params,V NM NPL,2
-runner For Class,V P N,4
-sx,N,5
-Tsurgeon Parse Exception,NM NM N,2
+from Byte Buffers,P NM NPL,4
 num light,NM N,1
-retain Function,NM N,5
-f Ptr Out,PRE NM N,3
-convert bullet to grpc command,V N DT NM N,4
-stream Headers,NM NPL,3
-Cache Control,NM N,2
-passphrase,N,3
-wrapper Class,NM N,3
-sample Mid,NM N,3
-i ar e,NM NM N,5
-sentence List,NM N,3
-Replace Text Context,NM NM N,1
-multipart body,NM N,2
-X scale,NM N,1
-run Methods,V NPL,4
-save lambdas,V NPL,4
-Firmata I2C Data,NM NM NPL,2
-Shift Reduce Train Options,NM NM NM NPL,2
-read subframe,V N,4
-source index,NM N,3
-num Active Contexts,NM NM NPL,5
-bm log,NM N,1
-Suite Method,NM N,2
-OAuth Session Factory,NM NM N,2
-child Statement,NM N,5
-Attribute,N,2
-set dot,V N,4
-Less Dummy Gui Helper,NM NM NM N,2
-accelerometer Data,NM N,5
-read Pass,V N,4
-base transform,NM N,3
-rconde,N,5
-get Number Of Transitions,V N P NPL,4
-diff fd,NM N,2
-parameter Assignment,NM N,5
-actual,N,5
-delay agnostic enabled,NM N V,1
-settings,NPL,5
-Cipher Suite,NM N,2
-ID LUMNINANCE MIN,NM NM N,1
-pre Map,P N,5
-in Order Wrapped Verification Mode,P N NM NM N,1
-read Element Text Span,V NM NM N,4
-OF Android Object,PRE NM N,2
-mt,N,3
-get Diffuse Colour,V NM N,4
-set Protocol Method,NM NM N,5
-sub flags to forward,NM NPL P N,3
-do Install Status,V NM N,4
-failed Assumptions With Message,V NPL P N,4
-depth cb,NM N,1
-bt Collision Shape,PRE NM N,2
-optimize Identity Cast Composition,V NM NM N,4
-OP CODE CONTINUATION,NM NM N,1
-rules Of New Chain,N P NM N,3
-total Merge Throttled Time,NM NM NM N,1
-set Tiling,V N,4
-get Id For Name,V N P N,4
-content Type String,NM NM N,5
-UNKNOWN WORD,NM N,1
-the Class,DT N,5
-m transform Change Args,PRE NM NM NPL,1
-palette size,NM N,5
-in,N,5
-enable Materials,V NPL,4
-left Sisters Buffer,NM NM N,3
-bean Configs,NM NPL,1
-scale and add to,V CJ V P,4
-movie Media Handler,NM NM N,3
-method Name Prefixes,NM NM NPL,5
-Web Socket Listener,NM NM N,2
-EGLEW ANDROID frame buffer target,PRE PRE NM NM N,1
-b3 Push Profile Timing,PRE V NM N,4
-call Id,NM N,5
-curr Thread Exception,NM NM N,3
-JFlex Dummy Lexer,PRE NM N,2
-C At Grayscale,PRE NM N,2
-get down sampling rate,V NM NM N,4
-actual Count,NM N,1
-TEGRA MORPH INIT,PRE N V,4
-min Fresh Seconds,NM NM NPL,5
-map json adapter,V NM N,1
-REFRESH INTERVAL IN MILLIS,NM N P NPL,1
-INVALID,NM,1
-flags Classifier Pair,NM NM N,5
-initial delay milliseconds,NM NM NPL,5
-Inverse Dynamics Example,NM NM N,2
-GET SOURCE NAME,NM NM N,1
-data Point Method,NM NM N,5
-session Config,NM N,4
-runner Factory,NM N,5
-C At Background Color,PRE NM NM N,2
-depth Stencil As Texture,NM N P N,1
-state,N,3
-key with newline not permitted,N P N VM V,4
-m angle,PRE N,1
-Mention Detection Evaluator,NM NM N,2
-Maps,NPL,2
-encoded Values,NM NPL,5
-cmd Str,NM N,5
-make extractor,V N,4
-previous Stream Id,NM NM N,3
-learned Lop Expert Weights 2 D,NM NM NM NPL D N,5
-num Files,NM NPL,5
-set sphere resolution,V NM N,4
-Read Text File,V NM N,4
-inet Socket Address,NM NM N,1
-m origin,PRE N,3
-s Tracking System Name,PRE NM NM N,3
-id Mention,N NM,3
-n Shininess,NM N,5
-backprop Training,NM N,5
-selected Account,NM N,1
-max Age Seconds Long,NM NM NPL NM,3
-client Number,NM N,1
-Method Sorter,NM N,2
-Multiple Failure Exception,NM NM N,2
-describe Mismatch Safely,V N NM,4
-H Wnd,N NM,1
-in buffer,NM N,5
-Slack Client,NM N,2
-sz Joint Ranges,NM NM NPL,3
-IS FIRST CAPITAL,V NM N,1
-CRF Non Linear Log Conditional Objective Function,NM NM NM NM NM NM N,2
-rate Pointer,NM N,5
-m FBO Height,PRE NM N,1
-image,N,3
-b Multi Fullscreen,PRE NM N,5
-get Max Shingle Diff,V NM NM N,4
-Parameter Signature,NM N,2
-Arabic Segmenter,NM N,2
-OF Android Window,PRE NM N,2
-mx Bean,NM N,3
-follow Component,V N,4
-core,N,1
-get Initial Window Size,V NM NM N,4
-inbound,NM,5
-rcp len 2,NM N D,3
-encoded Path Segments,NM NM NPL,1
-followUp,N,3
-set from aligned pixels,V P NM NPL,4
-exception Channels,NM NPL,1
-last Gradient,NM N,4
-ori W,NM N,3
-equals Offset,NM N,3
-Max Core,NM N,2
-network Security Policy,NM NM N,3
-Parallel Computer,NM N,2
+existing symlink,NM N,5
+Ko Section End Private,PRE NM N NM,2
+res Width,NM N,5
+Default Injection Engine,NM NM N,2
+get Operations Reads,V NM NPL,4
+pi Hash,PRE N,5
+num Outs,NM NPL,1
+Stroke Attribute alpha get,NM NM N V,4
+Layout Data,NM N,2
+parse Max Age,V NM N,4
+reader Flags,NM NPL,5
+dst Saturation,NM N,3
 global Scope,NM N,4
-png read IDAT data,NM V NM N,4
-q tail,NM N,1
-base Category,NM N,3
-kinects Copy,NM N,3
-stack,N,1
-rt Stream Ptr,NM NM N,3
-get PID No Exceptions,V N DT NPL,4
-push Reset Later,V N VM,4
-parse Expires,V NPL,4
-bt Material,PRE N,2
-Assertion Failed Error,NM NM N,2
-Patterns Annotations,NM NPL,2
-rotate desc,NM N,1
-avg Map,NM N,3
-max Num Pixels,NM NM NPL,3
-client Certificates,NM NPL,3
-minimized Random FA,NM NM N,3
-Vertex Position,NM N,2
-register With Volatility Spread,V P NM N,4
-Post File,NM N,2
-find syntactic head,V NM N,4
-apply Margin Insets,V NM NPL,4
-Print Events,NM NPL,2
-size contents,NM NPL,5
-file Channel,NM N,5
-convex Shapes,NM NPL,5
-multiply in front,V P N,4
-quad Bezier To,NM N P,4
-b Flip Horizontally,PRE V VM,5
-actual Suffix,NM N,3
-tune Treebank,NM N,3
-message,N,5
-cone translation,NM N,3
-free texture,NM N,1
-r hdr,NM N,3
-training Examples,NM NPL,4
-array Class,NM N,5
-headers,NPL,5
-PARENT,N,1
-reset seated zero pose,V NM NM N,1
-x 2,N D,3
-eglew Create Platform Window Surface,PRE V NM NM N,1
-present Scaling,NM N,3
-m Preview Started,PRE N NM,1
-want x,V N,5
-force network,NM N,1
-move RBT surgeon,NM NM N,1
-key Events Copy,NM NM N,3
-get children,V NPL,4
-build sentence from tokens,V N P NPL,4
-m Line Dash Offset,PRE NM NM N,1
-Temporary Folder,NM N,2
-labels File,NM N,5
-validate Class Rules,V NM NPL,4
-Rolling Friction Demo,NM NM N,2
-Run After Params,V NM NPL,2
-best Node,NM N,3
-num States,NM NPL,3
-check T,V N,4
-m contact Motion 1,PRE NM N D,1
-Rule Member Validator,NM NM N,2
-Chinese Treebank Parser Params,NM NM NM NPL,2
-assigns,NPL,5
-tex ID,NM N,5
-Voronoi Fracture Demo,NM NM N,2
-outer Rule,NM N,5
-notify Touch Down,V NM N,4
-credentials,NPL,2
-unpack texture Blend Func,V NM NM N,4
-z probs,NM NPL,5
-Segmenter Core Annotations,NM NM NPL,2
-User 2 Internal Index,N P NM N,2
-mesh scale,NM N,5
-Rule Chain,NM N,2
-Form Body,NM N,2
-pickup,N,1
-get label,V N,4
-Internal,NM,2
-world To Screen,N P N,4
-promises,NPL,5
-factory Class,NM N,3
-Disk Lru Cache,NM NM N,2
-sub start,NM N,3
-Value Label,NM N,2
-Http1 Exchange Codec,NM NM N,2
-H pack,NM N,2
-number Elementary Vegas,NM NM NPL,1
-num cols,NM NPL,1
-OAuth Session,NM N,2
-LATENCY ARG,NM N,1
-out table,NM N,5
-get Controller Transform,V NM N,4
-num Verts In A,NM NPL P N,3
+attribute Decls,NM NPL,1
+Cpp Generator Services,NM NM NPL,2
+MP4 Input,NM N,2
+f m m,NM NM N,3
+bytes Received,NPL NM,1
+parser Errors,NM NPL,1
+projects Dir,NM N,5
+Bounding Radius,NM N,1
+resamplers,NPL,1
+get Jf,V N,4
+gimp value set int32 array,PRE N V NM N,4
+grpc json writer value string,PRE NM NM NM N,4
+I Read File,NM NM N,2
+f Ptr Out,PRE NM N,3
+is Conscrypt Preferred,V N V,4
+Cipher Suite,NM N,2
+param Def,NM N,3
+gimp selection tool class init,PRE NM NM N V,4
+final Response,NM N,5
+logger Name Parts,NM NM NPL,3
+content Type String,NM NM N,5
+Output Delegate Private,NM N NM,2
+default look,NM N,3
+Expected Exception,NM N,2
+befores,NPL,1
+add Bias To Embedding,V N P N,1
+auth Result,NM N,5
+language To Rules Files,N P NM NPL,1
+max scale f,NM NM N,5
+Set Add Faces Points,V V NM NPL,4
+WSDLS Solver,NM N,2
+Label Drawing Widget,NM NM N,2
+worst score,NM N,3
+UNKNOWN USERNAME,NM N,1
+var Args,NM NPL,3
+extract Raw Type Of,V NM NM P,4
+f Tolerance,NM N,5
+Check Writeable,V NM,4
+File,N,1
+on Group Call Key Sent,P NM NM N NM,4
+Clause Matrix,NM N,2
 child Categories,NM NPL,3
-Bitmap Data Size,NM NM N,1
-glyph ID,NM N,3
-theory,N,4
-inertial Frame,NM N,3
-to XYZ,P N,3
-Rest Client,NM N,2
-rtm Session,NM N,3
-planes,NPL,5
-from Local Aabb Min,P NM NM N,3
-edit count,NM N,1
-LOGGER,N,1
-get Message,V N,4
-save As Quadratic Png,V P NM N,4
-source,N,5
-OF Orientation Listener,PRE NM N,2
-Category Filter Factory,NM NM N,2
+current Invocation,NM N,5
+num cols,NM NPL,1
+num metadata,NM N,3
+flags Classifier Pair,NM NM N,5
+Store,N,2
+JFlex Dummy Lexer,PRE NM N,2
+Call Error Extensions,NM NM NPL,2
+Problem Reporter Factory,NM NM N,2
+on connect,P N,5
+copy Item,NM N,3
+Run Before Params,V NM NPL,2
+Op Pool,NM N,2
+cp 1254,N D,3
+after Channel,P N,4
+block Nr,NM N,5
+with Cms Leg Rule,P NM NM N,4
+x origin,NM N,1
+Maps,NPL,2
+Sub Module Name Visibility Pairs,NM NM NM NM NPL,1
+png get unknown chunks,NM V NM NPL,4
+Tuple LValue Emitter,NM NM N,2
+verification Started,N V,4
+obj Proj,NM N,3
+reset Meta Class Cache,V NM NM N,4
+point index,NM N,5
+Executor,N,2
+grouping,N,5
 Cache Strategy,NM N,2
-num axis events,NM NM NPL,1
-get Raw Arguments,V NM NPL,4
-set tracking space,V NM N,1
-data Buf,NM N,3
-split Argument List,V NM N,4
-flag,N,1
-folder Names,NM NPL,5
-sqrt per elem,V P N,4
-cookie,N,2
-includes New,NM NM,3
-max Requests Per Host,NM NPL P N,5
+new Sil Type,NM NM N,3
+gimp eraser default,PRE N NM,4
+literal Bucket,NM N,5
+line 1 grad,NM D N,3
+transform Unique Id,NM NM N,3
+selected Account,NM N,1
+active Tool Id,NM NM N,3
+Node Shape,NM N,2
+null Passed To Verify No More Interactions,N V P V VM DT NPL,4
+parent Had Big Change,N V NM N,5
+pnm load raw pfm,NM V NM N,4
+Handle If,V CJ,4
+simple Fn Ty,NM NM N,3
+do Forward,V V,4
+C Archive Loader TAR,PRE NM N NM,2
+next Search,NM N,3
+previous Caption,NM N,1
+line index mask len,NM NM NM N,5
+Dispatch Paint Mask,NM NM N,2
+calc LUT,V N,4
+raw Arguments,NM NPL,1
+atn State,NM N,3
+in SCC,P N,4
+cookie Jar,NM N,1
+call Id,NM N,5
+attrs,NPL,3
+D mat,NM N,5
+require Client Auth,V NM N,4
+read Pass,V N,4
+encoded Values,NM N,5
+bibliography Type,NM N,5
+source index,NM N,3
+core,N,1
+time range,NM N,5
+Null Program,NM N,2
+check Next,V N,3
+maximize All,V DT,4
+metadata Snapshot,NM N,4
+byte Array View,NM NM N,5
+cache Body Unbuffered,NM N NM,3
+num Vec Per Segment,NM N P N,3
+undiscounted Amount,NM N,5
+active Copies,NM NPL,1
+Controller Value,NM N,2
+RUN DIST CMD PROP,NM NM NM N,1
+first Space,NM N,3
+send Serial Config,V NM N,4
+min Fresh,NM N,5
+validate Class Rules,V NM NPL,4
+REPL Module,NM N,3
 sort Field Data Type,NM NM NM N,1
+aead crypter seal,NM NM N,3
+destroy with parent,V P N,5
+Content Path,NM N,2
+win Error,NM N,3
+edit count,NM N,1
+set Prev Ctx Action,V NM NM N,3
+reference Index Meta Datas,NM NM NM NPL,1
+max File Open,NM N NM,1
+client,N,1
+Workspace File Mask,NM NM N,2
+new Field Type,NM NM N,5
+Const Parameter Float,NM NM N,2
+default,N,5
+Bridged Value Fun Arg,NM NM NM N,5
+b Flip Horizontally,PRE V VM,5
+bind Matrix,NM N,3
+full path,NM N,5
+desktop Size,NM N,5
+times To Append Last Matcher,NPL P V NM N,5
+ambient,N,1
+V URL Encode,PRE N V,4
+Value Label,NM N,2
+expected String,NM N,3
+sorted Indices Buf,NM NM N,5
+present Scaling,NM N,3
+Video Capture DShow,NM NM N,2
+binary Search Bytes,NM N NPL,4
+declare Component,V N,4
+feature Iterator,NM N,3
+Voronoi Fracture Demo,NM NM N,2
+led Color,NM N,5
+color Conversion System,NM NM N,1
+current median,NM N,5
+cms Pricer,NM N,3
+wrap If Not Thread Safe,V CJ VM NM N,4
+LATENCY ARG,NM N,1
+Delete Input,V N,4
+CODES,NPL,1
+ya Bottom,NM N,1
+File Path Filter,NM NM N,2
+in Order Wrapped Verification Mode,P N NM NM N,1
+New Aggregate Builder Map,NM NM NM N,2
+Data Access Repository Private,NM NM N NM,2
+equals Offset,NM N,3
+next Unassigned,NM NM,4
+eglew Create Platform Window Surface,PRE V NM NM N,1
+coterminal Model,NM N,3
+concrete Follower Indices,NM NM NPL,5
+missing Classes,NM NPL,3
+DEFAULT BLOCKED ITEM COMPARATOR,NM NM NM N,3
+corr QC,NM N,3
+num Factors,NM NPL,5
+Token Type Decl,NM NM N,2
+Is Bridged Argument,V NM N,1
+parts Size,NM N,3
+IMPLICIT GROUP KEY,NM NM N,3
+push Reset Later,V N VM,4
+Get DMF Header,V NM N,4
+bm log,NM N,1
+spline max len,NM NM N,1
+script Event Action Factories,NM NM NM NPL,1
+Caplet Variance Curve,NM NM N,2
+Jnt Array Acc,NM NM N,2
+num axis events,NM NM NPL,1
+followUp,N,3
+effective Style,NM N,4
+always preview,VM V,3
+pre Map,P N,5
+img stub,NM N,3
+is Sum Supported,V N V,4
+tab Overlap,NM N,3
+register With Volatility Spread,V P NM N,4
+Attribute,N,2
+do Print After,V V P,4
+handle Pos,NM N,5
+selection bounds,NM NPL,3
+Get Meta Index,V NM N,4
+backprop Training,NM N,5
+minimized Random FA,NM NM N,3
+len r,NM N,5
+Single Period Timeline,NM NM N,2
+make HTML Table,V NM N,4
+text Chopped 2,N NM D,3
+m text Types,PRE NM NPL,1
+Label Action,NM N,2
+PREF FONT,NM N,1
+wrapped Verification,NM N,5
+b d c,NM NM N,5
+progress out,V N,3
+src start idx,NM NM N,3
+score Pos Prev,NM N NM,3
+Strictness Selector,NM N,2
+unpack texture Blend Func,V NM NM N,4
+Replace Text Context,NM NM N,1
+Cluster Update Settings Response,NM NM NM N,2
+on Item Long Click Listener,P NM NM NM N,1
+Initialize Dual Graph,V NM N,4
+parent field,NM N,5
+cone translation,NM N,3
+retain Function,NM N,5
+create In Indices,V NM NPL,4
+utf8 size,NM N,5
+institution,N,5
+source Ty,NM N,3
+code Point To,NM N P,5
+Dual Con Input Reader,NM NM NM N,2
+exception Channels,NM NPL,1
+is Valid Trailing Closure,V NM NM N,4
+rgb real,NM N,3
+down sample,NM N,5
+parse Expires,V NPL,4
+check Sign,V N,4
+matches Any Parent Categories,V DT NM NPL,4
+reduction Indices,NM NPL,1
+average In Bucket Used Slot Count,N P NM NM NM N,1
+im out shape,NM NM N,1
+idp Configuration,NM N,3
+read subframe,V N,4
+get Top Border Size,V NM NM N,4
+learned Lop Expert Weights 2 D,NM NM NM NPL D N,5
+get Red Adjust 2,V NM N D,4
+Camera Data,NM N,2
+Handshake Mode,NM N,2
+q tail,NM N,1
+time spec,NM N,1
+last Saved Step,NM NM N,1
+Contextualize Closures,V NPL,2
+Cbor X Content,NM NM N,2
+target chars,NM NPL,3
+glew Validate Program Pipeline,PRE V NM N,1
+strength,N,5
+pybullet compute View Matrix,PRE V NM N,4
+find Hashable Base Type,V NM NM N,4
+rules Of New Chain,NPL P NM N,3
+fixed Cam,NM N,3
+comparison Value,NM N,5
+Image Manager,NM N,2
+m reference,PRE N,1
+render result exr file end,V NM NM NM N,4
+flag,N,1
+remap Nearest Neighbor,V NM N,4
+super Method,NM N,5
+interface Bounds,NM NPL,3
+request bytes,NM NPL,3
+DEFAULT FACTORY,NM N,1
+dialog info update,NM N V,4
+label Regex,NM N,1
+Struct Ty,NM N,1
+order With,V P,3
+GLX Configurator,NM N,2
+Shift Reduce Train Options,NM NM NM NPL,2
+link URL,NM N,3
 Runner Scheduler,NM N,2
+MINIMUM SUPPORTED VERSION,NM NM N,2
+parse Attribute Def,V NM N,4
+simulate GC,V N,4
+event 0,N D,3
+locations,NPL,1
+label casefold,NM N,3
+group Boxes,NM NPL,1
+ori W,NM N,3
+format Display Name,V NM N,4
+verification Over Time,N P N,3
+mkt Factors,NM NPL,5
+own flags,NM NPL,5
+min Font Size,NM NM N,1
+assign Lexer Token Types,V NM NM NPL,4
+src File Info,NM NM N,3
+UNRESTRICTED,NM,1
+in Cache,P N,3
+repress Ref At Loc,V N P N,4
+typed Array,NM N,5
+cache file,NM N,5
+sin rot w,NM NM N,3
+from Server,P N,5
+start Dirs,NM NPL,5
+is Friend,V N,5
+presentation Start From First,N V P NM,4
+row limit,NM N,1
+get Actual Values,V NM NPL,4
+b Loop,PRE N,1
+noise 1,N D,3
+add Unicode Script Codes To Names,V NM NM NPL P NPL,4
+move RBT surgeon,NM NM N,1
+open Class Tags,NM NM NPL,3
+sentence List,NM N,3
+next Giphy Search Offset,NM NM NM N,1
+validate Public Static Void Methods,V NM NM NM NPL,4
+ADDRESS TYPE IPV4,NM NM N,1
+MORE,DT,1
+build Lexer Rule Actions,V NM NM NPL,4
+relative contrast,NM N,5
+float Day Counter,NM NM N,1
+dump Frame buffer Formats,V NM NM NPL,4
+dump cemd cmd,V NM N,4
+TIFF Get Size Proc,NM V NM N,4
+Change Scroll,V N,2
+Alt And Context Config Equality Comparator,N CJ NM NM NM N,2
+cmd Lines,NM NPL,3
+C Skinned Mesh,PRE NM N,2
+Parallel Computer,NM N,2
+Ko Rgb U8 Invert Color Transformation,PRE NM NM NM NM N,2
+sqlite3 session config,PRE N V,4
+all Invocation Matchers,DT NM NPL,3
+EGLEW ANDROID frame buffer target,PRE PRE NM NM N,1
+frame pixel coords,NM NM NPL,5
+output array,NM N,5
+method Handles,NM NPL,3
+check Not Local,V VM N,4
+X dnd Type List,NM NM NM N,1
+TIFF Current Tile,NM NM N,4
+png get row bytes,NM V NM NPL,4
+nbr gaps,NM NPL,3
+dst Type 1,NM N D,3
+new Verification Mode,NM NM N,5
+Convert To Php Namespace,V P NM N,4
+original Mocking Details,NM NM NPL,1
+debug policy,NM N,1
+gimp status bar progress canceled,PRE NM NM N V,4
+Slack Client,NM N,2
+Default Ssl Roots Override,NM NM NPL NM,2
+labels File,NM N,5
+number Elementary Vegas,NM NM NPL,1
+depth Stencil As Texture,NM N P N,1
+Rule Member Validator,NM NM N,2
+left Sisters Buffer,NM NM N,3
+underlying Fx Correlation,NM NM N,5
+extract Events,V NPL,1
+tagged Resources,NM NPL,3
+curvatures height,NM N,5
+colored Count,NM N,1
+C File Read Callback,PRE NM NM N,2
+char strings,NM NPL,1
+End Snapshot,NM N,5
+operator Method Decls,NM NM NPL,5
+trade Price,NM N,1
+write Root,V N,5
+save Dual Cells,V NM NPL,5
+extra Inhabitants Mask,NM NM N,3
+new Warning Header Size,NM NM NM N,3
+radius,N,5
+Stochastic Process,NM N,2
+m last Changed Location,PRE NM NM N,1
+scene Node Type Name,NM NM NM N,5
+get Raw Arguments,V NM NPL,4
+C At Font,PRE NM N,2
+OAuth Session,NM N,2
+Color Map,NM N,2
+cell Cursor,NM N,3
+max basket,NM N,3
+Disk Lru Cache,NM NM N,2
+mock Method,NM N,3
+in buffer,NM N,5
+get Completed,V NM,4
+frame,N,5
+echo path change,V NM N,5
+action To Index Map,N P NM N,1
+set Canonical Mention Begin,V NM NM N,4
+actual Suffix,NM N,3
+is Trained,V V,3
+tool View Position,NM NM N,4
+Http1 Exchange Codec,NM NM N,2
+reapply Filter,V N,4
+fixed Leg Frequency,NM NM N,3
+passphrase,N,3
+from Local Aabb Min,P NM NM N,3
+mapped labels,NM NPL,3
+method Name Prefixes,NM NM NPL,5
+m is indx present,PRE V NM N,1
+all Stubbings,DT NPL,1
+m First Render Queue,PRE NM NM N,1
+m post Fix,PRE NM N,1
+executors,NPL,3
+raw nor,NM N,3
+Tree Element,NM N,2
+gimp canvas rectangle set property,PRE NM N V N,4
+txt alias,NM N,3
+face index,NM N,3
+brush Hatch,NM N,5
+previous Index,NM N,5
+with Web Socket Upgrade,P NM NM N,4
+search Profile Results,NM NM NPL,5
+TEGRA MORPH INIT,PRE N V,4
+on Implies,P V,4
+w Width,NM N,1
+D obj Points,NM NM NPL,2
+animations Data,NM NPL,5
+inertial Frame,NM N,3
+save As Quadratic Png,V P NM N,4
+current Sequence,NM N,3
+Dispatch Mask Buffer Iterator,NM NM NM N,2
+is Stdlib Module,V NM N,4
+m sbuf,PRE N,1
+bt Collision Shape,PRE NM N,2
+List Level,NM N,2
+Post Script Document,NM NM N,2
+Build Wrapper,NM N,2
+worker Thread Wait,NM N V,4
+Mock Creation Validator,NM NM N,2
+Parameter Signature,NM N,2
+number Str,NM N,5
+node find output by name,N V N P N,4
+num Active Contexts,NM NM NPL,5
+session Config,NM N,4
+wrapper Class,NM N,3
+mark As Fetching,V P V,4
+f curve Found,NM N V,3
+num Keys,NM NPL,5
+base transform,NM N,3
+key Events Copy,NM NM N,3
+new Y,NM N,1
+verification Strategy,NM N,1
+get Binary Side,V NM N,4
+num Verts In A,NM NPL P N,3
+is Blocked By Shutdown,V V P N,4
+str args,NM NPL,3
+C Image,PRE N,2
+Ko Main Window Private,PRE NM N NM,2
+separator Color,NM N,5
+Current Scene Node,NM NM N,1
+get Phrase 1,V N D,4
+DEFAULT FLAGS,NM NPL,1
+Process,N,2
+uuid,N,1
+GET SOURCE NAME,NM NM N,1
+first type label,NM NM N,5
+fine priority,NM N,5
+runtime Mx Bean,NM NM N,1
+get Failure Timestamp,V NM N,4
+nd Formula,NM N,3
+update Mouse Pos,V NM N,4
+GEN SUBJ,NM N,1
+html File,NM N,5
+risky Annuity,NM N,1
+remove Imported Parent Contexts,V NM NM NPL,4
+state To Grammar Region Map,N P NM NM N,1
+outer Rule,NM N,5
+lp Binary Path Name,PRE NM NM N,5
+y In,NM N,5
+finished Normally,V VM,3
+f Context Length,PRE NM N,1
+read Element Text Span,V NM NM N,4
+buffers,NPL,1
+set Invert,V N,4
+C http2 Connector,PRE NM N,2
+docking Area,NM N,5
+C Image Writer JPG,PRE NM N NM,2
+merged Type,NM N,3
+m zoom Controller,PRE NM N,1
+tbl index,NM N,5
+Cq Event Queue,NM NM N,2
+Env Vars Slave Info Display Name,NM NM NM NM NM N,2
+Record Header,NM N,2
+BUCKETS PATH FIELD,NM NM N,1
+Frame 2,N D,2
+App ID,NM N,5
+set Frame Pen,V NM N,4
+Scroll Id For Node,NM N P N,2
+get PID No Exceptions,V N DT NPL,4
+Area Info Dialog t,NM NM NM N,2
+ios,N,5
+PAI Arg,NM N,3
+Category Filter Factory,NM NM N,2
+add Object Index,V NM N,4
+bone Positions,NM NPL,5
+Patterns Annotations,NM NPL,2
+tmp vec,NM N,3
+shift Values,NM NPL,1
+read Response,V N,4
+m Resources,PRE NPL,1
+new image height,NM NM N,3
+EMBEDDED VERSION,NM N,1
+skip Whitespace And Commas,V N CJ NPL,4
+print label flag,NM NM N,5
+cache Entity,NM N,3
+Basic Replication Request,NM NM N,2
+folder Names,NM NPL,5
+curr Thread Exception,NM NM N,3
+tot channel,NM N,1
+inflation Leg NPV,NM NM N,4
+is Dependency Changed,V N V,4
+indexes Of Suspicious Args,NPL P NM NPL,3
+compare Inverse And Forward Dynamics,V NM CJ NM NPL,4
+requested Plugins,NM NPL,3
+n d,NM N,1
+cap Times,NM NPL,3
+Get Related View Data Row Double,V NM NM NM N NM,4
+Heat Vision Listener,NM NM N,2
+notify Touch Down,V NM N,4
+build time minor,NM NM N,5
+current Filename,NM N,1
+nonce length,NM N,1
+height int,NM N,1
+Setting Manager,NM N,2
+target Started,N V,4
+usage,N,5
+OF Android Object,PRE NM N,2
+f Matcher,PRE N,1
+sanitize Path,V N,4
+pd Sum,NM N,3
+layer mask source node,NM NM NM N,1
+all Open Files String,DT NM NM N,4
+H Wnd,N NM,1
+User 2 Internal Index,N P NM N,2
+extract Component,V N,4
+mx Bean,NM N,3
+z p i,NM NM N,5
+Ko Path Point Remove Command Private,PRE NM NM NM N NM,2
+odf Symbol Type,NM NM N,1
+IS FIRST CAPITAL,V NM N,1
+l b layer,NM NM N,5
+client Certificates,NM NPL,3
+anchor Name,NM N,3
+check Not Interface,V VM N,4
+INVALID HOST,NM N,1
+read White Space,V NM N,4
+dst map 2,NM N D,5
+SINH,N,2
+wait Until,V P,3
+Returns Empty Values,V NM NPL,2
+pixel Width,NM N,1
+addr,N,5
+Nav Visible,N NM,1
+breakpoint,N,1
+Added Unicode Smp,NM NM N,1
+arg Mismatch Stubbings,NM NM NPL,5
+Reference Range,NM N,5
+skip Vetoes,NM NPL,1
+dispose,N,5
+avg 1,N D,3
+delete,V,4
+yield MVs,NM NPL,5
+Is Indirect Result,V NM N,1
+locking,V,5
+write tcp data,V NM N,4
+throw Provision Exception If Errors Exist,V NM N CJ NPL V,4
+platform String,NM N,3
+mock Creation Settings,NM NM NPL,5
+question AST,NM N,5
+Timelapser,N,2
+byte Count,NM N,3
+dividend Discount Mother,NM NM N,4
+highlighter,N,5
+p global info 32,PRE NM N D,5
+Top NGram Record,NM NM N,2
+all Factors,DT NPL,5
+Left Recursive Rule Function,NM NM NM N,2
+File Operator,NM N,2
+strip Left Recursion,V NM N,4
+Action Translator,NM N,2
+X scale,NM N,1
+rotate desc,NM N,1
+r hdr,NM N,3
+build Timestamp,NM N,1
+D3D11 Unsupported Gpu Program,NM NM NM N,2
+will Return Last Parameter,V V NM N,5
+default instance void,NM NM N,1
+max Requests Per Host,NM NPL P N,5
+optimize Identity Cast Composition,V NM NM N,4
+video chunk cb,NM NM N,1
+generate Rule Bypass Transitions,V NM NM NPL,3
+Segmenter Core Annotations,NM NM NPL,2
+previous Initial Value,NM NM N,5
+Run After Params,V NM NPL,2
+ssl creds,NM NPL,3
+Reserve Fn,NM N,5
+inner Alpha,NM N,1
+BLI str r strip,PRE N VM V,4
+Arabic Segmenter,NM N,2
+n repeats,NM NPL,3
+visit SIL Argument,V NM N,4
+rets,NPL,5
+element spec,NM N,3
+num Tess Face Data,NM NM NM N,1
+Ares Dns Resolver,NM NM N,2
+error Mark Type,NM NM N,3
+actual Count,NM N,1
+extra Interfaces,NM NPL,3
+Get Longitude,V N,4
+parent Pairs,NM NPL,4
+Dialog Elements,NM NPL,2
+get Id For Name,V N P N,4
+size Guess,NM N,3
+end Of Input,N P N,3
+Explicit Euler Scheme,NM NM N,2
+handled Boxes,NM NPL,1
+property Interval Set,NM NM N,5
+last Gradient,NM N,4
+idle Delay,NM N,1
+alternative Cache Name,NM NM N,5
+pronoun,N,5
+ico load layer,PRE V N,4
+is First Frame,V NM N,1
+Quote,N,2
+enum Count,NM N,3
+rem F,NM N,3
+path With Native Separators,N P NM NPL,4
+set Protocol Method,NM NM N,5
+Float,N,4
+next Fragment Expression,NM NM N,3
+utc Timestamp Ms,NM NM NPL,3
+is canon,V N,4
+forked iter,V N,3
+append Python Style Escaped Code Point,V NM N NM NM N,4
+Accessor Conformance Info,NM NM N,2
+Mockito Assertion Error,PRE NM N,2
+Lsm Basis System,NM NM N,2
+palette size,NM N,5
+Replacement Length,NM N,1
+rt Stream Ptr,NM NM N,3
+Mask Components,NM NPL,2
+color Map,NM N,5
+uncompress If Needed,V CJ V,4
+check T,V N,4
+dependencies ST,NM N,3
+use Shadows 1,V NPL D,5
+enable Background Opacity,V NM N,4
+CRF Non Linear Log Conditional Objective Function,NM NM NM NM NM NM N,2
+mtx,N,1
+Stubbing Comparator,NM N,2
+Binary Rule,NM N,2
+Internal,NM,2
+gimp image file get thumbnail,PRE NM N V N,4
+name Container,NM N,1
+m FBO Height,PRE NM N,1
+m count Activities,PRE NM NPL,1
+C At Grayscale,PRE NM N,2
+Apply Rewriter,NM N,2
+ID LUMNINANCE MIN,NM NM N,1
+field Offset Vector,NM NM N,3
+certificate Chain Cleaner,NM NM N,1
+Read Bitstream,V N,2
+current Prefix,NM N,5
+x Distance,NM N,3
+validate On,V P,5
+Combine Paint Mask To Canvas Buffer To Paint Buf Alpha,NM NM N P NM N P NM NM N,2
+print t,V N,5
+m Line Dash Offset,PRE NM NM N,1
+Read Text File,V NM N,4
+get Error Listeners,V NM NPL,4
+bean Configs,NM NPL,1
+set Layer Texture Name,V NM NM N,4
+received Token Signature,NM NM N,3
+RS Compute Operation,NM NM N,2
+best b,NM N,3
+set Tiling,V N,4
+prev num hooks,NM NM NPL,3
+pen Loaded,N V,5
+biggest Constructor,NM N,4
+m remove User Data Response Args,PRE NM NM NM NM NPL,1
+Render Text,V N,4
+provider Code,NM N,3
+Num,N,2
+Ko Shadow Style Private,PRE NM N NM,2
+verifier get mapping,N V N,4
+HDR Listener,NM N,2
+factory Class,NM N,3
+new Rule Text,NM NM N,3
+create metadata array,V NM N,4
+force Direct,V N,5
+sub start,NM N,3
+Project Controller Private,NM N NM,2
+keep Aspect,V N,1
+Layer Parameter,NM N,2
+have Mask,V N,3
+GL Config Attribs,PRE NM NPL,2
+Token Property Ref,NM NM N,2
+layer sizes,NM NPL,3
+Transport Shard Refresh Action,NM NM NM N,2
+key Begin,NM N,3
+Pointer Map,NM N,2
+world To Screen,N P N,4
+with Market Rate Accuracy,P NM NM N,4
+dump Core Map To String Builder,V NM N P NM N,4
+get Default Atlasing Attributes,V NM NM NPL,4
+ATOM,N,1
+keep Readability Only On Descendants,V NM VM P NPL,4
+discount Factor,NM N,5
+LVL Currency,NM N,2
+gimp filter tool set gyroscope,PRE NM N V N,4
+rotation Per Second,N P N,5
+Base Loader Callback,NM NM N,2
+cmd Str,NM N,5
+mod Iface,NM N,3
+Num Active Tris,NM NM NPL,1
+other Data Len Bits,NM NM NM NPL,1
+ambient coefficient,NM N,5
+st lib,NM N,1
+filter Spec,NM N,3
+set Display Index,V NM N,4
+built Url,NM N,5
+child Statement,NM N,5
+Get XCR 0,V N D,4
+C At Background Color,PRE NM NM N,2
+get Msg Send Super Ty,V NM NM NM N,4
+get Diffuse Colour,V NM N,4
+Web Socket Listener,NM NM N,2
+Task Impl,NM N,2
+Bucket Collector,NM N,2
+items per second,NPL P N,3
+other side x,NM NM N,1
+token Type S,NM NM N,3
+caching Mock Bytecode Generator,NM NM NM N,1
+Tile Parameter Default Type Internal,NM NM NM N NM,2
+packet sent,NM N,1
+remote Cluster Names,NM NM NPL,5
+Tsurgeon Parse Exception,NM NM N,2
+unload Textures,V NPL,4
+TYPE TEST RULE,NM NM N,1
+calibration Phase,NM N,1
+melanin ofs,NM N,3
+rgb 2 rgb565,N P N,4
+Reset Token Stats,V NM NPL,4
+trim Parse Trees,V NM NPL,3
+Globals As Members Table Reader Info,NPL P NPL NM NM N,2
+running Log Average,NM NM N,3
 Clock,N,2
-circle Mesh,NM N,1
-supplier Class,NM N,5
-child joint,NM N,5
-f context length,NM NM N,1
+token Within Action,N P N,5
+previous Is Valid,N V NM,5
+match By IP,V P N,4
+File System Archive,NM NM N,2
+tcp Slave Agent Listener Lock,NM NM NM NM N,1
+OF Android Window,PRE NM N,2
+Main Class,NM N,2
+Container Tab Bar,NM NM N,2
+chosen Overrides,NM NPL,1
+inverted Direction,NM N,3
+Remoting Diagnostics,NM NPL,2
+suppress File,V N,5
+training Examples,NM NPL,4
+m contact Motion 1,PRE NM N D,1
+ARGB Subtract Row C,N V NM N,4
+selection width label,NM NM N,1
+EGLEW KHR stream fifo,PRE PRE NM N,1
+Step No,NM N,1
+OF Android Life Cycle Helper,PRE NM NM NM N,2
+env Name,NM N,5
+Group By Context,N P N,2
+waiting List,NM N,5
+ordered Invocations,NM NPL,5
+two Factor Response,NM NM N,4
+recorded Matchers Size,NM NM N,3
+deep Stub,NM N,4
+Generic Emissive Closure,NM NM N,2
+max width,NM N,1
+str array len,NM NM N,4
+byte Src,NM N,3
+current Slide,NM N,4
+m Preview Started,PRE N NM,1
+labels,NPL,5
+crop node,NM N,1
+update area,NM N,3
+fence,N,4
+m worker,PRE N,1
+generated Token On Creation,NM N P N,3
+network Security Policy,NM NM N,3
+new Files,NM NPL,5
+Write Context,NM N,2
+expect rows,NM NPL,3
+create Sub Buffer,V NM N,4
+id Mention,N NM,3
+Default Mocking Details,NM NM NPL,2
+inv Flight K 2,NM NM N D,3
+of To Binary,PRE P N,4
+statement,N,1
+Mention Detection Evaluator,NM NM N,2
+m is Worker Done,PRE V N NM,1
+Reconstruct Update Callback,NM NM N,2
+Func,N,5
+src Gradient,NM N,5
+Invert Success,V N,1
+binormal type,NM N,3
+default Answer,NM N,1
+tranched Loss After,NM N P,3
+Key Status,NM N,2
+referee Set Map,NM NM N,5
+format OK,N NM,3
+file Descriptor Proto,NM NM N,1
+delay agnostic enabled,NM N V,1
+stream Headers,NM NPL,3
+Refutable Pattern Initialization,NM NM N,2
+next Line,NM N,5
+future Active Doc,NM NM N,3
+status File,NM N,5
+rule Options,NM NPL,1
+emit Address,V N,4
+all action Roots,DT NM NPL,3
+determine Strictness,V N,4
+v proj axis,NM NM N,3
+read Operation,NM N,5
+Response Handlers,NM NPL,2
+grpc chttp2 mark stream writable,PRE PRE V N NM,4
+Compiler Item,NM N,2
+overlap,N,5
+weak Ref Lost,NM NM N,1
+i var Initializer,NM NM N,5
+a pos,PRE N,5
+z probs,NM NPL,5
+Start Slot,NM N,5
+PARENT,N,1
+b3 Push Profile Timing,PRE V NM N,4
+n vector,NM N,5
+nulls Ok,NPL NM,4
+is V,V NM,5
+Basket Payoff,NM N,2
+AUD Sound envelope,PRE NM N,4
+set Custom Uniform 1 f,V NM N D NM,4
+import G,NM N,5
+set Destructor Callback,V NM N,4
+supported Style,NM N,3
+Mpeg Audio Reader,NM NM N,2
+session Factory,NM N,1
+get Leftmost Descendant,V NM N,4
+Device Handler,NM N,2
+joint Start,NM N,3
+compiling Contexts,V NPL,3
+kinects Copy,NM N,3
+movie Media Handler,NM NM N,3
+Rest Client,NM N,2
+one Document,NM N,3
+angle In Radian,N P N,3
+code Exception Message,NM NM N,3
+with Charset,P N,4
+resize Nearest Neighbor,V NM N,4
+run Methods,V NPL,4
+z weight,NM N,1
+Pass Machine Instructions,NM NM NPL,5
+is Generic Type Disambiguating Token,V NM NM NM N,4
+Completion Handler I Unary Response Client Callback,NM N NM NM NM NM N,1
+Fd Black Scholes Vanilla Engine,NM NM NM NM N,2
+url From Json,N P N,4
+default Role,NM N,5
+classfile Buffer,NM N,5
+put Watch Request,NM NM N,5
+inet Socket Address,NM NM N,1
+line Y,NM N,3
+Tree Post Script Generator,NM NM NM N,2
+subroutine Slot Name,NM NM N,5
+OF Orientation Listener,PRE NM N,2
+Add Log To Stream,V N P N,4
+int Hex String,NM NM N,5
+d inf,NM N,3
+find Source Subdir,V NM N,4
+INVALID,NM,1
+value X,NM N,3
+tick Freq,NM N,5
+static Rect,NM N,3
+current Root,NM N,5
+get Protocol Method,NM NM N,5
+bt Material,PRE N,2
+adjusted Gradient,NM N,4
+set Project Naming Strategy,V NM NM N,4
+base Category,NM N,3
+Temporary Folder,NM N,2
+with Rate Bound,P NM N,4
+matcher Builder,NM N,1
+Get Total Disk Space,V NM NM N,2
+Is Return Bridged,V N NM,1
+prim Type,NM N,3
+Bitmap Data Size,NM NM N,1
+progressive,N,5
+split Argument List,V NM N,4
+whole regexp,NM N,1
+class Annotations,NM NPL,4
+stmt Close,N V,4
+default mat x,NM NM N,5
+avg Map,NM N,3
+alt Label Ctxs,NM NM NPL,1
+runner Override,NM N,1
+Server Safe Handle,NM NM N,2
+all Open Indices,DT NM NPL,3
+random Walk,NM N,5
+m Sky Plane Render Queue,PRE NM NM NM N,1
+has Composite Op,V NM N,4
+non Greedy States Builder,NM NM NM N,3
+Mp4 Extractor,NM N,2
+new order,NM N,3
+next func,NM N,5
+total Merge Throttled Time,NM NM NM N,1
+bt Deformable Contact Constraint,PRE NM NM N,2
+File Item Delegate,NM NM N,2
+Detect Leaks,V NPL,1
+Dvb Subtitle Reader,NM NM N,2
+ABC Opt,NM N,2
+breaker Consumer,NM N,5
+loaded mentions count,NM NM N,3
+default open,NM N,5
+num body parts,NM NM NPL,1
+silk bw expander 32,NM NM N D,4
+Quad,N,2
+gimp wire compare,PRE N V,4
+Define,N,2
+excess Workload,NM N,5
+variables,NPL,1
+nullable Class,NM N,5
+session ticket key,NM NM N,1
+mapped color,NM N,5
+get Commit Id,V NM N,4
+png init palette transformations,NM V NM NPL,4
+Clear Active ID,V NM N,4
+get Plane Point,V NM N,4
+rounded Bounds,NM NPL,3
+Piecewise Constant Abcd Variance,NM NM NM N,2
+Icy Decoder,NM N,2
+do Caps,V NPL,5
+Array Count Propagation,NM NM N,2
+f Cos,NM N,3
+append Sequence,V N,4
+prev Property,NM N,1
+parameter Assignment,NM N,5
+Part Document Private,NM N NM,2
+i ar e,NM NM N,5
+use Tabs,V NPL,5
+step Size,NM N,3
+Serialized Form,NM N,2
+free Positions,NM NPL,3
+last Token Was Delete Or Default,NM N V N CJ N,3
+method index,NM N,3
+equals Builder,NM N,3
+num States,NM NPL,3
+Rule Property Ref start,NM NM NM N,2
+build Context,NM N,5
+png get rows,NM V NPL,4
+Abstract Build Execution,NM NM N,2
+Temperature Cauchy 1 D,NM N D NM,2
+do Install Status,V NM N,4
+Deserialization Context,NM N,2
+component Type,NM N,1
+Generate Service Descriptor Property,V NM NM N,4
+REFRESH INTERVAL IN MILLIS,NM N P NPL,1
+Inverse Dynamics Example,NM NM N,2
+Fixed Object,NM N,2
+identifier quark,NM N,3
+RETURNS SELF,V N,1
+filtered Children,NM NPL,1
+Cached Region Tracker,NM NM N,2
+overriden Function It,NM NM N,3
+index Tensor,NM N,5
+Chapter Toc Frame,NM NM N,2
+col Length Left,NM NM N,3
+assigns,NPL,5
+palette poll,N V,4
+sha256 hash,NM N,4
+Class Loaders,NM NPL,2
+Internal FFMpeg Register,NM NM N,2
+out d G,N NM NM,3
+promises,NPL,5
+Text Paint View,NM NM N,2
+Sibling Info,NM N,5
+DOT Generator,NM N,2
+id A,NM N,5
+dep H,NM N,5
+nla invert combine value,NM V NM N,4
+Template Preview Icon Data,NM NM NM NPL,2
+write Node Materials,V NM NPL,4
+in,N,5
+get Controller Transform,V NM N,4
+apply Margin Insets,V NM NPL,4
+order With,V P,4
+Sprites,NPL,1
+Ch,N,3
+rcp len 2,NM N D,3
+inst Results,NM NPL,3
+Log Mixed Linear Cubic Interpolation,NM NM NM NM N,2
+zoom x y,NM N N,5
+Simple Pressure,NM N,2
+the Invocation,DT N,5
+n layers,NM NPL,5
+Geometry Interface,NM N,2
+init For Group,V P N,4
+Vanilla Forward Payoff,NM NM N,2
+validator Strategies,NM NPL,1
+max Draw Buffers,NM NM NPL,4
+get Working Directory,V NM N,4
+min Fresh Seconds,NM NM NPL,5
+setup Bounding Box Vertices,V NM NM NPL,4
+key Frame 2,NM N D,5
+EMPTY DIRECTORY,NM N,1
+Temp Comp Mask,NM NM N,2
+array Class,NM N,5
+Rolling Friction Demo,NM NM N,2
+original Set,NM N,5
+current Charuco Corners,NM NM NPL,3
+Risky Bond,NM N,2
+context Url List,NM NM N,4
+m Shadow Receiver Pass,PRE NM NM N,1
+png do strip channel,NM V V N,4
+get Artificial Op Prec Rule,V NM NM NM N,4
+lower Boundary Factor,NM NM N,4
+RS Stencil Operation,NM NM N,2
+gauss Lobatto Eps,NM NM N,5
+m VS Out Light Position,PRE NM NM NM N,1
+show tags,V NPL,1
+depth cb,NM N,1
+number Of Joysticks,N P NPL,3
+server list,NM N,5
+num groups,NM NPL,1
+img Type,NM N,3
+sz Joint Ranges,NM NM NPL,3
+label Op,NM N,5
+m weaver,PRE N,1
+s Tracking System Name,PRE NM NM N,3
+target,N,5
+user hook 3,NM N D,1
+transform Path,V N,4
+settings,NPL,5
+INITIALIZATION ERROR,NM N,1
+query Timeout In Ms,NM N P NPL,5
+tlv Symbols,NM NPL,1
+temp Attrs,NM NPL,3
+animation box,NM N,3
+build Group Query,V NM N,4
+n Shininess,NM N,5
+tex ID,NM N,5
+stubbing Lookup Listeners,NM NM NPL,1
+enable Materials,V NPL,4
+png read IDAT data,NM V NM N,4
+object With To String,N P P N,4
+max Buffer Size,NM NM N,1
+process Helper,NM N,4
+idx u,NM N,3
+parsing,V,5
+QR Detect,NM N,2
+OAuth Session Factory,NM NM N,2
+convex Shapes,NM NPL,5
+project file,NM N,5
+r,N,5
+b Is Playing,PRE V V,1
+Generic Type Extractor,NM NM N,2
+rgbx 2 bgrx,N P N,4
+named Writeables,NM NPL,5
+Warning Failure Exception,NM NM N,2
+MultiPolygon,N,2
+cause Matcher,NM N,5
+Sei Reader,NM N,2
+accepting Tasks,NM NPL,5
+key sym,NM N,1
+shader data to shader globals,NM NPL P NM NPL,4
+lhs Component,NM N,3
+glew Index Mask,PRE NM N,1
+check GL Support,V NM N,4
+Max Core,NM N,2
+create Duplicate Change Id,V NM NM N,4
+out buf,NM N,5
+rectangle Index,NM N,3
+Link Name,NM N,1
+has View Relative Texture Coordinate Generation,V NM NM NM NM N,4
+img buffer original,NM N NM,1
+layer get composite mode invoker,NM V NM NM N,4
+Lease,N,2
+rate Pointer,NM N,5
+Less Dummy Gui Helper,NM NM NM N,2
+m gpu Rays,PRE NM NPL,1
+Predicate Wrapper,NM N,2
+Child Location,NM N,2
+dynamic Table Byte Count,NM NM NM N,1
+Min Error,NM N,5
+Token Property Ref channel,NM NM NM N,2
+do Login Entry,V NM N,4
+esa,N,5
+max Age Seconds Long,NM NM NPL NM,3
+light Dim,NM N,5
+paint radio,NM N,3
+timeout Task,NM N,5
+polling Log,NM N,5
+Formatted Text,NM N,2
+numbering Path,NM N,3
+SU Time,NM N,2
+get Item Type Descriptor,V NM NM N,4
+b Multi Fullscreen,PRE NM N,5
+need fallback,V N,3
+Command t,NM N,2
+use Atm Spread,V NM N,1
+index To Loc Format,N P NM N,1
+within vertically,P VM,3
+Local Ref,NM N,2
+pem key,NM N,5
+is a empty,V DT N,3
+packet Sample Count,NM NM N,5
+D Bus Proxy,NM NM N,2
+Point 3,N D,2
+set Extra Interfaces,V NM NPL,4
+drift term,NM N,3
+raw Extra Interfaces,NM NM NPL,3
+pickup,N,1
+stack,N,1
+wat id,NM N,3
+best Style,NM N,3
+grpc sock addr make wildcards,PRE NM N V NPL,4
+get Initial Window Size,V NM NM N,4
+nearest point,NM N,3
+start Matched Count Dec,V NM N V,4
+Verification Mode Factory,NM NM N,2
+want x,V N,5
+DEPOT MESSAGE START,NM NM N,3
+key,N,5
+driver Type Name,NM NM N,5
+Rule Version Attribute,NM NM N,2
+EPS,N,5

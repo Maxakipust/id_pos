@@ -76,7 +76,7 @@ def get_data():
 def extract_data():
     data = []
 
-    with open("data/orig_unseen_testing_data.csv", "r+") as infile:
+    with open("data/orig_training_data.csv", "r+") as infile:
         reader = csv.DictReader(infile)
         prevId = ""
         for row in reader:
