@@ -41,6 +41,21 @@ used_tags = [
     'PRE'
 ]
 
+with_unk = [
+    'N',
+    'DT',
+    'CJ',
+    'P',
+    'NPL',
+    'NM',
+    'V',
+    'VM',
+    # 'PR',
+    'D',
+    'PRE',
+    'UNK',
+]
+
 #remove numbers from words
 def cleanUpWord(id):
     try:

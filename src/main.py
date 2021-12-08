@@ -1,6 +1,7 @@
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from numpy.core.numeric import full
+from scipy.sparse import data
 import generate_probs
 import test_model
 import evaluate_pos
@@ -11,6 +12,7 @@ import inflect
 import word2vec_clustering 
 import graph_clustering
 import sys
+import data_extraction
 
 
 #prints a confusion matrix with labels
@@ -18,6 +20,12 @@ def print_confusion(confusion):
     print(pd.DataFrame(confusion, 
         index=list(map((lambda x: 'true:'+x), common.used_tags)), #['true:yes', 'true:no'], 
         columns=list(map((lambda x: 'pred:'+x), common.used_tags)) #['pred:yes', 'pred:no']
+    ))
+
+def print_confusion_with_unk(confusion):
+    print(pd.DataFrame(confusion, 
+        index=list(map((lambda x: 'true:'+x), common.with_unk)), #['true:yes', 'true:no'], 
+        columns=list(map((lambda x: 'pred:'+x), common.with_unk)) #['pred:yes', 'pred:no']
     ))
 
 noun_tags = ["N", "NM", "NPL"]
@@ -77,7 +85,6 @@ def run_new_tagger():
 #runs a bunch of different configs and prints out the results 
 def full_run():
     long = True if len(sys.argv) > 1 and sys.argv[1] == "long" else False
-    print("running base HMM with only global probs")
     orig_training_data = open("data/orig_training_data.csv", "r")
     orig_test_data = open("data/orig_unseen_testing_data.csv", "r")
     base_hmm_global_emission_probs = open("model/baseHMM/global_emission_probs.txt", "w+")
@@ -85,8 +92,16 @@ def full_run():
     base_hmm_context_emission_probs = open("model/baseHMM/context_emission_probs.txt", "w+")
     base_hmm_context_transition_probs = open("model/baseHMM/context_transition_probs.txt", "w+")
     generate_probs.generate_probabilities(orig_training_data, base_hmm_global_emission_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs)
-    
-    print("calculated probabilites")
+    print("running baseline with NM")
+    run_baseline("NM")
+
+    print("running baseline with most probable tag")
+    baselinefn = data_extraction.pos_tag_with_max(base_hmm_global_emission_probs)
+    (confusion, report) = test_model.test_model(baselinefn, orig_test_data)
+    print_confusion_with_unk(confusion)
+    print(report)
+
+    print("running base HMM with only global probs")
     globaltagFn = evaluate_pos.load_probs(base_hmm_global_emission_probs, base_hmm_global_transition_probs, base_hmm_context_emission_probs, base_hmm_context_transition_probs,
     1.0, 1.0, 0.0, 0.0)
     (confusion, report) = test_model.test_model(globaltagFn, orig_test_data)
