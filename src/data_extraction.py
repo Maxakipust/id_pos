@@ -82,7 +82,7 @@ def extract_data():
         for row in reader:
             if not row["IDENTIFIER"] == prevId:
                 prevId = row["IDENTIFIER"]
-                data.append((row["IDENTIFIER"], row["GRAMMAR_PATTERN"], row["CONTEXT"]))
+                data.append((row["IDENTIFIER"].split(" "), row["GRAMMAR_PATTERN"].split(" "), row["CONTEXT"]))
     
     random.shuffle(data)
 

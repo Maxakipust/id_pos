@@ -1,328 +1,328 @@
 IDENTIFIER,GRAMMAR_PATTERN,CONTEXT
-p   g l o b a l   i n f o   3 2,P R E   N M   N   D,5
-b 3   P u s h   P r o f i l e   T i m i n g,P R E   V   N M   N,4
-c o o k i e,N,2
-m i n   F r e s h,N M   N,5
-R u l e   C h a i n,N M   N,2
-b u i l d   m i n i m i z e d   F A,V   N M   N,4
-O A u t h   S e s s i o n   F a c t o r y,N M   N M   N,2
-e x p a n d   H e a d e r s   F r o m   R e q u e s t,V   N P L   P   N,4
-a l l   O p e n   F i l e s   S t r i n g,D T   N M   N M   N,4
-U s e r   2   I n t e r n a l   I n d e x,N   P   N M   N,2
-c a m   R o t   Z,N M   N M   N,3
-b t   D e f o r m a b l e   C o n t a c t   C o n s t r a i n t,P R E   N M   N M   N,2
-l e n   r,N M   N,5
-E G L E W   A N D R O I D   f r a m e   b u f f e r   t a r g e t,P R E   P R E   N M   N M   N,1
-G E T   S O U R C E   N A M E,N M   N M   N,1
-i n   O r d e r   W r a p p e d   V e r i f i c a t i o n   M o d e,P   N   N M   N M   N,1
-c a u s e   M a t c h e r,N M   N,5
-d o   I n s t a l l   S t a t u s,V   N M   N,4
-e q u a l s   O f f s e t,N M   N,3
-r e a d   E l e m e n t   T e x t   S p a n,V   N M   N M   N,4
-r t m   S e s s i o n,N M   N,3
-h e a d e r s,N P L,5
-m a x   R e q u e s t s   P e r   H o s t,N M   N P L   P   N,5
-f i n d   s y n t a c t i c   h e a d,V   N M   N,4
-n u m   c o l s,N M   N P L,1
-g e t   J f,V   N,4
-C a c h e   C o n t r o l,N M   N,2
-n e w   F i l e s,N M   N P L,5
-v a l i d a t e   i n s t a n c e   m e t h o d s,V   N M   N P L,4
-l e f t   S i s t e r s   B u f f e r,N M   N M   N,3
-m p g 1 2 3   r e a d   f i l e,P R E   N M   N,4
-M e t h o d   S o r t e r,N M   N,2
-i n e r t i a l   F r a m e,N M   N,3
-r o t a t e   d e s c,N M   N,1
-r e p r e s s   R e f   A t   L o c,V   N   P   N,4
-f i l e   C h a n n e l,N M   N,5
-p l a t f o r m   S t r i n g,N M   N,3
-m u l t i p l y   i n   f r o n t,V   P   N,4
-n u m   F i l e s,N M   N P L,5
-p r e   M a p,P   N,5
-s i z e   o n   f i r s t   u s e,N   P   N M   N,5
-s e s s i o n   C o n f i g,N M   N,4
-d a t a   B u f,N M   N,3
-F o r m   B o d y,N M   N,2
-m u l t i p a r t   b o d y,N M   N,2
-z   w e i g h t,N M   N,1
-c h e c k   T,V   N,4
-h t t p 2   E r r o r   C o d e,N M   N M   N,5
-G e t   L o n g i t u d e,V   N,4
-b m   l o g,N M   N,1
-F i r m a t a   I 2 C   D a t a,N M   N M   N P L,2
-s e t   t r a c k i n g   s p a c e,V   N M   N,1
-R e p l a c e   T e x t   C o n t e x t,N M   N M   N,1
-c o n t e n t   T y p e   S t r i n g,N M   N M   N,5
-g e t   I n i t i a l   W i n d o w   S i z e,V   N M   N M   N,4
-f o l l o w U p,N,3
-P A R E N T,N,1
-e n c o d e d   V a l u e s,N M   N P L,5
-R u l e   M e m b e r   V a l i d a t o r,N M   N M   N,2
-R u n n e r   S c h e d u l e r,N M   N,2
-C   A t   B a c k g r o u n d   C o l o r,P R E   N M   N M   N,2
-c u r r   T h r e a d   E x c e p t i o n,N M   N M   N,3
-c o n e   t r a n s l a t i o n,N M   N,3
-D y n a m i c   T e x t u r e d   C u b e   D e m o,N M   N M   N M   N,2
-P a r a m e t e r   S i g n a t u r e,N M   N,2
-c o l   L e n g t h   L e f t,N M   N M   N,3
-g e t   D i f f u s e   C o l o u r,V   N M   N,4
-i n   b u f f e r,N M   N,5
-c l i e n t   N u m b e r,N M   N,1
-p a l e t t e   s i z e,N M   N,5
-o u t   t a b l e,N M   N,5
-P a t t e r n s   A n n o t a t i o n s,N M   N P L,2
-g l y p h   I D,N M   N,3
-s p l i n e   m a x   l e n,N M   N M   N,1
-f a i l e d   A s s u m p t i o n s   W i t h   M e s s a g e,V   N P L   P   N,4
-F i l e   O p e r a t o r,N M   N,2
-m   i s   i n d x   p r e s e n t,P R E   V   N M   N,1
-V e r t e x   P o s i t i o n,N M   N,2
-I D   L U M N I N A N C E   M I N,N M   N M   N,1
-f r e e   P o s i t i o n s,N M   N P L,3
-R o l l i n g   F r i c t i o n   D e m o,N M   N M   N,2
-C R F   N o n   L i n e a r   L o g   C o n d i t i o n a l   O b j e c t i v e   F u n c t i o n,N M   N M   N M   N M   N M   N M   N,2
-b r e a k p o i n t,N,1
-n u m   A c t i v e   C o n t e x t s,N M   N M   N P L,5
-f   P t r   O u t,P R E   N M   N,3
-p n g   r e a d   I D A T   d a t a,N M   V   N M   N,4
-m i n i m i z e d   R a n d o m   F A,N M   N M   N,3
-i n i t i a l   d e l a y   m i l l i s e c o n d s,N M   N M   N P L,5
-d e f a u l t   o p e n,N M   N,5
-i m a g e,N,3
-I S   F I R S T   C A P I T A L,V   N M   N,1
-L A T E N C Y   A R G,N M   N,1
-p a s s p h r a s e,N,3
-A r a b i c   S e g m e n t e r,N M   N,2
-m e s h   s c a l e,N M   N,5
-a l t   N a m e,N M   N,5
-p r e s e n t   S c a l i n g,N M   N,3
-C l o c k,N,2
-o p t i m i z e   I d e n t i t y   C a s t   C o m p o s i t i o n,V   N M   N M   N,4
-L O G G E R,N,1
-i n t   H e x   S t r i n g,N M   N M   N,5
-p a r s e   E x p i r e s,V   N P L,4
-r e a l,N,3
-n   S h i n i n e s s,N M   N,5
-m   S k y   B o x   O r i e n t a t i o n,P R E   N M   N M   N,1
-t e x   I D,N M   N,5
-n u m   l i g h t,N M   N,1
-M u l t i p l e   F a i l u r e   E x c e p t i o n,N M   N M   N,2
-O A u t h   S e s s i o n,N M   N,2
-t o t   c h a n n e l,N M   N,1
-w r a p p e r   C l a s s,N M   N,3
-k e y   B e g i n,N M   N,3
-T s u r g e o n   P a r s e   E x c e p t i o n,N M   N M   N,2
-c o n v e r t   b u l l e t   t o   g r p c   c o m m a n d,V   N   D T   N M   N,4
-r u l e s   O f   N e w   C h a i n,N   P   N M   N,3
-s i z e   c o n t e n t s,N M   N P L,5
-r u n n e r   F o r   C l a s s,V   P   N,4
-e g l e w   C r e a t e   P l a t f o r m   W i n d o w   S u r f a c e,P R E   V   N M   N M   N,1
-s e t   T i l i n g,V   N,4
-t u n e   T r e e b a n k,N M   N,3
-v a r y   F i e l d s,N M   N P L,3
-o r i   W,N M   N,3
-g e t   l a b e l,V   N,4
-a c t u a l   C o u n t,N M   N,1
-w o r l d   T o   S c r e e n,N   P   N,4
-c o r e,N,1
-c h i l d   j o i n t,N M   N,5
-u s a g e,N,5
-g e t   c h i l d r e n,V   N P L,4
-R e s t   C l i e n t,N M   N,2
-i d   M e n t i o n,N   N M,3
-m   F B O   H e i g h t,P R E   N M   N,1
-T e m p o r a r y   F o l d e r,N M   N,2
-L e s s   D u m m y   G u i   H e l p e r,N M   N M   N M   N,2
-W e b   S o c k e t   L i s t e n e r,N M   N M   N,2
-a c c e l e r o m e t e r   D a t a,N M   N,5
-b e a n   C o n f i g s,N M   N P L,1
-s   T r a c k i n g   S y s t e m   N a m e,P R E   N M   N M   N,3
-m   P r e v i e w   S t a r t e d,P R E   N   N M,1
-r u l e   O p t i o n s,N M   N P L,1
-f l a g s   C l a s s i f i e r   P a i r,N M   N M   N,5
-P o s t   F i l e,N M   N,2
-S e g m e n t e r   C o r e   A n n o t a t i o n s,N M   N M   N P L,2
-e n c o d e d   P a t h   S e g m e n t s,N M   N M   N P L,1
-c o n v e x   S h a p e s,N M   N P L,5
-s e l e c t i o n   w i d t h   l a b e l,N M   N M   N,1
-W a r n i n g   F a i l u r e   E x c e p t i o n,N M   N M   N,2
-s o r t   F i e l d   D a t a   T y p e,N M   N M   N M   N,1
-I N V A L I D,N M,1
-s o u r c e   i n d e x,N M   N,3
-s e t   P r o t o c o l   M e t h o d,N M   N M   N,5
-O F   A n d r o i d   S o u n d   P l a y e r,P R E   N M   N M   N,2
-S U   T i m e,N M   N,2
-c r e d e n t i a l s,N P L,2
-S e r i a l i z e d   F o r m,N M   N,2
-P h y s i c s   C l i e n t   E x a m p l e,N M   N M   N,2
-S e t   A d d   F a c e s   P o i n t s,V   V   N M   N P L,4
-k e e p   A s p e c t,V   N,1
-r a t e   P o i n t e r,N M   N,5
-n u m   K e y s,N M   N P L,5
-m a x   A g e   S e c o n d s   L o n g,N M   N M   N P L   N M,3
-r e s e t   s e a t e d   z e r o   p o s e,V   N M   N M   N,1
-s t a t e,N,3
-c a l l   I d,N M   N,5
-e n a b l e   M a t e r i a l s,V   N P L,4
-f i l t e r   S p e c,N M   N,3
-g e t   I d   F o r   N a m e,V   N   P   N,4
-C a c h e   S t r a t e g y,N M   N,2
-d e l a y   a g n o s t i c   e n a b l e d,N M   N   V,1
-e d i t   c o u n t,N M   N,1
-O P   C O D E   C O N T I N U A T I O N,N M   N M   N,1
-A d d e d   U n i c o d e   S m p,N M   N M   N,1
-f   c o n t e x t   l e n g t h,N M   N M   N,1
-C   A t   F o n t,P R E   N M   N,2
-o u t e r   R u l e,N M   N,5
-O F   O r i e n t a t i o n   L i s t e n e r,P R E   N M   N,2
-i   a r   e,N M   N M   N,5
-E x p e c t e d   E x c e p t i o n,N M   N,2
-s e t   s p h e r e   r e s o l u t i o n,V   N M   N,4
-p r o m i s e s,N P L,5
-t o   X Y Z,P   N,3
-O F   A n d r o i d   L i f e   C y c l e   H e l p e r,P R E   N M   N M   N M   N,2
-r e g i s t e r   W i t h   V o l a t i l i t y   S p r e a d,V   P   N M   N,4
-i s   N o d e   A   L e f t   C h i l d   L e a f,V   N   D T   N M   N M   N,3
-T o p   N G r a m   R e c o r d,N M   N M   N,2
-a r r a y   C l a s s,N M   N,5
-A s s e r t i o n   F a i l e d   E r r o r,N M   N M   N,2
-H t t p 1   E x c h a n g e   C o d e c,N M   N M   N,2
-g e t   P I D   N o   E x c e p t i o n s,V   N   D T   N P L,4
-g e t   M e s s a g e,V   N,4
-f l a g,N,1
-c o n t o u r s,N P L,1
-d e s c r i b e   M i s m a t c h   S a f e l y,V   N   N M,4
-M a x   C o r e,N M   N,2
-i n e t   S o c k e t   A d d r e s s,N M   N M   N,1
-v a l i d a t e   C l a s s   R u l e s,V   N M   N P L,4
-t r a d e   P r i c e,N M   N,1
-t o   s e n t e n c e,P   N,4
-T E G R A   M O R P H   I N I T,P R E   N   V,4
-g e t   P r o t o c o l   M e t h o d,N M   N M   N,5
-u s e   S h a d o w s   1,V   N P L   D,5
-I n v e r s e   D y n a m i c s   E x a m p l e,N M   N M   N,2
-m a x   I n t e r m e d i a t e   C a s,N M   N M   N P L,5
-v a l u e   C o u n t   S t r i n g,N M   N M   N,3
-r e t a i n   F u n c t i o n,N M   N,5
-c h i l d   S t a t e m e n t,N M   N,5
-S u i t e   M e t h o d,N M   N,2
-b a s e   t r a n s f o r m,N M   N,3
-m   a n g l e,P R E   N,1
-s e t   d o t,V   N,4
-r e s   W i d t h,N M   N,5
-b u i l d   s e n t e n c e   f r o m   t o k e n s,V   N   P   N P L,4
-u r l   F r o m   J s o n,N   P   N,4
-r c o n d e,N,5
-r u n   M e t h o d s,V   N P L,4
-S h i f t   R e d u c e   T r a i n   O p t i o n s,N M   N M   N M   N P L,2
-s o u r c e,N,5
-R E F R E S H   I N T E R V A L   I N   M I L L I S,N M   N   P   N P L,1
-t h e   C l a s s,D T   N,5
-f i r s t   S p a c e,N M   N,3
-m o v i e   M e d i a   H a n d l e r,N M   N M   N,3
-R u n   B e f o r e   P a r a m s,V   N M   N P L,2
-m   c o n t a c t   M o t i o n   1,P R E   N M   N   D,1
-X   s c a l e,N M   N,1
-P r i n t   E v e n t s,N M   N P L,2
-a v g   M a p,N M   N,3
-i n,N,5
-s e t t i n g s,N P L,5
-m e t h o d   N a m e   P r e f i x e s,N M   N M   N P L,5
-g e t   D e c l a r e d   M e t h o d s,V   N M   N P L,4
-f o r c e   n e t w o r k,N M   N,1
-s e n t e n c e   L i s t,N M   N,3
-b   F l i p   H o r i z o n t a l l y,P R E   V   V M,5
-r e a d   s u b f r a m e,V   N,4
-k i n e c t s   C o p y,N M   N,3
-s i l k   b w   e x p a n d e r   3 2,N M   N M   N   D,4
-g e t   N u m b e r   O f   T r a n s i t i o n s,V   N   P   N P L,4
-f o l l o w   C o m p o n e n t,V   N,4
-s a v e   A s   Q u a d r a t i c   P n g,V   P   N M   N,4
-q   t a i l,N M   N,1
-b a s e   C a t e g o r y,N M   N,3
-b t   M a t e r i a l,P R E   N,2
-n u l l a b l e   C l a s s,N M   N,5
-g e t   d o w n   s a m p l i n g   r a t e,V   N M   N M   N,4
-o n e   D o c u m e n t,N M   N,3
-M a p s,N P L,2
-n e t w o r k   S e c u r i t y   P o l i c y,N M   N M   N,3
-x   D i s t a n c e,N M   N,3
-m a k e   e x t r a c t o r,V   N,4
-P a r a l l e l   C o m p u t e r,N M   N,2
-m t,N,3
-p i c k u p,N,1
-b t   C o l l i s i o n   S h a p e,P R E   N M   N,2
-k e y   E v e n t s   C o p y,N M   N M   N,3
-m a x   N u m   P i x e l s,N M   N M   N P L,3
-V o r o n o i   F r a c t u r e   D e m o,N M   N M   N,2
-o p e n   C l a s s   T a g s,N M   N M   N P L,3
-C o n f i g u r e   T i m e o u t s,N M   N P L,2
-m a p   j s o n   a d a p t e r,V   N M   N,1
-R u n   A f t e r   P a r a m s,V   N M   N P L,2
-d i f f   f d,N M   N,2
-M e n t i o n   D e t e c t i o n   E v a l u a t o r,N M   N M   N,2
-R e a d   T e x t   F i l e,V   N M   N,4
-U N K N O W N   W O R D,N M   N,1
-r e a d   P a s s,V   N,4
-g e t   R a w   A r g u m e n t s,V   N M   N P L,4
-r u n n e r   F a c t o r y,N M   N,5
-i n c l u d e s   N e w,N M   N M,3
-b   L o o p,P R E   N,1
-c a c h e   B o d y   U n b u f f e r e d,N M   N   N M,3
-H   p a c k,N M   N,2
-s t a c k,N,1
-i n b o u n d,N M,5
-I s   R e t u r n   B r i d g e d,V   N   N M,1
-A t t r i b u t e,N,2
-c l i e n t   C e r t i f i c a t e s,N M   N P L,3
-a c t u a l   S u f f i x,N M   N,3
-d e p t h   S t e n c i l   A s   T e x t u r e,N M   N   P   N,1
-o r d e r   W i t h,V   P,3
-w a n t   x,V   N,5
-z   p r o b s,N M   N P L,5
-S l a c k   C l i e n t,N M   N,2
-e n u m   C o u n t,N M   N,3
-p a r a m e t e r   A s s i g n m e n t,N M   N,5
-m e s s a g e,N,5
-s c o r e   P o s   P r e v,N M   N   N M,3
-e x p e c t e d   S t r i n g,N M   N,3
-b   M u l t i   F u l l s c r e e n,P R E   N M   N,5
-w o r d   L e m m a   T a g,N M   N M   N,5
-g e t   M a x   S h i n g l e   D i f f,V   N M   N M   N,4
-c m d   S t r,N M   N,5
-l a s t   G r a d i e n t,N M   N,4
-c o d e   E x c e p t i o n   M e s s a g e,N M   N M   N,3
-s u b   s t a r t,N M   N,3
-s e t   E x t r a   I n t e r f a c e s,V   N M   N P L,4
-C h i n e s e   T r e e b a n k   P a r s e r   P a r a m s,N M   N M   N M   N P L,2
-B i t m a p   D a t a   S i z e,N M   N M   N,1
-H   W n d,N   N M,1
-n o t i f y   T o u c h   D o w n,V   N M   N,4
-g e t   C o n t r o l l e r   T r a n s f o r m,V   N M   N,4
-s t r e a m   H e a d e r s,N M   N P L,3
-s z   J o i n t   R a n g e s,N M   N M   N P L,3
-s c a l e   a n d   a d d   t o,V   C J   V   P,4
-t o t a l   M e r g e   T h r o t t l e d   T i m e,N M   N M   N M   N,1
-B i n a r y   R u l e,N M   N,2
-z   p   i,N M   N M   N,5
-p u s h   R e s e t   L a t e r,V   N   V M,4
-p a t h   W i t h   N a t i v e   S e p a r a t o r s,N   P   N M   N P L,4
-m o v e   R B T   s u r g e o n,N M   N M   N,1
-o r i g i n a l   M o c k i n g   D e t a i l s,N M   N M   N P L,1
-s x,N,5
-G e o m e t r y   I n t e r f a c e,N M   N,2
-r c p   l e n   2,N M   N   D,3
-f a c t o r y   C l a s s,N M   N,3
-m a x   F i l e   O p e n,N M   N   N M,1
-b e s t   N o d e,N M   N,3
-n u l l s   O k,N P L   N M,4
-s e t   f r o m   a l i g n e d   p i x e l s,V   P   N M   N P L,4
-C   A t   G r a y s c a l e,P R E   N M   N,2
-u n p a c k   t e x t u r e   B l e n d   F u n c,V   N M   N M   N,4
-b a c k p r o p   T r a i n i n g,N M   N,5
-r t   S t r e a m   P t r,N M   N M   N,3
-c h e c k   p e r m i s s i o n,V   N,4
-m   L i n e   D a s h   O f f s e t,P R E   N M   N M   N,1
-f r e e   t e x t u r e,N M   N,1
-m x   B e a n,N M   N,3
-t r a i n i n g   E x a m p l e s,N M   N P L,4
+Struct Ty,NM N,1
+validate instance methods,V NM NPL,4
+Dynamic Textured Cube Demo,NM NM NM N,2
+expected String,NM N,3
+key Begin,NM N,3
+cause Matcher,NM N,5
+m is indx present,PRE V NM N,1
+OF Android Sound Player,PRE NM NM N,2
+nullable Class,NM N,5
+nulls Ok,NPL NM,4
+word Lemma Tag,NM NM N,5
+set Frame Pen,V NM N,4
+http2 Error Code,NM NM N,5
+first Space,NM N,3
+nav visible,N V,1
+open Class Tags,NM NM NPL,3
+Get Longitude,V N,4
+res Width,NM N,5
+z weight,NM N,1
+rule Options,NM NPL,1
+Binary Rule,NM N,2
+Warning Failure Exception,NM NM N,2
+silk bw expander 32,NM NM N D,4
+p global info 32,PRE NM N D,5
+selection width label,NM NM N,1
+size on first use,N P NM N,5
+platform String,NM N,3
+tot channel,NM N,1
+cam Rot Z,NM NM N,3
+num Keys,NM NPL,5
+score Pos Prev,NM N NM,3
+int Hex String,NM NM N,5
+trade Price,NM N,1
+Configure Timeouts,NM NPL,2
+value Hash,NM N,1
+is Node A Left Child Leaf,V N DT NM NM N,3
+OF Android Life Cycle Helper,PRE NM NM NM N,2
+keep Aspect,V N,1
+col Length Left,NM NM N,3
+spline max len,NM NM N,1
+all Open Files String,DT NM NM N,4
+Physics Client Example,NM NM N,2
+contours,NPL,1
+Suite Method Builder,NM NM N,2
+to sentence,P N,4
+Run Before Params,V NM NPL,2
+runner For Class,V P N,4
+sx,N,5
+Tsurgeon Parse Exception,NM NM N,2
+num light,NM N,1
+retain Function,NM N,5
+f Ptr Out,PRE NM N,3
+convert bullet to grpc command,V N DT NM N,4
+stream Headers,NM NPL,3
+Cache Control,NM N,2
+passphrase,N,3
+wrapper Class,NM N,3
+sample Mid,NM N,3
+i ar e,NM NM N,5
+sentence List,NM N,3
+Replace Text Context,NM NM N,1
+multipart body,NM N,2
+X scale,NM N,1
+run Methods,V NPL,4
+save lambdas,V NPL,4
+Firmata I2C Data,NM NM NPL,2
+Shift Reduce Train Options,NM NM NM NPL,2
+read subframe,V N,4
+source index,NM N,3
+num Active Contexts,NM NM NPL,5
+bm log,NM N,1
+Suite Method,NM N,2
+OAuth Session Factory,NM NM N,2
+child Statement,NM N,5
+Attribute,N,2
+set dot,V N,4
+Less Dummy Gui Helper,NM NM NM N,2
+accelerometer Data,NM N,5
+read Pass,V N,4
+base transform,NM N,3
+rconde,N,5
+get Number Of Transitions,V N P NPL,4
+diff fd,NM N,2
+parameter Assignment,NM N,5
+actual,N,5
+delay agnostic enabled,NM N V,1
+settings,NPL,5
+Cipher Suite,NM N,2
+ID LUMNINANCE MIN,NM NM N,1
+pre Map,P N,5
+in Order Wrapped Verification Mode,P N NM NM N,1
+read Element Text Span,V NM NM N,4
+OF Android Object,PRE NM N,2
+mt,N,3
+get Diffuse Colour,V NM N,4
+set Protocol Method,NM NM N,5
+sub flags to forward,NM NPL P N,3
+do Install Status,V NM N,4
+failed Assumptions With Message,V NPL P N,4
+depth cb,NM N,1
+bt Collision Shape,PRE NM N,2
+optimize Identity Cast Composition,V NM NM N,4
+OP CODE CONTINUATION,NM NM N,1
+rules Of New Chain,N P NM N,3
+total Merge Throttled Time,NM NM NM N,1
+set Tiling,V N,4
+get Id For Name,V N P N,4
+content Type String,NM NM N,5
+UNKNOWN WORD,NM N,1
+the Class,DT N,5
+m transform Change Args,PRE NM NM NPL,1
+palette size,NM N,5
+in,N,5
+enable Materials,V NPL,4
+left Sisters Buffer,NM NM N,3
+bean Configs,NM NPL,1
+scale and add to,V CJ V P,4
+movie Media Handler,NM NM N,3
+method Name Prefixes,NM NM NPL,5
+Web Socket Listener,NM NM N,2
+EGLEW ANDROID frame buffer target,PRE PRE NM NM N,1
+b3 Push Profile Timing,PRE V NM N,4
+call Id,NM N,5
+curr Thread Exception,NM NM N,3
+JFlex Dummy Lexer,PRE NM N,2
+C At Grayscale,PRE NM N,2
+get down sampling rate,V NM NM N,4
+actual Count,NM N,1
+TEGRA MORPH INIT,PRE N V,4
+min Fresh Seconds,NM NM NPL,5
+map json adapter,V NM N,1
+REFRESH INTERVAL IN MILLIS,NM N P NPL,1
+INVALID,NM,1
+flags Classifier Pair,NM NM N,5
+initial delay milliseconds,NM NM NPL,5
+Inverse Dynamics Example,NM NM N,2
+GET SOURCE NAME,NM NM N,1
+data Point Method,NM NM N,5
+session Config,NM N,4
+runner Factory,NM N,5
+C At Background Color,PRE NM NM N,2
+depth Stencil As Texture,NM N P N,1
+state,N,3
+key with newline not permitted,N P N VM V,4
+m angle,PRE N,1
+Mention Detection Evaluator,NM NM N,2
+Maps,NPL,2
+encoded Values,NM NPL,5
+cmd Str,NM N,5
+make extractor,V N,4
+previous Stream Id,NM NM N,3
+learned Lop Expert Weights 2 D,NM NM NM NPL D N,5
+num Files,NM NPL,5
+set sphere resolution,V NM N,4
+Read Text File,V NM N,4
+inet Socket Address,NM NM N,1
+m origin,PRE N,3
+s Tracking System Name,PRE NM NM N,3
+id Mention,N NM,3
+n Shininess,NM N,5
+backprop Training,NM N,5
+selected Account,NM N,1
+max Age Seconds Long,NM NM NPL NM,3
+client Number,NM N,1
+Method Sorter,NM N,2
+Multiple Failure Exception,NM NM N,2
+describe Mismatch Safely,V N NM,4
+H Wnd,N NM,1
+in buffer,NM N,5
+Slack Client,NM N,2
+sz Joint Ranges,NM NM NPL,3
+IS FIRST CAPITAL,V NM N,1
+CRF Non Linear Log Conditional Objective Function,NM NM NM NM NM NM N,2
+rate Pointer,NM N,5
+m FBO Height,PRE NM N,1
+image,N,3
+b Multi Fullscreen,PRE NM N,5
+get Max Shingle Diff,V NM NM N,4
+Parameter Signature,NM N,2
+Arabic Segmenter,NM N,2
+OF Android Window,PRE NM N,2
+mx Bean,NM N,3
+follow Component,V N,4
+core,N,1
+get Initial Window Size,V NM NM N,4
+inbound,NM,5
+rcp len 2,NM N D,3
+encoded Path Segments,NM NM NPL,1
+followUp,N,3
+set from aligned pixels,V P NM NPL,4
+exception Channels,NM NPL,1
+last Gradient,NM N,4
+ori W,NM N,3
+equals Offset,NM N,3
+Max Core,NM N,2
+network Security Policy,NM NM N,3
+Parallel Computer,NM N,2
+global Scope,NM N,4
+png read IDAT data,NM V NM N,4
+q tail,NM N,1
+base Category,NM N,3
+kinects Copy,NM N,3
+stack,N,1
+rt Stream Ptr,NM NM N,3
+get PID No Exceptions,V N DT NPL,4
+push Reset Later,V N VM,4
+parse Expires,V NPL,4
+bt Material,PRE N,2
+Assertion Failed Error,NM NM N,2
+Patterns Annotations,NM NPL,2
+rotate desc,NM N,1
+avg Map,NM N,3
+max Num Pixels,NM NM NPL,3
+client Certificates,NM NPL,3
+minimized Random FA,NM NM N,3
+Vertex Position,NM N,2
+register With Volatility Spread,V P NM N,4
+Post File,NM N,2
+find syntactic head,V NM N,4
+apply Margin Insets,V NM NPL,4
+Print Events,NM NPL,2
+size contents,NM NPL,5
+file Channel,NM N,5
+convex Shapes,NM NPL,5
+multiply in front,V P N,4
+quad Bezier To,NM N P,4
+b Flip Horizontally,PRE V VM,5
+actual Suffix,NM N,3
+tune Treebank,NM N,3
+message,N,5
+cone translation,NM N,3
+free texture,NM N,1
+r hdr,NM N,3
+training Examples,NM NPL,4
+array Class,NM N,5
+headers,NPL,5
+PARENT,N,1
+reset seated zero pose,V NM NM N,1
+x 2,N D,3
+eglew Create Platform Window Surface,PRE V NM NM N,1
+present Scaling,NM N,3
+m Preview Started,PRE N NM,1
+want x,V N,5
+force network,NM N,1
+move RBT surgeon,NM NM N,1
+key Events Copy,NM NM N,3
+get children,V NPL,4
+build sentence from tokens,V N P NPL,4
+m Line Dash Offset,PRE NM NM N,1
+Temporary Folder,NM N,2
+labels File,NM N,5
+validate Class Rules,V NM NPL,4
+Rolling Friction Demo,NM NM N,2
+Run After Params,V NM NPL,2
+best Node,NM N,3
+num States,NM NPL,3
+check T,V N,4
+m contact Motion 1,PRE NM N D,1
+Rule Member Validator,NM NM N,2
+Chinese Treebank Parser Params,NM NM NM NPL,2
+assigns,NPL,5
+tex ID,NM N,5
+Voronoi Fracture Demo,NM NM N,2
+outer Rule,NM N,5
+notify Touch Down,V NM N,4
+credentials,NPL,2
+unpack texture Blend Func,V NM NM N,4
+z probs,NM NPL,5
+Segmenter Core Annotations,NM NM NPL,2
+User 2 Internal Index,N P NM N,2
+mesh scale,NM N,5
+Rule Chain,NM N,2
+Form Body,NM N,2
+pickup,N,1
+get label,V N,4
+Internal,NM,2
+world To Screen,N P N,4
+promises,NPL,5
+factory Class,NM N,3
+Disk Lru Cache,NM NM N,2
+sub start,NM N,3
+Value Label,NM N,2
+Http1 Exchange Codec,NM NM N,2
+H pack,NM N,2
+number Elementary Vegas,NM NM NPL,1
+num cols,NM NPL,1
+OAuth Session,NM N,2
+LATENCY ARG,NM N,1
+out table,NM N,5
+get Controller Transform,V NM N,4
+num Verts In A,NM NPL P N,3
+child Categories,NM NPL,3
+Bitmap Data Size,NM NM N,1
+glyph ID,NM N,3
+theory,N,4
+inertial Frame,NM N,3
+to XYZ,P N,3
+Rest Client,NM N,2
+rtm Session,NM N,3
+planes,NPL,5
+from Local Aabb Min,P NM NM N,3
+edit count,NM N,1
+LOGGER,N,1
+get Message,V N,4
+save As Quadratic Png,V P NM N,4
+source,N,5
+OF Orientation Listener,PRE NM N,2
+Category Filter Factory,NM NM N,2
+Cache Strategy,NM N,2
+num axis events,NM NM NPL,1
+get Raw Arguments,V NM NPL,4
+set tracking space,V NM N,1
+data Buf,NM N,3
+split Argument List,V NM N,4
+flag,N,1
+folder Names,NM NPL,5
+sqrt per elem,V P N,4
+cookie,N,2
+includes New,NM NM,3
+max Requests Per Host,NM NPL P N,5
+sort Field Data Type,NM NM NM N,1
+Runner Scheduler,NM N,2
+Clock,N,2
+circle Mesh,NM N,1
+supplier Class,NM N,5
+child joint,NM N,5
+f context length,NM NM N,1

@@ -1,58 +1,58 @@
 IDENTIFIER,GRAMMAR_PATTERN,CONTEXT
-g e t   s t a r t   s t a t e s,V   N M   N P L,4
-f r o m   L o c a l   A a b b   M i n,P   N M   N M   N,3
-C a t e g o r y   F i l t e r   F a c t o r y,N M   N M   N,2
-n u m   a x i s   e v e n t s,N M   N M   N P L,1
-s q r t   p e r   e l e m,V   P   N,4
-V a l u e   L a b e l,N M   N,2
-C i p h e r   S u i t e,N M   N,2
-S t r u c t   T y,N M   N,1
-p r o n o u n,N,5
-d a t a   P o i n t   M e t h o d,N M   N M   N,5
-n u m b e r   E l e m e n t a r y   V e g a s,N M   N M   N P L,1
-l a b e l   R e g e x,N M   N,1
-a p p l y   M a r g i n   I n s e t s,V   N M   N P L,4
-s u b   f l a g s   t o   f o r w a r d,N M   N P L   P   N,3
-s a m p l e   M i d,N M   N,3
-n u m   S t a t e s,N M   N P L,3
-a c t u a l,N,5
-q u a d   B e z i e r   T o,N M   N   P,4
-O F   A n d r o i d   O b j e c t,P R E   N M   N,2
-n u m   V e r t s   I n   A,N M   N P L   P   N,3
-f o l d e r   N a m e s,N M   N P L,5
-k e y   w i t h   n e w l i n e   n o t   p e r m i t t e d,N   P   N   V M   V,4
-s e t   F r a m e   P e n,V   N M   N,4
-a s s i g n s,N P L,5
-s a v e   l a m b d a s,V   N P L,4
-d e p t h   c b,N M   N,1
-J F l e x   D u m m y   L e x e r,P R E   N M   N,2
-d e p   H,N M   N,5
-n a v   v i s i b l e,N   V,1
-t h r e a d   A r r a y   S i z e,N M   N M   N,3
-I n t e r n a l,N M,2
-c h i l d   C a t e g o r i e s,N M   N P L,3
-a m b i e n t   c o e f f i c i e n t,N M   N,5
-i m g   T y p e,N M   N,3
-p r e v i o u s   S t r e a m   I d,N M   N M   N,3
-g l o b a l   S c o p e,N M   N,4
-l a b e l s   F i l e,N M   N,5
-m   o r i g i n,P R E   N,3
-S u i t e   M e t h o d   B u i l d e r,N M   N M   N,2
-l e a r n e d   L o p   E x p e r t   W e i g h t s   2   D,N M   N M   N M   N P L   D   N,5
-s e l e c t e d   A c c o u n t,N M   N,1
-e x c e p t i o n   C h a n n e l s,N M   N P L,1
-s u p p l i e r   C l a s s,N M   N,5
-c i r c l e   M e s h,N M   N,1
-D i s k   L r u   C a c h e,N M   N M   N,2
-r   h d r,N M   N,3
-x   2,N   D,3
-s p e a k e r,N,4
-s p l i t   A r g u m e n t   L i s t,V   N M   N,4
-v a l u e   H a s h,N M   N,1
-O F   A n d r o i d   W i n d o w,P R E   N M   N,2
-c e r t i f i c a t e   p i n n e r,N M   N,2
-m   t r a n s f o r m   C h a n g e   A r g s,P R E   N M   N M   N P L,1
-p l a n e s,N P L,5
-m i n   F r e s h   S e c o n d s,N M   N M   N P L,5
-c r e d s,N P L,1
-t h e o r y,N,4
+Serialized Form,NM N,2
+path With Native Separators,N P NM NPL,4
+repress Ref At Loc,V N P N,4
+breakpoint,N,1
+real,N,3
+set Extra Interfaces,V NM NPL,4
+get Declared Methods,V NM NPL,4
+usage,N,5
+get Protocol Method,NM NM N,5
+Geometry Interface,NM N,2
+get start states,V NM NPL,4
+vary Fields,NM NPL,3
+bt Deformable Contact Constraint,PRE NM NM N,2
+len r,NM N,5
+img Type,NM N,3
+original Mocking Details,NM NM NPL,1
+dep H,NM N,5
+x Distance,NM N,3
+new Files,NM NPL,5
+certificate pinner,NM N,2
+Set Add Faces Points,V V NM NPL,4
+alt Name,NM N,5
+mpg123 read file,PRE NM N,4
+SU Time,NM N,2
+label Regex,NM N,1
+ambient coefficient,NM N,5
+m Sky Box Orientation,PRE NM NM N,1
+b Loop,PRE N,1
+enum Count,NM N,3
+pronoun,N,5
+build minimized FA,V NM N,4
+use Shadows 1,V NPL D,5
+speaker,N,4
+C At Font,PRE NM N,2
+File Operator,NM N,2
+Top NGram Record,NM NM N,2
+default open,NM N,5
+free Positions,NM NPL,3
+Added Unicode Smp,NM NM N,1
+Expected Exception,NM N,2
+z p i,NM NM N,5
+max File Open,NM N NM,1
+filter Spec,NM N,3
+url From Json,N P N,4
+code Exception Message,NM NM N,3
+Is Return Bridged,V N NM,1
+one Document,NM N,3
+cache Body Unbuffered,NM N NM,3
+min Fresh,NM N,5
+value Count String,NM NM N,3
+max Intermediate Cas,NM NM NPL,5
+check permission,V N,4
+thread Array Size,NM NM N,3
+get Jf,V N,4
+creds,NPL,1
+expand Headers From Request,V NPL P N,4
+order With,V P,3
