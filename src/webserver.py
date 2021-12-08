@@ -3,7 +3,7 @@ import evaluate_pos
 import clean_ids
 
 app = Flask(__name__)
-
+#small webserver to expose the tagger
 @app.route("/<type>/<name>/<context>")
 def tag_id(type, name, context):
     nameArr = clean_ids.camel_case_split(name).split(" ")

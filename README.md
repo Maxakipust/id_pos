@@ -4,7 +4,7 @@ This implementation is a simple hmm trained on [this dataset](https://github.com
 
 It uses the Viterbi algorithm to find the POS sequence with the highest probability for a given identifier
 
-Inspired by the algorithm to use graph clustering for POS tagging presented here https://aclanthology.org/P06-3002.pdf
+Inspired by the algorithm to use graph clustering for unsupervised POS tagging presented here https://aclanthology.org/P06-3002.pdf
 
 This repo contains a few attempts to improve the accuracy of a HMM model to tag identifiers found in code by using the additional information contained in the code itself to provide hints at the correct tags.
 
@@ -36,6 +36,8 @@ When we augment our training dat with both synonyms and plurality at 100% we get
 Finally we added a brill-like post processing. We look for sequences of N, NPL, and NMs. Then we make all but the head noun NM. We also do the same with VM and V. When running on just nouns we get an accuracy of 94%. When running on just verbs we get 93%. And with both we get 93%.
 
 There is more data in `weight.xlsx`
+There is example output in `run.out`
 
-To run: `python3 src/main`
+To run without building the word2vec model and graph clustering: `python3 src/main`
+To run and build the word2vec model and graph clustering
 To start a webserver urn `python3 src/webserver.py`

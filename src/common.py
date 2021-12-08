@@ -1,5 +1,6 @@
+
+#default probability to use for unknowns or 0s 
 defaultProb = 0.000001
-unkThreshold = 1
 
 #an array with all the contexts
 contexts = [
@@ -25,6 +26,7 @@ tags = [
     'PRE',
     'EOI'
 ]
+# an array of all the tags we have in the test dataset to quiet warnings when generating reports
 used_tags = [
     'N',
     'DT',

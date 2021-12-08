@@ -1,4 +1,6 @@
 import csv
+
+#small script to extract the training data and just have them as unabled ids
 lines = []
 with open('data/unlabeled_ids.txt', 'a') as outfile:
     with open('data/orig_training_data.csv', newline='') as csvfile:

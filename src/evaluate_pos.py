@@ -2,9 +2,13 @@ import numpy as np
 import re
 import common
 
+#evaluate an identifier to generate POS tags
+
+#regexs to extract info from the files
 globalexpr = re.compile('(.*) (.*): (.*)')
 contextexpr = re.compile('(.*) (.*) (.*): (.*)')
 
+#a function to initialize a function with the specified input files and weights
 def load_probs(in_emission_probs, in_transition_probs, in_context_emission_probs, in_context_transition_probs, global_transition_weight, global_emission_weight, context_transition_weight, context_emission_weight):
     in_emission_probs.seek(0)
     in_transition_probs.seek(0)
@@ -62,7 +66,8 @@ def load_probs(in_emission_probs, in_transition_probs, in_context_emission_probs
         # outfile.write(f"{context} {tag} {id}: {contextemissionProbs[context][tag][id]}\n")
 
 
-    # Viterbi
+    # captures all the data and weights in a closure and returns this function.
+    # this function is what actually performs the tagging
     def runViterbi(identifier, context):
         identifier = identifier.copy()
         identifier.insert(0,'BOI')

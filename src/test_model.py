@@ -23,10 +23,7 @@ def runEnsemble(type, name, context):
     except:
         return ""
 
-# def runNLTK(name):
-#     pos = nltk.pos_tag(name)
-#     return list(map(lambda arg: arg[1], pos))
-
+# test a model against the test data
 def test_model(tag_id_fn, test_file):
     test_file.seek(0)
     reader = csv.DictReader(test_file)
@@ -50,5 +47,5 @@ def test_model(tag_id_fn, test_file):
                     # print(actualPOS)
                     # print()
     confusion = confusion_matrix(actual_total, calculated_total, labels=common.used_tags)
-    report = classification_report(actual_total, calculated_total, labels=common.used_tags) # ,output_dict=True)
+    report = classification_report(actual_total, calculated_total, labels=common.used_tags) #, output_dict=True)
     return (confusion, report)

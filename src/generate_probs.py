@@ -3,7 +3,7 @@ import json
 import common
 import csv
 
-
+#generate the probability files from the training data
 
 # with open('data/orig_training_data.csv', newline='') as csvfile:
 def generate_probabilities(infile, outEmissionProbs, outTransitionProbs, outContextEmissionProbs, outContextTransitionProbs):
@@ -129,6 +129,7 @@ def generate_probabilities(infile, outEmissionProbs, outTransitionProbs, outCont
                 except ZeroDivisionError:
                     contextemissionProbs[context][tag][id] = common.defaultProb
 
+    #output files
     # with open('model/emissionProbs.txt', 'w+') as outfile:
     for tag in emissionProbs:
         for id in emissionProbs[tag]:

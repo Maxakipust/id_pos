@@ -1,4 +1,4 @@
-
+#split ids by camel case and _
 def camel_case_split(str):
     words = [[str[0]]]
   
