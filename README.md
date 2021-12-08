@@ -39,5 +39,5 @@ There is more data in `weight.xlsx`
 There is example output in `run.out`
 
 To run without building the word2vec model and graph clustering: `python3 src/main`
-To run and build the word2vec model and graph clustering
+To run and build the word2vec model and graph clustering `python3 src/main long`
 To start a webserver urn `python3 src/webserver.py`
