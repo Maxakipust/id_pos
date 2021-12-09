@@ -1,10 +1,8 @@
-import math
-import networkx as nx
-import matplotlib.pyplot as plt
-from networkx.algorithms.cluster import clustering
-import common
-import gensim
-from gensim.models import Word2Vec
+import sys
+
+short = True if len(sys.argv) >  1 and sys.argv[1] == "ondemand" else False
+if not short:
+    import networkx as nx
 from common import cleanUpWord
 
 # create a graph that relates each word with how similar to other words each word in

@@ -2,7 +2,10 @@ import csv
 import common
 import random
 from nltk.corpus import wordnet
-import inflect
+import sys
+short = True if len(sys.argv) >  1 and sys.argv[1] == "ondemand" else False
+if not short:
+    import inflect
 
 #augments the existing labled data by changing the plurality of sentences and finding synonyms
 
@@ -52,10 +55,11 @@ def write_data(data, outfile):
     for d in data:
         (identifierArrOrig, posArr, context) = d
         writer.writerow({"IDENTIFIER":" ".join(identifierArrOrig), "GRAMMAR_PATTERN":" ".join(posArr), "CONTEXT": context})
-p = inflect.engine()
+
 
 #perform synonym replacement
 def syn_labeled_data(infile, outfile):
+    p = inflect.engine()
     infile.seek(0)
     outfile.seek(0)
     print("augmenting labeled data with synonyms")
@@ -109,6 +113,7 @@ def syn_labeled_data(infile, outfile):
 
 #augment existing training data by changeing the plurality of nouns
 def plural_labeled_data(infile, outfile):
+    p = inflect.engine()
     infile.seek(0)
     outfile.seek(0)
     print("augmenting labeled data with plural and singular")

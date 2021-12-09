@@ -50,9 +50,11 @@ There is example output in `run.out`
 
 Note, if running on an onDemand environment, there are a few packages missing, `inflect`, `networkx`, and `chinese_whispers`
 To install these packages locally run `pip3 install inflect networkx chinese_whispers --user`
+These packages are only used for graph clustering and post processing. in order to run without building the models for graph clustering, use `python3 src/main ondemand`. This will use the pre-generated augmented models for evaluation.
 
 To run without building the word2vec model and graph clustering: `python3 src/main`
 To run and build the word2vec model and graph clustering `python3 src/main long`
+To run without libraries available on ondemand use `python3 src/main ondemand`
 To start a webserver run `cd src`, `export FLASK_APP=webserver` and `flask run`. Note flask needs to be installed with `pip3 install flask` (I don't know if there is a way to install it as user)
 
 ---

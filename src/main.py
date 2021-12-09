@@ -1,3 +1,7 @@
+import sys
+
+short = True if len(sys.argv) >  1 and sys.argv[1] == "ondemand" else False
+
 from nltk.stem import WordNetLemmatizer
 import generate_probs
 import test_model
@@ -5,7 +9,6 @@ import evaluate_pos
 import common
 import pandas as pd
 import augment_labeled_data
-import inflect
 import word2vec_clustering 
 import graph_clustering
 import sys
@@ -36,8 +39,9 @@ def isplural(word):
 
 # perform post processing on an existing tagger
 # finds sequences of noun like tags, makes all of them NM except for the head noun
-p = inflect.engine()
+
 def post_process(id, context, evaluate):
+    
     actual_result = evaluate(id, context)
     for (index, pos) in enumerate(actual_result):
         next_pos = actual_result[index + 1] if index < len(actual_result) - 1 else ""
@@ -58,7 +62,8 @@ def post_process(id, context, evaluate):
     # print("final result")
     # print(actual_result)
     return actual_result
-    
+
+
 # run the postprocessing on the base HMM
 def run_new_tagger():
     print("running base HMM with only global probs")
@@ -82,6 +87,9 @@ def run_new_tagger():
 #runs a bunch of different configs and prints out the results 
 def full_run():
     long = True if len(sys.argv) > 1 and sys.argv[1] == "long" else False
+    
+
+
     orig_training_data = open("data/orig_training_data.csv", "r")
     orig_test_data = open("data/orig_unseen_testing_data.csv", "r")
     base_hmm_global_emission_probs = open("model/baseHMM/global_emission_probs.txt", "w+")
@@ -121,12 +129,15 @@ def full_run():
     print()
 
     print("augmenting training data")
-    
-    augmented_syn_training_data = open('model/augmented/aug_syn_training_data.csv', 'w+')
-    augment_labeled_data.syn_labeled_data(orig_training_data, augmented_syn_training_data)
-    augmented_pl_training_data = open('model/augmented/aug_pl_training_data.csv', 'w+')
+    if not short:
+        augmented_syn_training_data = open('model/augmented/aug_syn_training_data.csv', 'w+')
+        augment_labeled_data.syn_labeled_data(orig_training_data, augmented_syn_training_data)
+        augmented_pl_training_data = open('model/augmented/aug_pl_training_data.csv', 'w+')
+        augment_labeled_data.plural_labeled_data(augmented_syn_training_data, augmented_pl_training_data)
+    else:
+        print("not actually augmenting training data since 'ondemand' is enabled")
+        augmented_pl_training_data = open('model/augmented/aug_pl_training_data.csv', 'r+')
     print()
-    augment_labeled_data.plural_labeled_data(augmented_syn_training_data, augmented_pl_training_data)
     aug_hmm_global_emission_probs = open("model/augmented/global_emission_probs.txt", "w+")
     aug_hmm_global_transition_probs = open("model/augmented/global_transition_probs.txt", "w+")
     aug_hmm_context_emission_probs = open("model/augmented/context_emission_probs.txt", "w+")
@@ -161,7 +172,7 @@ def full_run():
     print("running augmented emission data with neighbor graph clustering")
     # graph = open("model/graph/graph.gexf", "w+")
     graph_probs = None
-    if long:
+    if long and not short:
         print("This will take a long time. To disable run 'main.py'")
         graph_probs = open("model/graph/global_emission_probs.txt", "w+")
         graph_clustering.augment_emission_probs_with_custom_clustering(untagged_ids,base_hmm_global_emission_probs , "model/graph/graph.gexf", graph_probs)
