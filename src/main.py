@@ -1,7 +1,4 @@
-from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
-from numpy.core.numeric import full
-from scipy.sparse import data
 import generate_probs
 import test_model
 import evaluate_pos
