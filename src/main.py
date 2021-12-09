@@ -211,7 +211,17 @@ def run_baseline(tag):
     print_confusion(confusion)
     print(report)
 
+
+
+def test_ensemble():
+    ensemble_fn = lambda id,ctx: test_model.runEnsemble("int", id, ctx)
+    orig_test_data = open("data/orig_unseen_testing_data.csv", "r")
+    (confusion, report) = test_model.test_model(ensemble_fn, orig_test_data)
+    print_confusion(confusion)
+    print(report)
+
 # run_baseline("NM")
 # run_new_tagger()
 # find_optimal_weights()
 full_run()
+# test_ensemble()
