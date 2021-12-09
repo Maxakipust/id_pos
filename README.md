@@ -48,8 +48,11 @@ Finally we added a brill-like post processing. We look for sequences of N, NPL, 
 There is more data in `weight.xlsx`
 There is example output in `run.out`
 
-Note, if running on an onDemand environment, there are a few packages missing, `inflect`, `networkx`, and `chinese_whispers`
+
+
+Note, if running on an onDemand environment, there are a few packages missing, `inflect`, `networkx`, `gensem` and `chinese_whispers`
 To install these packages locally run `pip3 install inflect networkx chinese_whispers --user`
+Since we need `gensem` make sure to use `env activate engl-581-2`
 These packages are only used for graph clustering and post processing. in order to run without building the models for graph clustering, use `python3 src/main ondemand`. This will use the pre-generated augmented models for evaluation.
 
 To run without building the word2vec model and graph clustering: `python3 src/main`

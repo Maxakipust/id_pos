@@ -2,7 +2,6 @@ nltk
 sklearn
 inflect
 numpy
-pandas
 gensim
 networkx
 chinese_whispers

@@ -7,7 +7,7 @@ import generate_probs
 import test_model
 import evaluate_pos
 import common
-import pandas as pd
+# import pandas as pd
 import augment_labeled_data
 import word2vec_clustering 
 import graph_clustering
@@ -17,16 +17,25 @@ import data_extraction
 
 #prints a confusion matrix with labels
 def print_confusion(confusion):
-    print(pd.DataFrame(confusion, 
-        index=list(map((lambda x: 'true:'+x), common.used_tags)), #['true:yes', 'true:no'], 
-        columns=list(map((lambda x: 'pred:'+x), common.used_tags)) #['pred:yes', 'pred:no']
-    ))
+    print("top is predict")
+    print("left is true")
+    print("    " + " ".join(map(lambda x: (" "*(3 - len(x))) + x, common.used_tags)))
+    for row_label, row in zip(common.used_tags, confusion):
+        print('%s %s' % (row_label+(" "*(3 - len(row_label))), ' '.join('%03s' % i for i in row)))
+
+    # print(pd.DataFrame(confusion, 
+    #     index=list(map((lambda x: 'true:'+x), common.used_tags)), #['true:yes', 'true:no'], 
+    #     columns=list(map((lambda x: 'pred:'+x), common.used_tags)) #['pred:yes', 'pred:no']
+    # ))
 
 def print_confusion_with_unk(confusion):
-    print(pd.DataFrame(confusion, 
-        index=list(map((lambda x: 'true:'+x), common.with_unk)), #['true:yes', 'true:no'], 
-        columns=list(map((lambda x: 'pred:'+x), common.with_unk)) #['pred:yes', 'pred:no']
-    ))
+    print(" ".join(list(map(lambda x: "pred: "+x, common.with_unk))))
+    for row_label, row in zip(common.with_unk, confusion):
+        print('%s [%s]' % (row_label, ' '.join('%03s' % i for i in row)))
+    # print(pd.DataFrame(confusion, 
+    #     index=list(map((lambda x: 'true:'+x), common.with_unk)), #['true:yes', 'true:no'], 
+    #     columns=list(map((lambda x: 'pred:'+x), common.with_unk)) #['pred:yes', 'pred:no']
+    # ))
 
 noun_tags = ["N", "NM", "NPL"]
 verb_tags = ["V", "VM"]
