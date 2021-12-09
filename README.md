@@ -51,3 +51,8 @@ There is example output in `run.out`
 To run without building the word2vec model and graph clustering: `python3 src/main`
 To run and build the word2vec model and graph clustering `python3 src/main long`
 To start a webserver urn `python3 src/webserver.py`
+
+---
+
+To run the RNN portion of this project, open the included 'RNN_POS_TAGGER.ipynb' in a Google Colab environment and follow the instructions included in the project. Specifically, the first line of "Usage" stating that the "easiest way to the script by default is to open 'Runtime' in the topbar in Google Colab and then select 'Run all'."
+
