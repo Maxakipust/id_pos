@@ -1,0 +1,3 @@
+[console_scripts]
+chinese-whispers = chinese_whispers.__main__:main
+

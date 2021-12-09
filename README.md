@@ -48,9 +48,12 @@ Finally we added a brill-like post processing. We look for sequences of N, NPL, 
 There is more data in `weight.xlsx`
 There is example output in `run.out`
 
+Note, if running on an onDemand environment, there are 2 packages missing, `inflect`, and `chinese_whispers`
+To install these packages locally run `pip3 install inflect chinese_whispers --user`
+
 To run without building the word2vec model and graph clustering: `python3 src/main`
 To run and build the word2vec model and graph clustering `python3 src/main long`
-To start a webserver urn `python3 src/webserver.py`
+To start a webserver run `cd src`, `export FLASK_APP=webserver` and `flask run`. Note flask needs to be installed with `pip3 install flask` (I don't know if there is a way to install it as user)
 
 ---
 

@@ -1,8 +1,8 @@
-nltk
-sklearn
+# nltk
+# sklearn
 inflect
-numpy
-pandas
-gensim
+# numpy
+# pandas
+# gensim
 networkx
 chinese_whispers
