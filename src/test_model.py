@@ -19,9 +19,9 @@ def runEnsemble(type, name, context):
         result = []
         for section in response:
             result.append(section.split('|')[1])
-        return " ".join(result)
+        return result
     except:
-        return ""
+        return []
 
 # test a model against the test data
 def test_model(tag_id_fn, test_file):
