@@ -29,9 +29,11 @@ def print_confusion(confusion):
     # ))
 
 def print_confusion_with_unk(confusion):
-    print(" ".join(list(map(lambda x: "pred: "+x, common.with_unk))))
+    print("top is predict")
+    print("left is true")
+    print("    " + " ".join(map(lambda x: (" "*(3 - len(x))) + x, common.with_unk)))
     for row_label, row in zip(common.with_unk, confusion):
-        print('%s [%s]' % (row_label, ' '.join('%03s' % i for i in row)))
+        print('%s %s' % (row_label+(" "*(3 - len(row_label))), ' '.join('%03s' % i for i in row)))
     # print(pd.DataFrame(confusion, 
     #     index=list(map((lambda x: 'true:'+x), common.with_unk)), #['true:yes', 'true:no'], 
     #     columns=list(map((lambda x: 'pred:'+x), common.with_unk)) #['pred:yes', 'pred:no']
