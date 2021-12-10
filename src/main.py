@@ -52,7 +52,6 @@ def isplural(word):
 # finds sequences of noun like tags, makes all of them NM except for the head noun
 
 def post_process(id, context, evaluate):
-    
     actual_result = evaluate(id, context)
     for (index, pos) in enumerate(actual_result):
         next_pos = actual_result[index + 1] if index < len(actual_result) - 1 else ""
